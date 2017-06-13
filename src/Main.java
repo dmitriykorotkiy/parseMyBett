@@ -1,6 +1,7 @@
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,14 +17,16 @@ import java.util.concurrent.TimeUnit;
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        String USER = "USER";
-        String PASSWORD = "PASSWORD";
+        String USER = "***";
+        String PASSWORD = "***";
 
-        System.setProperty("webdriver.chrome.driver", "C:\\PROJECT JAVA(parseMyBet)\\chromeDriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\PARSER\\parseMyBett\\chromeDriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("http://user.***.ru");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.get("http://user.*****.ru/");
         login(USER, PASSWORD);
+
 
 
         List<WebElement> allPositions = driver.findElements(By.className("style4"));
@@ -67,10 +70,72 @@ public class Main {
             System.out.println(element);
         }
 
+        driver.get("https://www.*****.com/ru/");
+        WebElement element = driver.findElement(By.id("loginButton"));
+        element.click();
+        Thread.sleep(2000);
+        WebElement login = driver.findElement(By.xpath(".//*[@id='loginMvc']/form/div/div[1]/div[1]/div[2]/div[2]/input"));
+        login.sendKeys("****");
+        WebElement password = driver.findElement(By.xpath(".//*[@id='loginMvc']/form/div/div[1]/div[1]/div[3]/div[2]/input"));
+        password.sendKeys("****");
+        WebElement enter = driver.findElement(By.id("loginButtonContainer"));
+        Thread.sleep(2000);
+        enter.click();
+        WebElement tennis = driver.findElement(By.xpath(".//*[@id='menuSport_33']/a"));
+        tennis.click();
+        Thread.sleep(2000);
 
-        driver.quit();
+
+        Rate rate = new Rate();
+        rate.setPositions(positionsList);
+
+        for (Position bet: positionsList) {
+            String begin = bet.getBeginMatch();
+            if (begin.contains(":")){
+                WebElement moneyToday = driver.findElement(By.xpath(".//*[@id='menuEventFilter_33_343']"));
+                Thread.sleep(2000);
+                moneyToday.click();
+//                WebElement openMore = driver.findElement(By.id("loadMoreGamesLink"));
+//                Thread.sleep(2000);
+//                openMore.click();
+                Thread.sleep(2000);
+
+               WebElement webTable = driver.findElement(By.id("Today_33"));
+               List<WebElement> TotalRowCount = webTable.findElements(By.xpath("//*[@id='Today_33']/table/tbody/tr"));
+
+
+                String[] name = bet.getPlayerName().split("-");
+                System.out.println("No. of Rows in the WebTable: " + TotalRowCount.size());
+                for (WebElement rowElement : TotalRowCount) {
+                    System.out.println(rowElement.getText());
+
+                    List<WebElement> TotalColumnCount = rowElement.findElements(By.tagName("td"));
+                    for (WebElement colElement : TotalColumnCount) {
+                        System.out.println(colElement.getText());
+
+                        if (colElement.getText().contains(name[0]) || colElement.getText().contains(name[1])) {
+                            System.out.println("ПИЗДЕЦ , Я НАШЕЛ !!!! ---------------- >  ВОТ ТВОЯ СТАВКА : " + colElement.getText());
+//                            WebElement open = colElement.findElement(By.xpath("/a"));
+//                            Thread.sleep(2000);
+//                            open.click();
+
+                        }
+                    }
+                }
+
+
+
+            } else if (begin.contains("/")){
+                WebElement moneyLine = driver.findElement(By.xpath(".//*[@id='menuEventFilter_33_344']"));
+                Thread.sleep(1000);
+                moneyLine.click();
+            }
+        }
+
+
 
     }
+
 
 
     private static void login(String user, String password) throws AWTException, InterruptedException {
@@ -101,6 +166,8 @@ public class Main {
         rb.keyPress(KeyEvent.VK_ENTER);
         rb.keyRelease(KeyEvent.VK_ENTER);
     }
+
+
 
 }
 
