@@ -1,14 +1,12 @@
+import login.FirstSiteLogin;
+import login.SecondSiteLogin;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.awt.*;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.KeyEvent;
 import java.util.*;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -17,157 +15,135 @@ import java.util.concurrent.TimeUnit;
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        String USER = "***";
-        String PASSWORD = "***";
-
-        System.setProperty("webdriver.chrome.driver", "C:\\PARSER\\parseMyBett\\chromeDriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\PARSER\\parseMyBett\\src\\resources\\chromeDriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.get("http://user.*****.ru/");
-        login(USER, PASSWORD);
+        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+        FirstSiteLogin site1 = new FirstSiteLogin();
+        driver.get("C:\\PARSER\\parseMyBett\\src\\resources\\htmlExample\\site1.html");
+//        driver.get(site1.getFIRST_SITE_URL());                         // захожу на сайт , логинюсь
+//        site1.login(site1.getUSER(), site1.getPASSWORD());
+//        Thread.sleep(2000);
+
+        ParserSite parserSite = new ParserSite();
+        List<String> listTextBet = parserSite.getTextFromSite1(driver);
+        List<Position> positionsList = parserSite.createPositionsList(listTextBet);
+        parserSite.showPositionList(positionsList);
+
+        SecondSiteLogin site2 = new SecondSiteLogin();
+//        driver.get("C:\\PARSER\\parseMyBett\\src\\resources\\htmlExample\\site2.html");
+        driver.get(site2.getSECOND_SITE_URL());
+        site2.login(site2.getUSER_PIN(),site2.getPASSWORD_PIN(),driver);
 
 
 
-        List<WebElement> allPositions = driver.findElements(By.className("style4"));
+        parserSite.makeBet(positionsList,driver);
 
-        // Делаю масив строк , который состоит из текста
-        ArrayList<String> listBet = new ArrayList<>();
-        for (int i = 0; i < allPositions.size(); i++) {
-            String element = String.valueOf(allPositions.get(i).getText());
-            if (element.contains("(П)")){
-                listBet.add(element);
-            }
-        }
+        //достаю bet из листа и ищу ее на сайте
+        for (Position bet : positionsList) {
+//            String[] name = bet.getPlayerName().split("-");
 
-        //создаю лист позиций
-        List<Position> positionsList = new ArrayList<>();
+            String name = "Fabbiano";
+//          System.out.println(name[0] + " второе " + name[1]);
+            WebElement betToday = driver.findElement(By.xpath(".//*[@id='menuEventFilter_33_344']"));
+//            System.out.println("betToday.getText(): " + betToday.getText());
 
-        for (int i = 0 ; i < listBet.size() ; i++ ) {
-            String element = listBet.get(i);
-            String[] parts = element.split(" ");
-            ArrayUtils.reverse(parts);
-            Position position = new Position();
-            position.setBookmaker(parts[0]);
-            position.setPrice(parts[1]);
-            position.setBet(parts[2]);
+            Thread.sleep(2000);
+            betToday.click();
+
+            // СЕГОДНЯ
+            List<WebElement> tbodyList = betToday.findElements(By.xpath("//*[@id='Early_33']/table/tbody/tr"));
+//            System.out.println("tbodyList.count: " + tbodyList.size());
 
 
-            for (int j = 0; j < parts.length; j++) {
-                if (parts[j].contains(":") || parts[j].contains("/")){
-                    position.setBeginMatch(parts[j]);
-                    String[] namePlayer = Arrays.copyOfRange(parts,3,j);
-                    ArrayUtils.reverse(namePlayer);
-                    String name = StringUtils.join(namePlayer);
-                    position.setPlayerName(name);
-                }
-            }
 
-            positionsList.add(i, position);
-        }
+            for (WebElement tBodyElement : tbodyList) {
+//                     System.out.println("tBodyElement.getText(): " + tBodyElement.getText());
 
-        for (Position element : positionsList) {
-            System.out.println(element);
-        }
-
-        driver.get("https://www.*****.com/ru/");
-        WebElement element = driver.findElement(By.id("loginButton"));
-        element.click();
-        Thread.sleep(2000);
-        WebElement login = driver.findElement(By.xpath(".//*[@id='loginMvc']/form/div/div[1]/div[1]/div[2]/div[2]/input"));
-        login.sendKeys("****");
-        WebElement password = driver.findElement(By.xpath(".//*[@id='loginMvc']/form/div/div[1]/div[1]/div[3]/div[2]/input"));
-        password.sendKeys("****");
-        WebElement enter = driver.findElement(By.id("loginButtonContainer"));
-        Thread.sleep(2000);
-        enter.click();
-        WebElement tennis = driver.findElement(By.xpath(".//*[@id='menuSport_33']/a"));
-        tennis.click();
-        Thread.sleep(2000);
-
-
-        Rate rate = new Rate();
-        rate.setPositions(positionsList);
-
-        for (Position bet: positionsList) {
-            String begin = bet.getBeginMatch();
-            if (begin.contains(":")){
-                WebElement moneyToday = driver.findElement(By.xpath(".//*[@id='menuEventFilter_33_343']"));
+//                List<WebElement> listID = tBodyElement.findElements(By.className("teamId"));
                 Thread.sleep(2000);
-                moneyToday.click();
-//                WebElement openMore = driver.findElement(By.id("loadMoreGamesLink"));
-//                Thread.sleep(2000);
-//                openMore.click();
-                Thread.sleep(2000);
+                List<WebElement> trS = tBodyElement.findElements(By.xpath("//*[@id='Early_33']/table/tbody/tr"));
 
-               WebElement webTable = driver.findElement(By.id("Today_33"));
-               List<WebElement> TotalRowCount = webTable.findElements(By.xpath("//*[@id='Today_33']/table/tbody/tr"));
+                for (WebElement tr: trS) {
 
+                    System.out.println("TR!!!");
+                    List<WebElement> listID = tr.findElements(By.className("teamId"));
+                    System.out.println("listID.size" + listID.size());
+                    for (WebElement teamIdToday : listID) {
+                        System.out.println("teamIdToday " + teamIdToday.getText());
+                        if (teamIdToday.getText().contains(name)) {
 
-                String[] name = bet.getPlayerName().split("-");
-                System.out.println("No. of Rows in the WebTable: " + TotalRowCount.size());
-                for (WebElement rowElement : TotalRowCount) {
-                    System.out.println(rowElement.getText());
+                            System.out.println(" Я НАШЕЛ !!!! ---------------- >  ВОТ ТВОЯ СТАВКА : " + teamIdToday.getText());
+//                            System.out.println("tr.getText(): " + tr.getText());
+//                            System.out.println("alt: " + tr.findElement(By.className("alt")));
+//                            System.out.println("id: " + tr.findElement(By.className("id")));
+                            List<WebElement> btn = tr.findElements(By.className("alt"));
+                            for (WebElement btnText : btn) {
+                                System.out.println(btnText.getText());
+                                btnText.click();
+                            }
 
-                    List<WebElement> TotalColumnCount = rowElement.findElements(By.tagName("td"));
-                    for (WebElement colElement : TotalColumnCount) {
-                        System.out.println(colElement.getText());
-
-                        if (colElement.getText().contains(name[0]) || colElement.getText().contains(name[1])) {
-                            System.out.println("ПИЗДЕЦ , Я НАШЕЛ !!!! ---------------- >  ВОТ ТВОЯ СТАВКА : " + colElement.getText());
-//                            WebElement open = colElement.findElement(By.xpath("/a"));
-//                            Thread.sleep(2000);
-//                            open.click();
 
                         }
                     }
                 }
 
+//                for (WebElement teamIdToday : listID) {
+//                    System.out.println("teamIdToday.getText(): " + teamIdToday.getText());
+////                    if (teamIdToday.getText().contains(name[0]) || teamIdToday.getText().contains(name[1])) {
+//                        if (teamIdToday.getText().contains(name)) {
+//
+//                            String team = tBodyElement.findElement(By.className(teamIdToday.));
+//
+//                            System.out.println(" Я НАШЕЛ !!!! ---------------- >  ВОТ ТВОЯ СТАВКА : " + teamIdToday.getText());
+//                            List<WebElement> btn = tBodyElement.findElements(By.className("alt"));
+//                           for (WebElement btnText : btn) {
+//                               System.out.println(btnText.getText());
+//                               btnText.click();
+//                           }
+//
+//
+//                        }
+////
+////                        WebElement alt = teamIdToday.findElement(By.xpath(".//*tr/td[2]/a"));
+////                        alt.click();
+////                        Thread.sleep(3000);
+//
+//                        //ЗАВТРА
+////                    } else if (!(teamIdToday.getText().contains(name[0]) || teamIdToday.getText().contains(name[1]))) {
+//                    if (!(teamIdToday.getText().equals(name))) {
+//
+//                        WebElement betTomorrow = driver.findElement(By.xpath(".//*[@id='menuEventFilter_33_344']"));
+//                        betTomorrow.click();
+//
+//                        List<WebElement> TotalRowCountTomorrow = betTomorrow.findElements(By.xpath("//*[@id='Early_33']/table/tbody"));
+//
+//                        for (WebElement colElementTomorrow : TotalRowCountTomorrow) {
+////                                System.out.println("colElementTomorrow.getText(): " + colElementTomorrow.getText());
+//
+//                            // пробный
+//                            List<WebElement> teamID = colElementTomorrow.findElements(By.className("teamId"));
+//                            for (WebElement team : teamID) {
+////                                System.out.println("team.getText(): " + team.getText());
+//
+//                                if (team.getText().equals(name) || team.getText().equals(name)) {
+//
+////                                    System.out.println(" Я НАШЕЛ !!!! ---------------- >  ВОТ ТВОЯ СТАВКА : " + team.getText());
+//
+//
+//                                }
+//
+//                            }
+//
+//                        }
+//
+//                    }
+//
+//                    }
 
-
-            } else if (begin.contains("/")){
-                WebElement moneyLine = driver.findElement(By.xpath(".//*[@id='menuEventFilter_33_344']"));
-                Thread.sleep(1000);
-                moneyLine.click();
+                }
             }
         }
-
-
-
     }
 
-
-
-    private static void login(String user, String password) throws AWTException, InterruptedException {
-        Robot rb = new Robot();
-
-        //Enter user name by ctrl-v
-        StringSelection username = new StringSelection(user);
-        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(username, null);
-        rb.keyPress(KeyEvent.VK_CONTROL);
-        rb.keyPress(KeyEvent.VK_V);
-        rb.keyRelease(KeyEvent.VK_V);
-        rb.keyRelease(KeyEvent.VK_CONTROL);
-
-        //tab to password entry field
-        rb.keyPress(KeyEvent.VK_TAB);
-        rb.keyRelease(KeyEvent.VK_TAB);
-        Thread.sleep(2000);
-
-        //Enter password by ctrl-v
-        StringSelection pwd = new StringSelection(password);
-        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(pwd, null);
-        rb.keyPress(KeyEvent.VK_CONTROL);
-        rb.keyPress(KeyEvent.VK_V);
-        rb.keyRelease(KeyEvent.VK_V);
-        rb.keyRelease(KeyEvent.VK_CONTROL);
-
-        //press enter
-        rb.keyPress(KeyEvent.VK_ENTER);
-        rb.keyRelease(KeyEvent.VK_ENTER);
-    }
-
-
-
-}
 

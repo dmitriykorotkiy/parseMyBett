@@ -81,6 +81,11 @@ public class Position {
                 ", bookmaker='" + bookmaker + '\'' +
                 '}';
     }
+
+    public String[] createArrayName(Position position){
+       String[] playerName =  position.getPlayerName().split("-");
+          return playerName;
+    }
 }
 
 
