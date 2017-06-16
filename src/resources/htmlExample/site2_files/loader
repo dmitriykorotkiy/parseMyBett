@@ -1,0 +1,46 @@
+  
+    (function () {
+        var config = window.simultaneousLoginConfig = {
+                homePageUrl: "https://members.pinnacle.com/ru/simultaneous-login/simultaneous-login",
+                apiUrl: "https://members.pinnacle.com/ru/simultaneous-login/api?resource=registered-device",
+                logoutUrl: "https://members.pinnacle.com/Sportsbook/User/Logout",
+                iframeId: "simultaneousLoginIframe",
+                allUITypes: {
+                    mobile:"mobile",
+                    deskTop:"desktop"
+                },
+                uiType: "desktop",
+                loaderJsUrl: "https://members.pinnacle.com/Cms_Data/Sites/SimultaneousLogin/Scripts/loader/loader.js",
+                urlParameters:{
+                    iframeid:'iframeid',
+                    ui:'ui',
+                    logoutUrl:'logoutUrl'
+                },
+                registeredDeviceIsNotActiveCode: 'RegisteredDeviceIsNotActive',
+                registeredDeviceCheckDelayInSeconds: "30",
+            };
+
+
+        if (isEnabledForUser()) {
+            
+            $.ajax({
+                type: "GET",
+                url: config.loaderJsUrl,
+                dataType: "script",
+                cache: true
+            });
+        }
+
+        function isEnabledForUser() {
+            var userLicenseType = getCookie('CustomerLicenseType');
+                        
+            return 'Malta'.split(',').indexOf(userLicenseType) >= 0;
+        }
+
+        function getCookie(key) {
+            var keyValue = document.cookie.match(new RegExp('(^|;) ?' + key + '=([^;]*)(;|$)', "i"));
+            return keyValue ? keyValue[2] : null;
+        }  
+})();
+ 
+

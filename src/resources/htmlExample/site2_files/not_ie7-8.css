@@ -1,0 +1,33 @@
+/* mixin's */
+tr:hover.evRow {
+  background-color: #ffe684 !important;
+}
+
+tr:hover.evRow .alt a {
+  color: black;
+  display: block;
+  border: 1px solid #ffd11e;
+  padding: 0 0 0 0;
+  margin: 2px 3px 2px 3px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  /* fallback/image non-cover color */
+  background-color: #ffe684;
+  background-image: -moz-linear-gradient(#fff6d0 0%, #ffd637 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff6d0), to(#ffd637));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(#fff6d0, #ffd637);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(#fff6d0, #ffd637);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #fff6d0, #ffd637);
+  /* IE10 */
+  background-image: linear-gradient(top, #fff6d0, #ffd637);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fff6d0', EndColorStr='#ffd637');
+  /* IE6–IE9 */
+}
+tr:hover.evRow .alt a:hover {
+  color: #8a8a91;
+}

@@ -1,0 +1,2509 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script async="true" src="site2_files/CognesiaServiceV62.js" type="text/javascript"></script><script async="" src="site2_files/adrum-ext.js"></script><script src="site2_files/jquery.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="author" content="PinnacleSports.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=7, IE=9">
+    <title>
+
+	Wagering
+            - Pinnacle Sportsbook &gt; Online Sports Betting and Wagers
+
+    </title>
+            <script type="text/javascript" async="" src="site2_files/1.js"></script><script type="text/javascript" async="" src="site2_files/analytics.js"></script><script async="" src="site2_files/gtm.js"></script><script>window['adrum-start-time'] = new Date().getTime();</script>
+            <script type="text/javascript" src="site2_files/adrum.js"></script>
+
+        <link rel="stylesheet" type="text/css" media="all" href="site2_files/basic.css" title="PinnacleSports (screen)">
+        <script type="text/javascript" src="site2_files/LAB.js"></script>
+
+    <script type="text/javascript">
+
+        /* console shim*/
+        (function () {
+            var f = function () {};
+            if (!window.console) {
+                window.console = {
+                    log:f, info:f, warn:f, debug:f, error:f
+                };
+            }
+        }());
+
+        var INTELLITRACKER = { };
+
+        var LINES = {
+            binders: {}, helpers: {}, enums: {}, config: {}, state: {}, f1: {}
+        };
+
+
+
+        LINES.loadConfigAndState = function() {
+            LINES.config.virtualDirectory = "/Sportsbook/";
+            LINES.config.version = "7.3.8.11047";
+            LINES.config.baseUrl = "//members.pinnacle.com/";
+            LINES.config.verboseLoggingEnabled = false;
+				LINES.config.isDebugMode = false;
+            LINES.config.listedPitchersToggle = true;
+            LINES.config.limitNetworkCallLog = "25";
+            LINES.config.timerLimitCustomerBalance = 600;
+            LINES.config.minimumAmountOfGamesPerPageForSimpleSingle = "50";
+            LINES.config.minimumAmountOfGamesPerPageForDouble = "40";
+
+LINES.config.timerLimitMarketRefresh = { "Live": 21, "Today": 76, "Early": 76 };LINES.state.selectedSportId = 33;
+LINES.state.selectedEventFilterId = 342;
+LINES.state.selectedTime = null;
+LINES.state.selectedTimeForParlays = 0;
+LINES.state.selectedPeriodNumber = null;
+LINES.state.isFattened = false;
+LINES.state.selectedLeagueIds = {};
+LINES.state.selectedBuySellLevels = {};
+LINES.state.currentSportJson = {"Markets":[{"MarketName":"Live\r\n","HeaderLabels":["Гандикап на гейм","Хозяева","Гости \r\n","Матчи","OVER","UNDER"],"GamesContainers":{"z_ATPChallengerLisbonQF_199344":{"DisplayName":"ATP Challenger Lisbon - QF","PeriodDesc":null,"GameLines":[{"Rot":"11951","EvId":"736069795","Lvl":"0","TmH":{"Fc":"fav","Txt":"Attila Balazs","Pd":"","Ex":null,"Sc":null},"TmA":{"Fc":"","Txt":"Joris De Loore","Pd":"","Ex":null,"Sc":null},"Alt":"\u003ca href=\"/Sportsbook/Asia/Alternate/33/199344/736069795/0/Live/Market/3/null\"\u003e+5\u003c/a\u003e","DispDate":"06/16\u003cbr/\u003e04:30","Date":"6/16/2017 4:30 AM","WagerMap":["2.5","\u003ca href=\"/Sportsbook/Bet/Add/736069795/0/0/0/0/1.806?line=-2.5\" class=\"wLnk \"\u003e1.806\u003c/a\u003e","\u003ca href=\"/Sportsbook/Bet/Add/736069795/0/1/0/0/2.02?line=2.5\" class=\"wLnk \"\u003e2.020\u003c/a\u003e","25.5","\u003ca href=\"/Sportsbook/Bet/Add/736069795/0/0/2/0/1.869?line=25.5\" class=\"wLnk \"\u003e1.869\u003c/a\u003e","\u003ca href=\"/Sportsbook/Bet/Add/736069795/0/1/2/0/1.961?line=25.5\" class=\"wLnk \"\u003e1.961\u003c/a\u003e"]}],"UnchangedGames":[],"BuySellLevels":[{"Text":"1 линия","Id":"0","IsSelected":true,"BaseText":null},{"Text":"3 линии","Id":"1","IsSelected":false,"BaseText":null},{"Text":"5 линий","Id":"2","IsSelected":false,"BaseText":null},{"Text":"Всего","Id":"3","IsSelected":false,"BaseText":null}],"IsVisible":true,"SportType":0,"LeagueId":199344,"Name":"ATP Challenger Lisbon - QF","SortOrder":null,"MaxWagerLimit":null},"z_ATPChallengerNottinghamQF_8906":{"DisplayName":"ATP Challenger Nottingham - QF","PeriodDesc":null,"GameLines":[{"Rot":"11355","EvId":"736076983","Lvl":"0","TmH":{"Fc":"fav","Txt":"Samuel Groth","Pd":"","Ex":null,"Sc":null},"TmA":{"Fc":"","Txt":"John-Patrick Smith","Pd":"","Ex":null,"Sc":null},"Alt":"\u003ca href=\"/Sportsbook/Asia/Alternate/33/8906/736076983/0/Live/Market/3/null\"\u003e+6\u003c/a\u003e","DispDate":"06/16\u003cbr/\u003e05:00","Date":"6/16/2017 5:00 AM","WagerMap":["2.5","\u003ca href=\"/Sportsbook/Bet/Add/736076983/0/0/0/0/1.751?line=-2.5\" class=\"wLnk \"\u003e1.751\u003c/a\u003e","\u003ca href=\"/Sportsbook/Bet/Add/736076983/0/1/0/0/2.1?line=2.5\" class=\"wLnk \"\u003e2.100\u003c/a\u003e","24.5","\u003ca href=\"/Sportsbook/Bet/Add/736076983/0/0/2/0/1.833?line=24.5\" class=\"wLnk \"\u003e1.833\u003c/a\u003e","\u003ca href=\"/Sportsbook/Bet/Add/736076983/0/1/2/0/2?line=24.5\" class=\"wLnk \"\u003e2.000\u003c/a\u003e"]}],"UnchangedGames":[],"BuySellLevels":[{"Text":"1 линия","Id":"0","IsSelected":true,"BaseText":null},{"Text":"3 линии","Id":"1","IsSelected":false,"BaseText":null},{"Text":"5 линий","Id":"2","IsSelected":false,"BaseText":null},{"Text":"Всего","Id":"3","IsSelected":false,"BaseText":null}],"IsVisible":true,"SportType":0,"LeagueId":8906,"Name":"ATP Challenger Nottingham - QF","SortOrder":null,"MaxWagerLimit":null},"z_ATPStuttgartQF_3637":{"DisplayName":"ATP Stuttgart - QF","PeriodDesc":null,"GameLines":[{"Rot":"10051","EvId":"736074359","Lvl":"0","TmH":{"Fc":"fav","Txt":"Philipp Kohlschreiber","Pd":"","Ex":null,"Sc":null},"TmA":{"Fc":"","Txt":"Lucas Pouille","Pd":"","Ex":null,"Sc":null},"Alt":"\u003ca href=\"/Sportsbook/Asia/Alternate/33/3637/736074359/0/Live/Market/3/null\"\u003e+6\u003c/a\u003e","DispDate":"06/16\u003cbr/\u003e04:45","Date":"6/16/2017 4:45 AM","WagerMap":["1.5","\u003ca href=\"/Sportsbook/Bet/Add/736074359/0/0/0/0/1.74?line=-1.5\" class=\"wLnk \"\u003e1.740\u003c/a\u003e","\u003ca href=\"/Sportsbook/Bet/Add/736074359/0/1/0/0/2.12?line=1.5\" class=\"wLnk \"\u003e2.120\u003c/a\u003e","25.5","\u003ca href=\"/Sportsbook/Bet/Add/736074359/0/0/2/0/1.99?line=25.5\" class=\"wLnk \"\u003e1.990\u003c/a\u003e","\u003ca href=\"/Sportsbook/Bet/Add/736074359/0/1/2/0/1.84?line=25.5\" class=\"wLnk \"\u003e1.840\u003c/a\u003e"]}],"UnchangedGames":[],"BuySellLevels":[{"Text":"1 линия","Id":"0","IsSelected":true,"BaseText":null},{"Text":"3 линии","Id":"1","IsSelected":false,"BaseText":null},{"Text":"5 линий","Id":"2","IsSelected":false,"BaseText":null},{"Text":"Всего","Id":"3","IsSelected":false,"BaseText":null}],"IsVisible":true,"SportType":0,"LeagueId":3637,"Name":"ATP Stuttgart - QF","SortOrder":null,"MaxWagerLimit":null},"z_WTANottinghamQF_187533":{"DisplayName":"WTA Nottingham - QF","PeriodDesc":null,"GameLines":[{"Rot":"10849","EvId":"736077058","Lvl":"0","TmH":{"Fc":"fav","Txt":"Donna Vekic","Pd":"","Ex":null,"Sc":null},"TmA":{"Fc":"","Txt":"Maria Sakkari","Pd":"","Ex":null,"Sc":null},"Alt":"\u003ca href=\"/Sportsbook/Asia/Alternate/33/187533/736077058/0/Live/Market/3/null\"\u003e+6\u003c/a\u003e","DispDate":"06/16\u003cbr/\u003e05:00","Date":"6/16/2017 5:00 AM","WagerMap":["6.5","\u003ca href=\"/Sportsbook/Bet/Add/736077058/0/0/0/0/1.943?line=-6.5\" class=\"wLnk \"\u003e1.943\u003c/a\u003e","\u003ca href=\"/Sportsbook/Bet/Add/736077058/0/1/0/0/1.884?line=6.5\" class=\"wLnk \"\u003e1.884\u003c/a\u003e","18.5","\u003ca href=\"/Sportsbook/Bet/Add/736077058/0/0/2/0/1.952?line=18.5\" class=\"wLnk \"\u003e1.952\u003c/a\u003e","\u003ca href=\"/Sportsbook/Bet/Add/736077058/0/1/2/0/1.877?line=18.5\" class=\"wLnk \"\u003e1.877\u003c/a\u003e"]}],"UnchangedGames":[],"BuySellLevels":[{"Text":"1 линия","Id":"0","IsSelected":true,"BaseText":null},{"Text":"3 линии","Id":"1","IsSelected":false,"BaseText":null},{"Text":"5 линий","Id":"2","IsSelected":false,"BaseText":null},{"Text":"Всего","Id":"3","IsSelected":false,"BaseText":null}],"IsVisible":true,"SportType":0,"LeagueId":187533,"Name":"WTA Nottingham - QF","SortOrder":null,"MaxWagerLimit":null}},"Market":0,"HideMarket":false}],"Sports":null,"LineViewTypes":[{"Text":"Простая линия","Id":"Simple","IsSelected":true,"BaseText":null},{"Text":"Одиночная линия","Id":"Single","IsSelected":false,"BaseText":null},{"Text":"Двойная линия","Id":"Double","IsSelected":false,"BaseText":null}],"Times":null,"Periods":[{"Text":"Матч","Id":"0","IsSelected":false,"BaseText":null},{"Text":"1-й сет\r\n\r\n","Id":"1","IsSelected":false,"BaseText":null},{"Text":"2-й сет\r\n\r\n","Id":"2","IsSelected":false,"BaseText":null},{"Text":"3-й сет\r\n\r\n","Id":"3","IsSelected":false,"BaseText":null},{"Text":"4-й сет\r\n\r\n","Id":"4","IsSelected":false,"BaseText":null},{"Text":"5-й сет\r\n","Id":"5","IsSelected":false,"BaseText":null}],"SportId":33,"SportName":"Теннис","SortOrder":57,"LineViewType":0,"CssViewType":0,"IsParlay":false};
+LINES.state.allLeaguesVisible = true;
+LINES.state.culture = 'ru-RU';
+LINES.state.IntellitrackerId  = 554163;
+LINES.state.oddsType  = 'decimal';
+LINES.state.baseDomain  = 'Decimal';
+LINES.state.virtualDirectory  = '/Sportsbook/';
+LINES.state.referrer  = '';
+
+
+            LINES.state.timerCountDownMarketRefresh = { "Live": LINES.config.timerLimitMarketRefresh.Live, "Today": LINES.config.timerLimitMarketRefresh.Today, "Early": LINES.config.timerLimitMarketRefresh.Early };
+
+            // output translations
+            LINES.state.translationsStore = {
+                "refresh": "обновить",
+                "full details": "Все детали",
+                "less details": "меньше сведений",
+                "moneyline": "Денежная линия",
+                "spread": "Фора",
+                "totalpoints": "Всего очков",
+                "team1total": "Тотал команды 1",
+                "team2total": "Тотал команды 2",
+                "team first": "Первая команда",
+                "Please Wait": "Пожалуйста, подождите...",
+                "BetTicketConfirm_Default": "Вы уверены, что хотите сделать эту ставку?",
+                "Please enter a wager amount.": "Пожалуйста, введите сумму ставки ",
+                "Offline": "Офлайн",
+                "BetTicketNote2": "В данном билете отсутствует ставка. Пожалуйста, сделайте выбор.",
+                "only numbers allowed": "Допускаются только цифры",
+                "Please select at least one league": "Пожалуйста, выберите хотя бы одну лигу.",
+                "Error_DataTemporarilyUnavailable": "Запрашиваемые Вами данные временно недоступны.",
+                "Saved successfully": "Успешно сохранено",
+                "Max_Abbr": "Макс",
+                "Error_ListedPitchersSelectionError": "Необходимо внести питчера в список."
+            };
+        };
+
+        var jQueryVersion = "1.8.3";
+        var jQueryUiVersion = "1.9.2";
+        var cdnRoot = "/Sportsbook/";
+        function jQueryReady(b, a) { window._q = window._q || []; if (window.jQuery) return b(); if (_q.push(b) > 1) return; var d = function (b) { var a = document.createElement("script"); a.type = "text/javascript"; a.src = b; document.getElementsByTagName("head")[0].appendChild(a) }; a = a || jQueryVersion; var e = 0, c = function () { if (window.jQuery) return $(_q).each(function () { this() }); e++ === 20 && d(cdnRoot + "Static/Scripts/failover/jquery-" + a + ".min.js"); setTimeout(c, 0); }; setTimeout(c, 0); }
+        function loadLocaljQueryIfNecessary() { if (!window.jQuery) { $LAB.script(cdnRoot + "Static/Scripts/failover/jquery-" + jQueryVersion + ".min.js").wait().script(cdnRoot + "Static/Scripts/failover/jquery-ui-" + jQueryUiVersion + ".min.js").wait(function () {initializeEnhancedSite(0);}); return true; } else if (!window.jQuery.ui) { $LAB.script(window.jQuery.ui, cdnRoot + "Static/Scripts/failover/jquery-ui-" + jQueryUiVersion + ".min.js").wait(function () {initializeEnhancedSite(0);}); return true; } return false; }
+        function initializeEnhancedSite(loadCount) {
+
+            $(window).load(function(){
+                if ($('#cookiepolicy').length) {
+                    var newTop = "75px";
+                    $("#cookiepolicy").css({
+                        "height": newTop
+                    });
+                    $("#divHeader").css({
+                        "top": newTop
+                    });
+                    $("#menu_and_ticket").css({
+                        "top": "130px"
+                    });
+                }
+            });
+
+            $(window).scroll(function() {
+                if ($('#cookiepolicy').length) {
+                    $('#cookiepolicy').addClass("hidden");
+                    $("#divHeader").css({
+                        "top": 0
+                    });
+                }
+                var scroll = $(window).scrollTop();
+                if (scroll === 0) {
+                    if ($('#cookiepolicy').length) {
+                        var newTop = "75px";
+                        $("#cookiepolicy").css({
+                            "display": "inline"
+                        });
+                        $('#cookiepolicy').removeClass("hidden");
+                        $("#divHeader").css({
+                            "top": newTop
+                        });
+                        $("#menu_and_ticket").css({
+                            "top": "130px"
+                        });
+                    }
+                }
+            });
+
+            if (window.jQuery && !(LINES.state.oddsFormat)) {
+                // add extensions to jQuery
+                jQuery.fn.exists = function () { return jQuery(this).length > 0; };
+                // onload
+                $(document).ready(function () {
+                    LINES.loadConfigAndState();
+                    if(LINES.state.browserMode == LINES.enums.browserMode.Basic) LINES.helpers.betMenu.refresh();
+                    LINES.state.browserMode = LINES.enums.browserMode.Enhanced;
+                    LINES.onload();
+                });
+            }
+            else if (loadCount < 10 && !(LINES.state.oddsFormat)) {
+                loadCount++;
+                setTimeout(function () { initializeEnhancedSite(loadCount); }, 2000);
+            }
+        }
+    </script>
+        <script type="text/javascript">
+            function loadEnhanceScripts() { 
+            
+                $LAB.script("//www.pinnacle.com/WebShared/2.0.17" + "/Shared/Scripts/jquery-" + jQueryVersion + ".min.js").wait()
+                    .script("//www.pinnacle.com/WebShared/2.0.17" + "/Shared/Scripts/jquery-ui-" + jQueryUiVersion + ".min.js")
+                    .script(cdnRoot + "Static/Scripts/lines/big-j.js?v=7.3.8.11047")
+                    .script("/Sportsbook/Static/Scripts/parlayTicket/parlayTicket.js?v=7.3.8.11047")
+                    .script("https://members.pinnacle.com/ru/simultaneous-login/loader?ui=desktop&logoutUrl=https://members.pinnacle.com/Sportsbook/User/Logout")
+                    .wait(function () { initializeEnhancedSite(0) });
+                setTimeout(function() { loadLocaljQueryIfNecessary(); }, 5000); return true;
+            }
+        </script>
+    
+
+
+    <!--[if gt IE 9]><!-->
+
+    <link rel="stylesheet" type="text/css" href="site2_files/not_ie7-8.css" media="all" title="PinnacleSports (screen)">
+    <!--<![endif]-->
+        <link rel="stylesheet" type="text/css" href="site2_files/lines.css" media="all" title="PinnacleSports (screen)">
+        <!--[if (gte IE 7) & (lte IE 8)]>
+
+        <link rel="stylesheet" type="text/css" href="/Sportsbook/Static/Css/lines/ie7plus.css?v=7.3.8.11047" media="all" title="PinnacleSports (screen)" />
+        <![endif]-->
+        <noscript>
+            <meta http-equiv="REFRESH" content="0;url=/Sportsbook/User/SetBrowserMode/Basic/Desktop" />
+        </noscript>
+        <script type="text/javascript" src="site2_files/jquery-1.js"></script>
+        <script type="text/javascript" src="site2_files/jquery-ui-1.js"></script>
+        <script type="text/javascript">
+            loadLocaljQueryIfNecessary();
+        </script>
+        <script type="text/javascript" src="site2_files/big-j.js"></script>
+        <script type="text/javascript" src="site2_files/parlayTicket.js"></script>
+            <script type="text/javascript" src="site2_files/loader"></script>
+        <script type="text/javascript">
+            initializeEnhancedSite(0);
+
+
+            var isUrgentAnnouncement = 'False';
+            if (isUrgentAnnouncement == 'True') {
+                var request = null;
+                request = $.ajax({
+                    url: "/notificationcenter/Announcement/index",
+                    data: {
+                        AnimateFromTo: "#personalMessages a",
+                        LanguageId: 11,
+                        AppId: "Desktop"
+                    },
+                    method: "POST",
+                    dataType: "html"
+                });
+                request.done(function(msg) {
+                    $("body").append(msg);
+                });
+                request.fail(function(jqXHR, textStatus) {
+                    alert("Announcement request failed: " + textStatus);
+                });
+            }
+        </script>
+
+<script type="text/javascript" async="true" src="site2_files/a_002.htm"></script><script type="text/javascript" async="true" src="site2_files/a.htm"></script></head>
+<body>
+
+
+<!-- Google Tag Manager -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PSRW2G" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PSRW2G');
+</script>
+<!-- End Google Tag Manager -->
+
+<div id="UpgradeBrowser">
+    Your web browser has limited capabilities. To view the enhanced experience try upgrading your browser
+    to the latest version of <a href="http://www.google.com/chrome" target="_blank">Chrome</a> or <a href="http://www.mozilla.com/" target="_blank">Firefox</a>.
+</div>
+<div id="divMain">
+    <div id="mainBox" class="modern_off">
+        <div id="divHeader">
+
+            <div id="divPLogo">
+                <a href="https://members.pinnacle.com/Members/canvas.asp" title="www.pinnaclesports.com"></a>
+            </div>
+            <div id="divHeaderContent">
+                <div id="divHeaderLinks">
+                    
+
+<span class="nav more-menu">
+    <ul class="dropdown clear">
+        <li class="first"><a id="linkMessages" class="linkPopup" href="https://members.pinnacle.com/members/aspxproxy.asp?aspx=/v2/Messages.aspx">Новости<sup>&nbsp;</sup></a></li>
+        <li><a id="linkFullBetList" class="linkDynamic" href="https://members.pinnacle.com/Sportsbook/Asia/BetList/GetFull/0">Список ставок заполнен<sup>&nbsp;</sup></a></li>
+        <li><a id="linkStatement" class="linkDynamic" href="https://members.pinnacle.com/Sportsbook/Asia/Statement">Выписка<sup>&nbsp;</sup></a></li>
+        
+        <li><a class="linkRedirect" href="https://www1.pinnacle.com/en/casino">Казино<sup>&nbsp;</sup></a></li>
+            <li><a class="linkRedirect" href="https://www1.pinnacle.com/en/casino/live-casino">Казино Live<sup>&nbsp;</sup></a></li>
+                    <li><a id="cashier-pop" class="linkRedirect" href="https://www1.pinnacle.com/members/cashier.asp?notemplate">Касса<sup>&nbsp;</sup></a></li>
+                
+        <li><a id="teaser-pop" class="linkRedirect" href="https://members.pinnacle.com/members/canvas.asp?noTemplate#/members/TrTeaserSelect.asp?notemplate">Тизеры <sup>&nbsp;</sup></a></li>
+        <li><a id="outrights-pop" class="linkRedirect" href="https://members.pinnacle.com/members/canvas.asp?noTemplate#betPageContestOnly.asp?notemplate">Аутрайты
+<sup>&nbsp;</sup></a></li>
+        <li>
+            <a id="linkMore" href="#" class="linkPopup">Еще<sup>&nbsp;</sup></a><span class="icon-menu-drop"></span>
+            <ul>
+                <li><a id="pdetails-pop" href="https://www1.pinnacle.com/members/canvas.asp?noTemplate#/Members/AccountDetails.asp?notemplate">Личные Данные</a></li>
+                <li><a id="linkRules" href="https://www.pinnacle.com/ru/help/betting-rules">Правила</a></li>
+                <li><a id="linkSettings" href="https://members.pinnacle.com/Sportsbook/Asia/Settings">Настройки </a></li>
+                <li><a id="linkNormalGamesResults" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Results/NormalGames">Результаты</a></li>
+            </ul>
+        </li>
+    </ul>
+</span>
+
+                </div>
+                <div id="divUserInfo">
+                    <span id="logoutButton">
+                            <a href="https://members.pinnacle.com/Sportsbook/User/Logout" id="logoutButtonLink">Выход</a>
+                    </span>
+                    <form method="post" action="/Sportsbook/User/SetProfileBar" name="userPrefs" id="userPrefs">
+                        <select class="select" id="culture" name="Culture" size="1"><option value="en-GB">English (International)</option>
+<option value="zh-CN">简体中文 (Chinese S.)</option>
+<option value="zh-TW">繁體中文 (Chinese T.)</option>
+<option value="cs-CZ">Ceština (Czech)</option>
+<option value="en-US">English (N. American)</option>
+<option value="fi-FI">Suomi (Finnish)</option>
+<option value="fr-FR">Français (French)</option>
+<option value="de-DE">Deutsch (German)</option>
+<option value="he-IL">עברית (Hebrew)</option>
+<option value="id-ID">Indonesian (Indonesian)</option>
+<option value="it-IT">Italiano (Italian)</option>
+<option value="ja-JP">日本語 (Japanese)</option>
+<option value="ko-KR">한국어 (Korean)</option>
+<option value="nb-NO">Norsk (Norwegian)</option>
+<option value="pl-PL">Polski (Polish)</option>
+<option value="pt-BR">Português (Portuguese)</option>
+<option selected="selected" value="ru-RU">Русский (Russian)</option>
+<option value="es-ES">Español (Spanish)</option>
+<option value="sv-SE">Svenska (Swedish)</option>
+<option value="th-TH">ภาษาไทย (Thai)</option>
+<option value="vi-VN">Tiếng Việt (Vietnamese)</option>
+</select>
+<select class="select" id="siteAccessType" name="SiteAccessType" size="1"><option value="1" selected="selected">Азиатский вид </option>
+<option value="2">Бета-просмотр</option>
+</select>                        <input id="dummy" style="width: 1px; height: 1px; border: 0" type="text">
+                        <select id="tmp-tmz" size="20" style="display: none; position: absolute;" disabled="disabled"></select>
+                        <input id="BrowserType" name="BrowserType" value="Desktop" type="hidden">
+                        <input id="oddsEntry" name="OddsFormat" value="Decimal" type="hidden">
+                        <input id="userPrefsSubmitButton" name="submit" value="submit" type="submit">
+                    <input id="tab_tab" name="tab_tab" value="Menu" type="hidden"><input id="tab_sport" name="tab_sport" value="/Sportsbook/Asia/ru-RU/GetLines/Tennis/Today/0/null/null/Regular/SportsBookAll/Decimal/7/false/" type="hidden"></form>
+                    <span id="welcome">
+                        Приветствуем, <span id="customerName">DK625762</span>
+                    </span>
+                    <span id="personalMessages"><a href="https://members.pinnacle.com/members/aspxproxy.asp?aspx=/v2/Messages.aspx?tab=2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="personalMessagesCount">(0)</span></a></span>
+                        <!--
+                        <a href="//members.pinnacle.com/members/information.asp?ID=5250&ico=membershome&icl=casino" class="casino_button"><span>Казино</span></a>
+                        -->
+                </div>
+            </div>
+        </div>
+        <div>
+            
+            
+
+	<h1 class="hidLabel">Wagering</h1>
+	<div class="col2 c1 tabsArea" id="menu_and_ticket" style="height: 888px;">
+		<div id="CustomerBalanceContent">
+			<div id="CustomerBalance">
+
+        <div>
+            <table id="AvailableBalance" width="100%">
+                <tbody><tr>
+                    <td class="mainBalance">USD:&nbsp;1,441.10
+                    </td>
+                    <td class="options">
+                        <a href="#" class="refresh">&nbsp;</a>
+                        <a href="#" class="expand">&nbsp;</a>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div id="ExpandedBalance" style="display: none;">
+            <table width="100%">
+                <tbody><tr class="bb"><td class="label">Логин:</td><td>DK625762</td></tr>
+                <tr class="bb"><td class="label">Валюта:</td><td>USD</td></tr>
+                <tr class="bb"><td class="label">Денежный баланс:</td><td class="">1,441.10</td></tr>
+                <tr class="bb"><td class="label">Незавершенные транзакции:</td><td>300.00</td></tr>
+</tbody></table>           
+        </div>
+</div>
+		</div>
+		<div id="tabs">
+			<ul class="tabgroup">
+				<li id="PendingTab" class="">
+					<a href="https://members.pinnacle.com/Sportsbook/AsiaSession/SelectTab?tab=Pending&amp;uniq=636331867578563408">Отложенная</a>
+				</li>
+				<li id="WagerTab" class="">
+					<a href="https://members.pinnacle.com/Sportsbook/AsiaSession/SelectTab?tab=Wager&amp;uniq=636331867578563408">Все ставки</a>
+				</li>
+			</ul>
+			<ul class="selectedtabgroup">
+				<li id="MenuTab" class="selectedtab">
+					<a href="https://members.pinnacle.com/Sportsbook/AsiaSession/SelectTab?tab=Menu&amp;uniq=636331867578563408">спорт
+</a>
+				</li>
+				<li id="TicketTab" class="">
+					<a href="https://members.pinnacle.com/Sportsbook/AsiaSession/SelectTab?tab=Ticket&amp;uniq=636331867578563408">Купон</a>
+				</li>
+			</ul>
+		</div>
+		<div id="tabsContent">
+			<div id="MenuContent" class="">
+				           
+
+    <ul class="sportList">
+<li id="menuSport_29" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Soccer" title="SOCCER">Футбол</a>
+                <span dir="ltr"> (190)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_29_295" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Soccer/Live/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Live
+</a>
+
+                            <span dir="ltr"> (3)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_29_296" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Soccer/Today/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Сегодня
+</a>
+
+                            <span dir="ltr"> (41)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_29_297" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Soccer/Early%20Markets/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Ранние Рынки
+</a>
+
+                            <span dir="ltr"> (149)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_29_299" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Soccer/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (183)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_29_300" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Soccer/Team%20Total/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Тотал команды</a>
+
+                            <span dir="ltr"> (180)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_29_1637" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Soccer/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (199)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_29_303" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Soccer/1st%20Half/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">1-й тайм</a>
+
+                            <span dir="ltr"> (181)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_15" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Football" title="FOOTBALL">Американский футбол</a>
+                <span dir="ltr"> (16)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_15_148" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Football/Live/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Live
+</a>
+
+                            <span dir="ltr"> (0)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_15_1623" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Football/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (16)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_15_149" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Football/Today/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Сегодня
+</a>
+
+                            <span dir="ltr"> (0)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_15_151" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Football/All%20Games/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Все матчи</a>
+
+                            <span dir="ltr"> (16)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_4" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Basketball" title="BASKETBALL">Баскетбол</a>
+                <span dir="ltr"> (14)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_4_32" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Basketball/Live/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Live
+</a>
+
+                            <span dir="ltr"> (1)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_4_1612" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Basketball/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (14)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_4_33" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Basketball/Today/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Сегодня
+</a>
+
+                            <span dir="ltr"> (10)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_4_34" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Basketball/Early%20Markets/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Ранние Рынки
+</a>
+
+                            <span dir="ltr"> (4)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_4_36" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Basketball/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (8)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_4_37" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Basketball/Team%20Total/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Тотал команды</a>
+
+                            <span dir="ltr"> (5)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_4_40" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Basketball/1st%20Half/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">1-й тайм</a>
+
+                            <span dir="ltr"> (8)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_4_41" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Basketball/2nd%20Half/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">2-й тайм</a>
+
+                            <span dir="ltr"> (0)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_4_42" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Basketball/1st%20Quarter/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">1-ая четверть</a>
+
+                            <span dir="ltr"> (8)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_3" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Baseball" title="BASEBALL">Бейсбол</a>
+                <span dir="ltr"> (15)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_3_22" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Baseball/Live/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Live
+</a>
+
+                            <span dir="ltr"> (0)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_3_1611" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Baseball/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (15)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_3_23" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Baseball/Today/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Сегодня
+</a>
+
+                            <span dir="ltr"> (15)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_3_24" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Baseball/Early%20Markets/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Ранние Рынки
+</a>
+
+                            <span dir="ltr"> (0)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_3_26" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Baseball/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (15)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_3_27" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Baseball/Team%20Total/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Тотал команды</a>
+
+                            <span dir="ltr"> (15)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_3_1663" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Baseball/1st%20Innings/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">1st Innings</a>
+
+                            <span dir="ltr"> (0)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_33" class="selectedSport">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Tennis" title="TENNIS">Теннис</a>
+                <span dir="ltr"> (38)</span>
+                <ul class="filterList ">
+                        <li class="">
+                            <a id="menuEventFilter_33_342" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Tennis/Live/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Live
+</a>
+
+                            <span dir="ltr"> (4)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_33_1641" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Tennis/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (52)</span>
+                        </li>
+                        <li class="selectedFilter">
+                            <a id="menuEventFilter_33_343" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Tennis/Today/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Сегодня
+</a>
+
+                            <span dir="ltr"> (23)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_33_344" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Tennis/Early%20Markets/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Ранние Рынки
+</a>
+
+                            <span dir="ltr"> (0)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_33_346" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Tennis/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (38)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_33_347" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Tennis/Team%20Total/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Тотал команды</a>
+
+                            <span dir="ltr"> (8)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_12" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=E%20Sports" title="E SPORTS">E Sports</a>
+                <span dir="ltr"> (61)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_12_1620" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/E%20Sports/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (244)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_12_121" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/E%20Sports/All%20Games/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Все матчи</a>
+
+                            <span dir="ltr"> (49)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_12_122" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/E%20Sports/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (61)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_6" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Boxing" title="BOXING">Бокс</a>
+                <span dir="ltr"> (8)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_6_1614" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Boxing/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (8)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_6_61" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Boxing/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (8)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_6_60" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Boxing/All%20Games/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Все матчи</a>
+
+                            <span dir="ltr"> (3)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_8" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Cricket" title="CRICKET">Крикет</a>
+                <span dir="ltr"> (1)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_8_1616" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Cricket/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (1)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_8_77" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Cricket/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (1)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_17" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Golf" title="GOLF">Гольф</a>
+                <span dir="ltr"> (25)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_17_1625" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Golf/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (25)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_17_176" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Golf/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (25)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_18" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Handball" title="HANDBALL">Гандбол</a>
+                <span dir="ltr"> (8)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_18_1626" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Handball/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (8)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_18_186" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Handball/Early%20Markets/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Ранние Рынки
+</a>
+
+                            <span dir="ltr"> (8)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_18_188" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Handball/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (5)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_22" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Mixed%20Martial%20Arts" title="MIXED MARTIAL ARTS">Смешанные боевые искусства</a>
+                <span dir="ltr"> (20)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_22_1630" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Mixed%20Martial%20Arts/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (20)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_22_231" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Mixed%20Martial%20Arts/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (20)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_22_230" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Mixed%20Martial%20Arts/All%20Games/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Все матчи</a>
+
+                            <span dir="ltr"> (20)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_26" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Rugby%20League" title="RUGBY LEAGUE">Регби</a>
+                <span dir="ltr"> (5)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_26_1634" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Rugby%20League/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (5)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_26_269" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Rugby%20League/All%20Games/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Все матчи</a>
+
+                            <span dir="ltr"> (5)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_26_270" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Rugby%20League/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (2)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_27" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Rugby%20Union" title="RUGBY UNION">Кубок мира по регби</a>
+                <span dir="ltr"> (8)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_27_1635" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Rugby%20Union/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (8)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_27_279" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Rugby%20Union/All%20Games/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Все матчи</a>
+
+                            <span dir="ltr"> (7)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_27_280" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Rugby%20Union/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (1)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_34" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Volleyball" title="VOLLEYBALL">Волейбол</a>
+                <span dir="ltr"> (16)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_34_1642" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Volleyball/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (16)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_34_358" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Volleyball/All%20Games/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Все матчи</a>
+
+                            <span dir="ltr"> (16)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_34_359" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Volleyball/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (12)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_39" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Aussie%20Rules" title="AUSSIE RULES">Австралийский футбол</a>
+                <span dir="ltr"> (4)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_39_1647" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Aussie%20Rules/Parlay/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink parlay">Экспрессы
+</a>
+
+                            <span dir="ltr"> (4)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_39_419" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Aussie%20Rules/Today/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Сегодня
+</a>
+
+                            <span dir="ltr"> (2)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_39_420" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Aussie%20Rules/Early%20Markets/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Ранние Рынки
+</a>
+
+                            <span dir="ltr"> (2)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_39_421" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Aussie%20Rules/All%20Games/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Все матчи</a>
+
+                            <span dir="ltr"> (4)</span>
+                        </li>
+                        <li class="">
+                            <a id="menuEventFilter_39_422" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Aussie%20Rules/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (3)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_45" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Cycling" title="CYCLING">Велоспорт</a>
+                <span dir="ltr"> (5)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_45_1347" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Cycling/Moneyline/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Денежная линия</a>
+
+                            <span dir="ltr"> (5)</span>
+                        </li>
+                </ul>
+            </li>
+<li id="menuSport_58" class="">
+                <a class="sportLink" href="https://members.pinnacle.com/Sportsbook/?sport=Entertainment" title="ENTERTAINMENT">разлекательное</a>
+                <span dir="ltr"> (0)</span>
+                <ul class="filterList hide">
+                        <li class="">
+                            <a id="menuEventFilter_58_1760" href="https://members.pinnacle.com/Sportsbook/Asia/ru-RU/Bet/Entertainment/Today/Simple/null/null/Regular/SportsBookAll/Decimal/7" class="filterLink">Сегодня
+</a>
+
+                            <span dir="ltr"> (0)</span>
+                        </li>
+                </ul>
+            </li>
+    </ul>
+
+			</div>
+		    <div id="TicketContent" class="ticket hidden">
+		        
+
+    <div id="emptyBetTicket" class="ticketDiv">
+	    <div class="cnt wrapper">
+		    <div class="message">
+			    This ticket does not contain a bet. Please make a selection.
+		    </div>
+	    </div>
+    </div>
+
+<div id="ticketWagers" class="ticketDiv hidden enhance">
+    <div class="cnt collapsibleContainer">
+<form action="/Sportsbook/BetTicket/PlaceBet" autocomplete="off" class="noBreak" id="PendingTicket" method="post">  
+
+<input id="ticketFormSource" name="PendingTicket.TicketSource" value="SimpleLine" type="hidden"><input id="ticketFormUniqueId" name="PendingTicket.UniqueId" value="3d0bac26-9cab-4335-b572-f6997f762cb7" type="hidden"><input id="ticketFormBallPercent" name="PendingTicket.TicketItem.BallPercent" value="" type="hidden"><input id="ticketFormBetType" name="PendingTicket.TicketItem.BetType" value="Spread" type="hidden"><input id="ticketFormBuySellLevel" name="PendingTicket.TicketItem.BuySellLevel" value="0" type="hidden"><input id="ticketFormBuySellId" name="PendingTicket.TicketItem.BuySellId" value="" type="hidden"><input id="ticketFormDisplayPick" name="PendingTicket.TicketItem.DisplayPick" value="False" type="hidden"><input id="ticketFormEventId" name="PendingTicket.TicketItem.EventId" value="0" type="hidden"><input id="ticketFormEventFilterType" name="PendingTicket.TicketItem.EventFilterType" value="" type="hidden"><input id="ticketFormEventFilterType" name="PendingTicket.TicketItem.EventFilterValue" value="" type="hidden"><input id="ticketFormFormattedPick" name="PendingTicket.TicketItem.EventLine.FormattedPick" value="" type="hidden"><input id="ticketFormPrice" name="PendingTicket.TicketItem.EventLine.Price" value="0" type="hidden"><input id="ticketFormFormattedPrice" name="PendingTicket.TicketItem.EventLine.FormattedPrice" value="" type="hidden"><input id="ticketFormLine" name="PendingTicket.TicketItem.EventLine.Line" value="" type="hidden"><input id="ticketFormFormattedLine" name="PendingTicket.TicketItem.EventLine.FormattedLine" value="" type="hidden"><input id="ticketFormEventStatus" name="PendingTicket.TicketItem.EventStatus" value="Open" type="hidden"><input id="ticketFormLeague" name="PendingTicket.TicketItem.League" value="" type="hidden"><input id="ticketFormLeagueId" name="PendingTicket.TicketItem.LeagueId" value="-1" type="hidden"><input id="ticketFormLineDescription" name="PendingTicket.TicketItem.LineDescription" value="" type="hidden"><input id="ticketFormLineId" name="PendingTicket.TicketItem.LineId" value="-1" type="hidden"><input id="ticketFormLineTypeLabel" name="PendingTicket.TicketItem.LineTypeLabel" value="" type="hidden"><input id="ticketFormMarketId" name="PendingTicket.TicketItem.MarketId" value="" type="hidden"><input id="ticketFormMaxRisk" name="PendingTicket.TicketItem.MaxRisk" value="" type="hidden"><input id="ticketFormMaxRiskAmount" name="PendingTicket.TicketItem.MaxRiskAmount" value="0" type="hidden"><input id="ticketFormMinRisk" name="PendingTicket.TicketItem.MinRisk" value="" type="hidden"><input id="ticketFormMinRiskAmount" name="PendingTicket.TicketItem.MinRiskAmount" value="0" type="hidden"><input id="ticketFormMaxWin" name="PendingTicket.TicketItem.MaxWin" value="" type="hidden"><input id="ticketFormMaxWinAmount" name="PendingTicket.TicketItem.MaxWinAmount" value="0" type="hidden"><input id="ticketFormMinWin" name="PendingTicket.TicketItem.MinWin" value="" type="hidden"><input id="ticketFormMinWinAmount" name="PendingTicket.TicketItem.MinWinAmount" value="0" type="hidden"><input id="ticketFormOverUnder" name="PendingTicket.TicketItem.OverUnder" value="" type="hidden"><input id="ticketFormPeriod" name="PendingTicket.TicketItem.Period" value="0" type="hidden"><input id="ticketFormPeriodDescription" name="PendingTicket.TicketItem.PeriodDescription" value="" type="hidden"><input id="ticketFormPeriodShortDescription" name="PendingTicket.TicketItem.PeriodShortDescription" value="" type="hidden"><input id="ticketFormPick" name="PendingTicket.TicketItem.Pick" value="Team1OrOver" type="hidden"><input id="ticketFormSport" name="PendingTicket.TicketItem.Sport" value="" type="hidden"><input id="ticketFormSportId" name="PendingTicket.TicketItem.SportId" value="0" type="hidden"><input id="ticketFormSportType" name="PendingTicket.TicketItem.SportType" value="Regular" type="hidden"><input id="ticketFormStartDate" name="PendingTicket.TicketItem.StartDate" value="06/16/2017 05:12:37" type="hidden"><input id="ticketFormTeam1FavoriteCss" name="PendingTicket.TicketItem.Team1FavoriteCss" value="" type="hidden"><input id="ticketFormTeam1Id" name="PendingTicket.TicketItem.Team1Id" value="" type="hidden"><input id="ticketFormTeam1Name" name="PendingTicket.TicketItem.Team1Name" value="" type="hidden"><input id="ticketFormTeam1Pitcher" name="PendingTicket.TicketItem.Team1Pitcher" value="" type="hidden"><input id="ticketFormTeam1RedCards" name="PendingTicket.TicketItem.Team1RedCards" value="" type="hidden"><input id="ticketFormTeam1Score" name="PendingTicket.TicketItem.Team1Score" value="" type="hidden"><input id="ticketFormTeam1FavoriteCss" name="PendingTicket.TicketItem.Team2FavoriteCss" value="" type="hidden"><input id="ticketFormTeam2Id" name="PendingTicket.TicketItem.Team2Id" value="" type="hidden"><input id="ticketFormTeam2Name" name="PendingTicket.TicketItem.Team2Name" value="" type="hidden"><input id="ticketFormTeam2Pitcher" name="PendingTicket.TicketItem.Team2Pitcher" value="" type="hidden"><input id="ticketFormTeam2RedCards" name="PendingTicket.TicketItem.Team2RedCards" value="" type="hidden"><input id="ticketFormTeam2Score" name="PendingTicket.TicketItem.Team2Score" value="" type="hidden">            <div class="item  " id="ticketItem">
+                <div id="betTicketItemContainer" class="hidden">
+                    <div class="puls_top">
+                        <a id="ticketClear" href="https://members.pinnacle.com/Sportsbook/BetTicket/ClearBetTicket" class="close removeLink" title="Click to Remove this item from your Bet Ticket"></a><a id="ticketRefresh" href="https://members.pinnacle.com/Sportsbook/">
+                                                                                          <span>обновить
+
+</span></a>
+                    </div>                    
+                  
+                    
+
+<div data-role="listview" data-inset="true" data-theme="c" class="addInfo">
+    <div id="betTicketSport" class="sport"></div>
+    <div id="betTicketLeague" class="league"></div>
+    <div id="betTicketDate" class="date">06/16/2017 05:12:37</div>
+    <div id="betTicketLineDesc" class="period"></div>
+</div>
+
+        <div class="ticketMatch">
+            <div id="betTicketTeam1Container" class="ticketTeam ">
+<span id="betTicketTeam1"></span>
+                <div id="betTicketTeam1PitcherContainer" class="hidden">
+
+                                
+<input class="hidden" data-role="none" id="PendingTicket_TicketItem_Team1PitcherChecked" name="PendingTicket.TicketItem.Team1PitcherChecked" value="true" type="checkbox"><input name="PendingTicket.TicketItem.Team1PitcherChecked" value="false" type="hidden">                                    <label class="pitcher" for=""><span id="betTicketTeam1Pitcher"></span>&nbsp;начинается в.</label>    
+
+							    
+                </div>
+            </div>
+<div class="vs">-vs-</div>
+                                
+            <div id="betTicketTeam2Container" class="ticketTeam ">
+<span id="betTicketTeam2"></span>
+                <div id="betTicketTeam2PitcherContainer" class="hidden">
+                                        
+<input class="hidden" data-role="none" id="PendingTicket_TicketItem_Team2PitcherChecked" name="PendingTicket.TicketItem.Team2PitcherChecked" value="true" type="checkbox"><input name="PendingTicket.TicketItem.Team2PitcherChecked" value="false" type="hidden">                                    <label class="pitcher" for=""><span id="betTicketTeam2Pitcher"></span>&nbsp;начинается в.</label>
+
+
+                </div>
+            </div>
+        </div>
+
+
+<div class="odds">
+    <table data-role="listview" data-inset="true" data-theme="c" class="ticketOdds" width="100%">
+        <tbody><tr id="betTicketPickContainer" class="hidden">
+            <td class="ticketPick">
+                <span id="ticketFormattedPick" class=""></span>
+            </td>
+        </tr>
+        <tr id="betTicketLineTypeContainer" class="hidden">
+            <td class="ticketLine">
+                <span id="betTicketLineTypeLabel"></span>: <span id="ticketFormattedLine"></span>&nbsp;
+                <span id="betTicketScoreContainer" class="hidden">
+                    <span>[</span><span id="betTicketTeam1Score">0</span>-<span id="betTicketTeam2Score">0</span><span>]</span>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td class="ticketLine">
+                <span id="betTicketOverUnder" class="ticketOverUnder"></span>
+                <span class="ticketAtSymbol">&nbsp;@ </span>
+                <span id="ticketFormattedPrice" class=""></span>
+            </td>
+        </tr>
+    </tbody></table>
+    <br class="ticketSpacer">
+</div>
+
+
+                    <table id="betTicketInputs" class="ticketInput ">
+                                <tbody><tr><td colspan="2" class="riskorwin ">
+                                        <fieldset data-role="controlgroup" data-type="horizontal">
+                                            <label for="risk">Сумма риска</label>
+                                            <input value="r" name="riskwin" id="risk" checked="checked" type="radio">
+                                            <label for="win">Выигрыш</label>
+                                            <input value="w" name="riskwin" id="win" type="radio">
+                                        </fieldset>
+                                    </td></tr>
+
+				        
+                        <tr>
+                            <td class="label">
+                                <span id="betTicketStake">
+Ставка
+                                                                            = <span class="betCurrency">USD</span>
+                                    
+                                </span>
+				
+                            </td><td class="input">
+                                     <input autocomplete="off" class="stakeInput" id="PendingTicket_TicketItem_StakeAmount" maxlength="10" name="PendingTicket.TicketItem.StakeAmount" step="0.01" type="text">
+                                 </td>
+                        </tr>
+                    </tbody></table>
+                            <div class="betMaximum">
+                                <input id="chkBetMaximum" name="PendingTicket.BetMaximum" value="true" type="checkbox"><input name="PendingTicket.BetMaximum" value="false" type="hidden">
+                                <label for="chkBetMaximum">Делайте максимальные ставки</label>
+                            </div>
+
+
+                            <div class="acceptBetterOdds ">
+                                <input checked="checked" id="PendingTicket_AcceptBetterLines" name="PendingTicket.AcceptBetterLines" value="true" type="checkbox"><input name="PendingTicket.AcceptBetterLines" value="false" type="hidden">
+                                <label for="PendingTicket_AcceptBetterLines">Всегда выбирайте лучшие линии</label>
+                            </div> 
+
+					
+                </div>
+            </div>
+            <div id="betTicketNotification" class="error hidden">
+                <div id="ticketNotification" class="warning">
+                    
+                </div>
+            </div>
+            <div id="betTicketSubmitContainer" class="divBtn">
+                <a id="BetTicketSubmitLink" class="confirm"><span>Оформить Ставку
+</span></a>
+                <input id="BetTicketSubmitButton" data-role="button" data-theme="d" value="Place Bet" title="Click to Submit your Bet Slip" class="hidden" type="submit">
+            </div>
+                    <div class="ticketNote">
+                        <div class="message">
+                            <div id="betTicketSummary" class="hidden">
+                                <table class="ticketTotals">
+                                    <tbody><tr class="container maxpayout">
+                                        <td class="left">Макс выплата</td>
+                                        <td class="right">
+                                            <span class="total"><span class="betCurrency">USD</span> <span id="ticketMaxPayout"></span></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="container minrisk ">
+                                        <td class="left">Мин. ставка</td>
+                                        <td class="right">
+                                            <span class="total"><span class="betCurrency">USD</span> <span id="ticketMinRisk"></span></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="container maxrisk ">
+                                        <td class="left">Макс. ставка</td>
+                                        <td class="right">
+                                            <span class="total"><span class="betCurrency">USD</span> <span id="ticketMaxRisk"></span></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="container minwin hidden">
+                                        <td class="left">Мин. выигрыш</td>
+                                        <td class="right">
+                                            <span class="total"><span class="betCurrency">USD</span> <span id="ticketMinWin"></span></span>
+                                        </td>
+                                    </tr>
+                                    <tr class="container maxwin hidden">
+                                        <td class="left">Макс. выигрыш</td>
+                                        <td class="right">
+                                            <span class="total"><span class="betCurrency">USD</span> <span id="ticketMaxWin"></span></span>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </div>
+                        </div>    
+                    </div>
+            <input id="InDangerZone" name="InDangerZone" type="hidden">
+            <input id="betTicketLineType" name="betTicketLineType" value="spread" type="hidden">
+            <input id="ticketPlaced" name="ticketPlaced" value="false" type="hidden">
+            <input id="isRisk" name="isRisk" value="value" type="hidden">
+            <input id="isTestDrive" name="isTestDrive" type="hidden">
+</form>    </div>
+</div>
+
+		        <div id="parlayTicketContainer" class="ticketDiv"></div>
+		    </div>
+			<div id="WagerContent" class="miniBetList hidden">
+				
+
+
+<div id="acceptedWagerList" class="betListContainer">
+        <div class="cnt">
+            <div class="emtpyWagerList">
+                Ставки нет в списке ставок
+            </div>
+        </div>
+</div>
+
+			</div>
+			<div id="PendingContent" class="miniBetList hidden">
+				
+
+
+
+<div id="pendingBetList" class="betListContainer">
+
+	<div class="cnt">
+		<div class="emtpyWagerList">
+			Ставка в списке отложенных ставок не найдена. 
+
+Чтобы проверить принятые ставки, нажмите на Список ставок!</div>
+	</div>
+	<div>
+	</div>
+</div>
+			</div>
+		</div>
+		<div class="bottom">
+		</div>
+<a href="https://members.pinnacle.com/members/information.asp?ID=5250&amp;ico=asianviewban&amp;icl=casino"><img alt="New! Live Dealer Casino" src="site2_files/rus-casino-rebate-asian-view-members-promo.jfif" border="0"></a>&nbsp;&nbsp;	</div>
+	<div class="col2 c2" id="main_column">
+		<div id="main">
+			<div id="lines_area">
+			    <div id="FullBetList" class="hidden"></div>
+				
+				<div id="Statement" class="hidden">
+					
+<div class="partialbox">
+	<div class="header">
+		<div class="title">
+			ВЫПИСКА
+			<span class="filters">-
+<input id="statementFilter" name="statementFilter" value="Past7Days" type="hidden">
+			</span>
+		</div>
+		<div class="actions">
+			<a class="refresh" href="https://members.pinnacle.com/Sportsbook/Asia/Statement">   </a>
+			<a class="close">   </a>
+		</div>
+	</div>
+	<div class="content">
+
+
+	<div class="noresults">
+	</div>
+	</div>
+</div>
+<div class="footer">
+	<span></span>
+</div>					
+				</div>
+
+			    <div id="Results" class="hidden">
+			        
+<div class="partialbox">
+	<div class="header">
+		<div class="title">
+			РЕЗУЛЬТАТЫ
+		</div>
+        <div class="actions"><a class="close"></a></div>
+        
+	</div>
+	<div class="content">
+
+
+
+<div class="filterBox">
+<form action="/Sportsbook/Asia/ru-RU/Results/NormalGames" id="resultsFilterForm" method="post">        <div class="filterBoxDate">
+            <span class="titleText">дата:</span>
+                    
+        </div>
+        <div class="filterBoxSorting">
+            <select name="selectedSorting" id="resultsFilterSort" size="1" class="sortingSelect">
+                        
+            </select>
+        </div>
+        <div class="filterBoxSport">
+            <span class="titleText">выделить
+:</span>
+        </div>
+        <div class="filterBoxLeague">
+            <select name="selectedLeagueId" id="resultsFilterLeague" size="1" class="leagueSelect">
+                <option value="0" selected="selected">Все лиги</option>
+            </select>
+        </div>
+        <input id="resultsFilterSubmitButton" value="submit" type="submit">
+</form>            
+</div>
+
+    <div class="noresults">
+        There are no results available
+    </div>
+	</div>
+</div>					
+			    </div>
+                
+                <div id="Settings" class="hidden">
+					
+<div class="partialbox">
+	<div class="header">
+		<div class="title">
+			НАСТРОЙКИ
+		</div>
+        <div class="actions"><a class="close"></a></div>
+        
+	</div>
+	<div class="content">
+		      <div class="noresults"></div>
+	</div>
+</div>
+					
+				</div>
+			  
+			    <div id="AlternateLines" class="hidden"></div>
+
+			    <div id="SelectLeagues" class="hidden"></div>
+
+
+
+				<div id="lines" class="">
+					
+    <div id="33" class="sportContainer Simple">
+        <div class="sportHeader">
+            <h2 class="sportName">ТЕННИС</h2>
+            <span class="sportSortOrder">57</span>
+            <div class="puls">
+                <span class="selectLeagues"><a id="SelectLeaguesButton" class="sLeagBtn">выберите лиги</a></span>
+<form action="/Sportsbook/AsiaSession/SelectFilter" id="SelectFilter" method="post">                    <select name="sport" id="sport" size="1" class="select hidden" autocomplete="off">
+                    </select>
+                    <select name="period" id="period" size="1" class="select"><option value="0" selected="selected">Матч</option><option value="1">1-й сет
+
+</option><option value="2">2-й сет
+
+</option><option value="3">3-й сет
+
+</option><option value="4">4-й сет
+
+</option><option value="5">5-й сет
+</option></select>
+                    <select name="time" id="time" size="1" class="select hidden"><option value="0" selected="selected">Все даты</option><option value="1">17 Jun</option><option value="2">18 Jun</option><option value="3">19 Jun</option><option value="4">20 Jun</option><option value="5">21 Jun</option><option value="6">6 дней
+</option></select>
+<input id="lc_isParlay" name="LinesRequest.IsParlay" value="False" type="hidden">                    <select name="lineViewType" id="lineViewType" size="1" class="select"><option value="Simple" selected="selected">Простая линия</option><option value="Single">Одиночная линия</option><option value="Double">Двойная линия</option></select>
+                    <input id="filterSubmitButton" value="submit" type="submit">
+</form>            </div>
+        </div>
+            
+                    <script type="text/javascript">
+                var _n = LINES.state.nochangeStore;
+                var _i = LINES.state.uniqueLeagueIdStore;
+                if (_i != null) {
+                    _i.add("Live", "Live_33_199344");
+_i.add("Live", "Live_33_8906");
+_i.add("Live", "Live_33_3637");
+_i.add("Live", "Live_33_187533");
+
+                }
+
+		    
+
+                if (_n != null) {
+                    _n.add("Live", "Live_736069795");
+_n.add("Live", "Live_736076983");
+_n.add("Live", "Live_736074359");
+_n.add("Live", "Live_736077058");
+
+                }
+                LINES.state.timeStamps['Live'] = "06/16/2017 05:12:35";
+            </script>
+        
+    <div class="MarketContainer enabled Live" id="Live_33">
+                <div class="market_header">
+                    <h4 class="MarketName">LIVE
+</h4>
+                    <div class="puls">
+                        <a href="#" class="rfsh"><span class="RefreshCountDown Live" data-state="Done">обновить&nbsp;12</span>
+                        </a>
+                    </div>
+                </div>
+                <table class="lineView Simple">
+                    <colgroup>
+                        <col class="col1">
+                        <col class="col2">
+                        <col class="col3">
+                        <col class="col4">
+                        <col class="col5">
+                        <col class="col6">
+                        <col class="col7">
+                        <col class="col8">
+                        <col class="col9">
+                    </colgroup>
+                    <thead class="header Simple">
+	<tr>
+		<th class="left_cell">&nbsp;</th>
+		<th class="flex_cell">&nbsp;</th>
+		<th class="Label0 light_cell">ГАНДИКАП НА ГЕЙМ</th>
+		<th class="Label1 cell">ХОЗЯЕВА</th>
+		<th class="Label2 cell">ГОСТИ 
+</th>
+		<th class="Label3 light_cell">МАТЧИ</th>
+		<th class="Label4 cell">OVER</th>
+		<th class="Label5 cell">UNDER</th>
+		<th class="right_cell"></th>
+	</tr>
+</thead>
+
+
+
+                                
+                <tbody class="LeagueContainer regular" id="Live_33_199344">
+                                    <tr class="GamesContainerHeader">
+                                        <th colspan="9" class="ColumnCount league_header">
+                                            <div class="puls">
+                                                    <select size="1" class="select buySellLevels ">
+                                                            <option value="0" selected="selected">1 линия</option>
+                                                            <option value="1">3 линии</option>
+                                                            <option value="2">5 линий</option>
+                                                            <option value="3">Всего</option>
+                                                    </select>
+
+                                                <a href="#" class="Refresh " title="обновить">
+                                                    &nbsp;</a>
+                                            </div>
+                                            <span class="dispName">ATP Challenger Lisbon - QF</span><span class="order hidden"></span>
+                                            <span class="LeagueName hidden">ATP Challenger Lisbon - QF</span>
+                                        </th>
+                                    </tr>
+
+
+
+	
+	
+
+                                <tr id="Live_736069795_0" class="Live_99999-Row evRow Live_736069795-Row">
+		<td class="left_cell">
+			<span class="sTime">06/16<br>04:30</span>
+			<span class="hTime">6/16/2017 4:30 AM</span>
+			<span class="rot">11951</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home  fav" title="Attila Balazs">Attila Balazs</span>-vs-<span class="Away " title="Joris De Loore">Joris De Loore</span>
+	    </td>
+		<td class="pos0 Handicap">2.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736069795/0/0/0/0/1.806?line=-2.5" class="wLnk ">1.806</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736069795/0/1/0/0/2.02?line=2.5" class="wLnk ">2.020</a></td>
+		<td class="pos1 Handicap">25.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736069795/0/0/2/0/1.869?line=25.5" class="wLnk ">1.869</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736069795/0/1/2/0/1.961?line=25.5" class="wLnk ">1.961</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/199344/736069795/0/Live/Market/2/null">+5</a></td>
+	</tr></tbody><tbody class="LeagueContainer regular" id="Live_33_8906">
+                                    <tr class="GamesContainerHeader">
+                                        <th colspan="9" class="ColumnCount league_header">
+                                            <div class="puls">
+                                                    <select size="1" class="select buySellLevels ">
+                                                            <option value="0" selected="selected">1 линия</option>
+                                                            <option value="1">3 линии</option>
+                                                            <option value="2">5 линий</option>
+                                                            <option value="3">Всего</option>
+                                                    </select>
+
+                                                <a href="#" class="Refresh " title="обновить">
+                                                    &nbsp;</a>
+                                            </div>
+                                            <span class="dispName">ATP Challenger Nottingham - QF</span><span class="order hidden"></span>
+                                            <span class="LeagueName hidden">ATP Challenger Nottingham - QF</span>
+                                        </th>
+                                    </tr>
+
+
+
+	
+	
+
+                                <tr id="Live_736076983_0" class="Live_99999-Row evRow Live_736076983-Row">
+		<td class="left_cell">
+			<span class="sTime">06/16<br>05:00</span>
+			<span class="hTime">6/16/2017 5:00 AM</span>
+			<span class="rot">11355</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home  fav" title="Samuel Groth">Samuel Groth</span>-vs-<span class="Away " title="John-Patrick Smith">John-Patrick Smith</span>
+	    </td>
+		<td class="pos0 Handicap">2.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736076983/0/0/0/0/1.751?line=-2.5" class="wLnk ">1.751</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736076983/0/1/0/0/2.1?line=2.5" class="wLnk ">2.100</a></td>
+		<td class="pos1 Handicap">24.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736076983/0/0/2/0/1.833?line=24.5" class="wLnk ">1.833</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736076983/0/1/2/0/2?line=24.5" class="wLnk ">2.000</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/8906/736076983/0/Live/Market/2/null">+6</a></td>
+	</tr></tbody><tbody class="LeagueContainer regular" id="Live_33_3637">
+                                    <tr class="GamesContainerHeader">
+                                        <th colspan="9" class="ColumnCount league_header">
+                                            <div class="puls">
+                                                    <select size="1" class="select buySellLevels ">
+                                                            <option value="0" selected="selected">1 линия</option>
+                                                            <option value="1">3 линии</option>
+                                                            <option value="2">5 линий</option>
+                                                            <option value="3">Всего</option>
+                                                    </select>
+
+                                                <a href="#" class="Refresh " title="обновить">
+                                                    &nbsp;</a>
+                                            </div>
+                                            <span class="dispName">ATP Stuttgart - QF</span><span class="order hidden"></span>
+                                            <span class="LeagueName hidden">ATP Stuttgart - QF</span>
+                                        </th>
+                                    </tr>
+
+
+
+	
+	
+
+                                <tr id="Live_736074359_0" class="Live_99999-Row evRow Live_736074359-Row">
+		<td class="left_cell">
+			<span class="sTime">06/16<br>04:45</span>
+			<span class="hTime">6/16/2017 4:45 AM</span>
+			<span class="rot">10051</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home  fav" title="Philipp Kohlschreiber">Philipp Kohlschreiber</span>-vs-<span class="Away " title="Lucas Pouille">Lucas Pouille</span>
+	    </td>
+		<td class="pos0 Handicap">1.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736074359/0/0/0/0/1.74?line=-1.5" class="wLnk ">1.740</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736074359/0/1/0/0/2.12?line=1.5" class="wLnk ">2.120</a></td>
+		<td class="pos1 Handicap">25.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736074359/0/0/2/0/1.99?line=25.5" class="wLnk ">1.990</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736074359/0/1/2/0/1.84?line=25.5" class="wLnk ">1.840</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/3637/736074359/0/Live/Market/2/null">+6</a></td>
+	</tr></tbody><tbody class="LeagueContainer regular" id="Live_33_187533">
+                                    <tr class="GamesContainerHeader">
+                                        <th colspan="9" class="ColumnCount league_header">
+                                            <div class="puls">
+                                                    <select size="1" class="select buySellLevels ">
+                                                            <option value="0" selected="selected">1 линия</option>
+                                                            <option value="1">3 линии</option>
+                                                            <option value="2">5 линий</option>
+                                                            <option value="3">Всего</option>
+                                                    </select>
+
+                                                <a href="#" class="Refresh " title="обновить">
+                                                    &nbsp;</a>
+                                            </div>
+                                            <span class="dispName">WTA Nottingham - QF</span><span class="order hidden"></span>
+                                            <span class="LeagueName hidden">WTA Nottingham - QF</span>
+                                        </th>
+                                    </tr>
+
+
+
+	
+	
+
+                                <tr id="Live_736077058_0" class="Live_99999-Row evRow Live_736077058-Row">
+		<td class="left_cell">
+			<span class="sTime">06/16<br>05:00</span>
+			<span class="hTime">6/16/2017 5:00 AM</span>
+			<span class="rot">10849</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home  fav" title="Donna Vekic">Donna Vekic</span>-vs-<span class="Away " title="Maria Sakkari">Maria Sakkari</span>
+	    </td>
+		<td class="pos0 Handicap">6.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736077058/0/0/0/0/1.943?line=-6.5" class="wLnk ">1.943</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736077058/0/1/0/0/1.884?line=6.5" class="wLnk ">1.884</a></td>
+		<td class="pos1 Handicap">18.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736077058/0/0/2/0/1.952?line=18.5" class="wLnk ">1.952</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/736077058/0/1/2/0/1.877?line=18.5" class="wLnk ">1.877</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/187533/736077058/0/Live/Market/2/null">+6</a></td>
+	</tr></tbody></table>
+            </div><div class="MarketContainer enabled Today" id="Today_33">
+                <div class="market_header">
+                    <h4 class="MarketName">СЕГОДНЯ
+</h4>
+                    <div class="puls">
+                        <a href="#" class="rfsh"><span class="RefreshCountDown Today" data-state="Done">обновить&nbsp;55</span>
+                        </a>
+                    </div>
+                </div>
+                <table class="lineView Simple">
+                    <colgroup>
+                        <col class="col1">
+                        <col class="col2">
+                        <col class="col3">
+                        <col class="col4">
+                        <col class="col5">
+                        <col class="col6">
+                        <col class="col7">
+                        <col class="col8">
+                        <col class="col9">
+                    </colgroup>
+                    <thead class="header Simple">
+	<tr>
+		<th class="left_cell">&nbsp;</th>
+		<th class="flex_cell">&nbsp;</th>
+		<th class="Label0 light_cell">ГАНДИКАП НА ГЕЙМ</th>
+		<th class="Label1 cell">ХОЗЯЕВА</th>
+		<th class="Label2 cell">ГОСТИ 
+</th>
+		<th class="Label3 light_cell">МАТЧИ</th>
+		<th class="Label4 cell">OVER</th>
+		<th class="Label5 cell">UNDER</th>
+		<th class="right_cell"></th>
+	</tr>
+</thead>
+
+
+
+                                
+                <tbody class="LeagueContainer regular" id="Today_33_8833">
+                                    <tr class="GamesContainerHeader">
+                                        <th colspan="9" class="ColumnCount league_header">
+                                            <div class="puls">
+                                                    <select size="1" class="select buySellLevels ">
+                                                            <option value="0" selected="selected">1 линия</option>
+                                                            <option value="1">3 линии</option>
+                                                            <option value="2">5 линий</option>
+                                                            <option value="3">Всего</option>
+                                                    </select>
+
+                                                <a href="#" class="Refresh " title="обновить">
+                                                    &nbsp;</a>
+                                            </div>
+                                            <span class="dispName">ATP Challenger Caltanissetta - QF</span><span class="order hidden"></span>
+                                            <span class="LeagueName hidden">ATP Challenger Caltanissetta - QF</span>
+                                        </th>
+                                    </tr>
+
+
+
+	
+	
+
+                                <tr id="Today_735612142_0" class="Live_99999-Row evRow Today_735612142-Row">
+		<td class="left_cell">
+			<span class="sTime">11:00</span>
+			<span class="hTime">6/16/2017 11:00 AM</span>
+			<span class="rot">9549</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home  fav" title="Paolo Lorenzi">Paolo Lorenzi</span>-vs-<span class="Away " title="Guido Andreozzi">Guido Andreozzi</span>
+	    </td>
+		<td class="pos0 Handicap">4.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735612142/0/0/0/0/1.925?line=-4.5" class="wLnk ">1.925</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735612142/0/1/0/0/1.892?line=4.5" class="wLnk ">1.892</a></td>
+		<td class="pos1 Handicap">21.0</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735612142/0/0/2/0/1.952?line=21.0" class="wLnk ">1.952</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735612142/0/1/2/0/1.869?line=21.0" class="wLnk ">1.869</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/8833/735612142/0/Today/Market/2/null">+2</a></td>
+	</tr><tr id="Today_735633110_0" class="Live_99999-Row evRow Today_735633110-Row">
+		<td class="left_cell">
+			<span class="sTime">07:30</span>
+			<span class="hTime">6/16/2017 7:30 AM</span>
+			<span class="rot">9551</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home " title="Radu Albot">Radu Albot</span>-vs-<span class="Away  fav" title="Tennys Sandgren">Tennys Sandgren</span>
+	    </td>
+		<td class="pos0 Handicap">1.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735633110/0/0/0/0/1.746?line=1.5" class="wLnk ">1.746</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735633110/0/1/0/0/2.11?line=-1.5" class="wLnk ">2.110</a></td>
+		<td class="pos1 Handicap">22.0</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735633110/0/0/2/0/1.943?line=22.0" class="wLnk ">1.943</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735633110/0/1/2/0/1.877?line=22.0" class="wLnk ">1.877</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/8833/735633110/0/Today/Market/2/null">+2</a></td>
+	</tr><tr id="Today_735908796_0" class="Live_99999-Row evRow Today_735908796-Row">
+		<td class="left_cell">
+			<span class="sTime">05:30</span>
+			<span class="hTime">6/16/2017 5:30 AM</span>
+			<span class="rot">9553</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home  fav" title="Marco Cecchinato">Marco Cecchinato</span>-vs-<span class="Away " title="Cedrik-Marcel Stebe">Cedrik-Marcel Stebe</span>
+	    </td>
+		<td class="pos0 Handicap">2.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735908796/0/0/0/0/1.884?line=-2.5" class="wLnk ">1.884</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735908796/0/1/0/0/1.934?line=2.5" class="wLnk ">1.934</a></td>
+		<td class="pos1 Handicap">22.0</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735908796/0/0/2/0/1.925?line=22.0" class="wLnk ">1.925</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735908796/0/1/2/0/1.892?line=22.0" class="wLnk ">1.892</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/8833/735908796/0/Today/Market/2/null">+2</a></td>
+	</tr><tr id="Today_735942582_0" class="Live_99999-Row evRow Today_735942582-Row">
+		<td class="left_cell">
+			<span class="sTime">07:30</span>
+			<span class="hTime">6/16/2017 7:30 AM</span>
+			<span class="rot">9555</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home " title="Alessandro Giannessi">Alessandro Giannessi</span>-vs-<span class="Away  fav" title="Mikhail Kukushkin">Mikhail Kukushkin</span>
+	    </td>
+		<td class="pos0 Handicap">2.0</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735942582/0/0/0/0/1.925?line=2.0" class="wLnk ">1.925</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735942582/0/1/0/0/1.892?line=-2.0" class="wLnk ">1.892</a></td>
+		<td class="pos1 Handicap">22.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735942582/0/0/2/0/1.877?line=22.5" class="wLnk ">1.877</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735942582/0/1/2/0/1.943?line=22.5" class="wLnk ">1.943</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/8833/735942582/0/Today/Market/2/null">+2</a></td>
+	</tr></tbody><tbody class="LeagueContainer regular" id="Today_33_199344">
+                                    <tr class="GamesContainerHeader">
+                                        <th colspan="9" class="ColumnCount league_header">
+                                            <div class="puls">
+                                                    <select size="1" class="select buySellLevels ">
+                                                            <option value="0" selected="selected">1 линия</option>
+                                                            <option value="1">3 линии</option>
+                                                            <option value="2">5 линий</option>
+                                                            <option value="3">Всего</option>
+                                                    </select>
+
+                                                <a href="#" class="Refresh " title="обновить">
+                                                    &nbsp;</a>
+                                            </div>
+                                            <span class="dispName">ATP Challenger Lisbon - QF</span><span class="order hidden"></span>
+                                            <span class="LeagueName hidden">ATP Challenger Lisbon - QF</span>
+                                        </th>
+                                    </tr>
+
+
+
+	
+	
+
+                                <tr id="Today_735611029_0" class="Live_99999-Row evRow Today_735611029-Row">
+		<td class="left_cell">
+			<span class="sTime">06:00</span>
+			<span class="hTime">6/16/2017 6:00 AM</span>
+			<span class="rot">9949</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home " title="Gleb Sakharov">Gleb Sakharov</span>-vs-<span class="Away  fav" title="Taro Daniel">Taro Daniel</span>
+	    </td>
+		<td class="pos0 Handicap">5.0</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735611029/0/0/0/0/1.917?line=5.0" class="wLnk ">1.917</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735611029/0/1/0/0/1.9?line=-5.0" class="wLnk ">1.900</a></td>
+		<td class="pos1 Handicap">19.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735611029/0/0/2/0/1.877?line=19.5" class="wLnk ">1.877</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735611029/0/1/2/0/1.943?line=19.5" class="wLnk ">1.943</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/199344/735611029/0/Today/Market/2/null">+2</a></td>
+	</tr><tr id="Today_735876149_0" class="Live_99999-Row evRow Today_735876149-Row">
+		<td class="left_cell">
+			<span class="sTime">06:00</span>
+			<span class="hTime">6/16/2017 6:00 AM</span>
+			<span class="rot">9953</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home " title="Daniel Munoz-De La Nava">Daniel Munoz-De La Nava</span>-vs-<span class="Away  fav" title="Oscar Otte">Oscar Otte</span>
+	    </td>
+		<td class="pos0 Handicap">2.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735876149/0/0/0/0/1.862?line=2.5" class="wLnk ">1.862</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735876149/0/1/0/0/1.961?line=-2.5" class="wLnk ">1.961</a></td>
+		<td class="pos1 Handicap">22.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735876149/0/0/2/0/1.952?line=22.5" class="wLnk ">1.952</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735876149/0/1/2/0/1.869?line=22.5" class="wLnk ">1.869</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/199344/735876149/0/Today/Market/2/null">+2</a></td>
+	</tr><tr id="Today_735888116_0" class="Live_99999-Row evRow Today_735888116-Row">
+		<td class="left_cell">
+			<span class="sTime">10:00</span>
+			<span class="hTime">6/16/2017 10:00 AM</span>
+			<span class="rot">9955</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home  fav" title="Pedro Sousa">Pedro Sousa</span>-vs-<span class="Away " title="Gianluigi Quinzi">Gianluigi Quinzi</span>
+	    </td>
+		<td class="pos0 Handicap">1.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735888116/0/0/0/0/2.11?line=-1.5" class="wLnk ">2.110</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735888116/0/1/0/0/1.746?line=1.5" class="wLnk ">1.746</a></td>
+		<td class="pos1 Handicap">22.0</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735888116/0/0/2/0/1.869?line=22.0" class="wLnk ">1.869</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735888116/0/1/2/0/1.952?line=22.0" class="wLnk ">1.952</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/199344/735888116/0/Today/Market/2/null">+2</a></td>
+	</tr></tbody><tbody class="LeagueContainer regular" id="Today_33_3244">
+                                    <tr class="GamesContainerHeader">
+                                        <th colspan="9" class="ColumnCount league_header">
+                                            <div class="puls">
+                                                    <select size="1" class="select buySellLevels ">
+                                                            <option value="0" selected="selected">1 линия</option>
+                                                            <option value="1">3 линии</option>
+                                                            <option value="2">5 линий</option>
+                                                            <option value="3">Всего</option>
+                                                    </select>
+
+                                                <a href="#" class="Refresh " title="обновить">
+                                                    &nbsp;</a>
+                                            </div>
+                                            <span class="dispName">ATP Challenger Lyon - QF</span><span class="order hidden"></span>
+                                            <span class="LeagueName hidden">ATP Challenger Lyon - QF</span>
+                                        </th>
+                                    </tr>
+
+
+
+	
+	
+
+                                <tr id="Today_735596720_0" class="Live_99999-Row evRow Today_735596720-Row">
+		<td class="left_cell">
+			<span class="sTime">09:30</span>
+			<span class="hTime">6/16/2017 9:30 AM</span>
+			<span class="rot">9751</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home " title="Felix Auger Alliassime">Felix Auger Alliassime</span>-vs-<span class="Away  fav" title="Casper Ruud">Casper Ruud</span>
+	    </td>
+		<td class="pos0 Handicap">4.0</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735596720/0/0/0/0/1.9?line=4.0" class="wLnk ">1.900</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735596720/0/1/0/0/1.917?line=-4.0" class="wLnk ">1.917</a></td>
+		<td class="pos1 Handicap">21.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735596720/0/0/2/0/1.862?line=21.5" class="wLnk ">1.862</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735596720/0/1/2/0/1.961?line=21.5" class="wLnk ">1.961</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/3244/735596720/0/Today/Market/2/null">+2</a></td>
+	</tr><tr id="Today_735883103_0" class="Live_99999-Row evRow Today_735883103-Row">
+		<td class="left_cell">
+			<span class="sTime">05:30</span>
+			<span class="hTime">6/16/2017 5:30 AM</span>
+			<span class="rot">9753</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home  fav" title="Horacio Zeballos">Horacio Zeballos</span>-vs-<span class="Away " title="Tristan Lamasine">Tristan Lamasine</span>
+	    </td>
+		<td class="pos0 Handicap">4.0</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735883103/0/0/0/0/1.8?line=-4.0" class="wLnk ">1.800</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735883103/0/1/0/0/2.03?line=4.0" class="wLnk ">2.030</a></td>
+		<td class="pos1 Handicap">21.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735883103/0/0/2/0/1.934?line=21.5" class="wLnk ">1.934</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735883103/0/1/2/0/1.884?line=21.5" class="wLnk ">1.884</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/3244/735883103/0/Today/Market/2/null">+2</a></td>
+	</tr></tbody><tbody class="LeagueContainer regular" id="Today_33_8906">
+                                    <tr class="GamesContainerHeader">
+                                        <th colspan="9" class="ColumnCount league_header">
+                                            <div class="puls">
+                                                    <select size="1" class="select buySellLevels ">
+                                                            <option value="0" selected="selected">1 линия</option>
+                                                            <option value="1">3 линии</option>
+                                                            <option value="2">5 линий</option>
+                                                            <option value="3">Всего</option>
+                                                    </select>
+
+                                                <a href="#" class="Refresh " title="обновить">
+                                                    &nbsp;</a>
+                                            </div>
+                                            <span class="dispName">ATP Challenger Nottingham - QF</span><span class="order hidden"></span>
+                                            <span class="LeagueName hidden">ATP Challenger Nottingham - QF</span>
+                                        </th>
+                                    </tr>
+
+
+
+	
+	
+
+                                <tr id="Today_735518190_0" class="Live_99999-Row evRow Today_735518190-Row">
+		<td class="left_cell">
+			<span class="sTime">09:00</span>
+			<span class="hTime">6/16/2017 9:00 AM</span>
+			<span class="rot">9351</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home " title="Lloyd Glasspool">Lloyd Glasspool</span>-vs-<span class="Away  fav" title="Dudi Sela">Dudi Sela</span>
+	    </td>
+		<td class="pos0 Handicap">4.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735518190/0/0/0/0/1.925?line=4.5" class="wLnk ">1.925</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735518190/0/1/0/0/1.892?line=-4.5" class="wLnk ">1.892</a></td>
+		<td class="pos1 Handicap">21.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735518190/0/0/2/0/2?line=21.5" class="wLnk ">2.000</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735518190/0/1/2/0/1.826?line=21.5" class="wLnk ">1.826</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/8906/735518190/0/Today/Market/2/null">+2</a></td>
+	</tr><tr id="Today_735827430_0" class="Live_99999-Row evRow Today_735827430-Row">
+		<td class="left_cell">
+			<span class="sTime">05:30</span>
+			<span class="hTime">6/16/2017 5:30 AM</span>
+			<span class="rot">9353</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home " title="Bjorn Fratangelo">Bjorn Fratangelo</span>-vs-<span class="Away  fav" title="Marius Copil">Marius Copil</span>
+	    </td>
+		<td class="pos0 Handicap">3.0</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735827430/0/0/0/0/1.833?line=3.0" class="wLnk ">1.833</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735827430/0/1/0/0/1.99?line=-3.0" class="wLnk ">1.990</a></td>
+		<td class="pos1 Handicap">23.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735827430/0/0/2/0/1.892?line=23.5" class="wLnk ">1.892</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735827430/0/1/2/0/1.925?line=23.5" class="wLnk ">1.925</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/8906/735827430/0/Today/Market/2/null">+2</a></td>
+	</tr></tbody><tbody class="LeagueContainer regular" id="Today_33_6358">
+                                    <tr class="GamesContainerHeader">
+                                        <th colspan="9" class="ColumnCount league_header">
+                                            <div class="puls">
+                                                    <select size="1" class="select buySellLevels ">
+                                                            <option value="0" selected="selected">1 линия</option>
+                                                            <option value="1">3 линии</option>
+                                                            <option value="2">5 линий</option>
+                                                            <option value="3">Всего</option>
+                                                    </select>
+
+                                                <a href="#" class="Refresh " title="обновить">
+                                                    &nbsp;</a>
+                                            </div>
+                                            <span class="dispName">ATP Hertogenbosch - QF</span><span class="order hidden"></span>
+                                            <span class="LeagueName hidden">ATP Hertogenbosch - QF</span>
+                                        </th>
+                                    </tr>
+
+
+
+	
+	
+
+                                <tr id="Today_735534841_0" class="Live_99999-Row evRow Today_735534841-Row">
+		<td class="left_cell">
+			<span class="sTime">05:30</span>
+			<span class="hTime">6/16/2017 5:30 AM</span>
+			<span class="rot">8251</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home " title="Julien Benneteau">Julien Benneteau</span>-vs-<span class="Away  fav" title="Alexander Zverev">Alexander Zverev</span>
+	    </td>
+		<td class="pos0 Handicap">4.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735534841/0/0/0/0/2?line=4.5" class="wLnk ">2.000</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735534841/0/1/0/0/1.909?line=-4.5" class="wLnk ">1.909</a></td>
+		<td class="pos1 Handicap">21.0</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735534841/0/0/2/0/1.99?line=21.0" class="wLnk ">1.990</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735534841/0/1/2/0/1.917?line=21.0" class="wLnk ">1.917</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/6358/735534841/0/Today/Market/2/null">+5</a></td>
+	</tr><tr id="Today_735860542_0" class="Live_99999-Row evRow Today_735860542-Row">
+		<td class="left_cell">
+			<span class="sTime">07:30</span>
+			<span class="hTime">6/16/2017 7:30 AM</span>
+			<span class="rot">8255</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home  fav" title="Marin Cilic">Marin Cilic</span>-vs-<span class="Away " title="Vasek Pospisil">Vasek Pospisil</span>
+	    </td>
+		<td class="pos0 Handicap">3.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735860542/0/0/0/0/1.917?line=-3.5" class="wLnk ">1.917</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735860542/0/1/0/0/1.99?line=3.5" class="wLnk ">1.990</a></td>
+		<td class="pos1 Handicap">22.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735860542/0/0/2/0/1.884?line=22.5" class="wLnk ">1.884</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735860542/0/1/2/0/2.02?line=22.5" class="wLnk ">2.020</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/6358/735860542/0/Today/Market/2/null">+5</a></td>
+	</tr></tbody><tbody class="LeagueContainer regular" id="Today_33_3637">
+                                    <tr class="GamesContainerHeader">
+                                        <th colspan="9" class="ColumnCount league_header">
+                                            <div class="puls">
+                                                    <select size="1" class="select buySellLevels ">
+                                                            <option value="0" selected="selected">1 линия</option>
+                                                            <option value="1">3 линии</option>
+                                                            <option value="2">5 линий</option>
+                                                            <option value="3">Всего</option>
+                                                    </select>
+
+                                                <a href="#" class="Refresh " title="обновить">
+                                                    &nbsp;</a>
+                                            </div>
+                                            <span class="dispName">ATP Stuttgart - QF</span><span class="order hidden"></span>
+                                            <span class="LeagueName hidden">ATP Stuttgart - QF</span>
+                                        </th>
+                                    </tr>
+
+
+
+	
+	
+
+                                <tr id="Today_735530095_0" class="Live_99999-Row evRow Today_735530095-Row">
+		<td class="left_cell">
+			<span class="sTime">06:30</span>
+			<span class="hTime">6/16/2017 6:30 AM</span>
+			<span class="rot">8049</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home " title="Tommy Haas">Tommy Haas</span>-vs-<span class="Away  fav" title="Mischa Zverev">Mischa Zverev</span>
+	    </td>
+		<td class="pos0 Handicap">2.0</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735530095/0/0/0/0/1.934?line=2.0" class="wLnk ">1.934</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735530095/0/1/0/0/1.97?line=-2.0" class="wLnk ">1.970</a></td>
+		<td class="pos1 Handicap">23.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735530095/0/0/2/0/1.97?line=23.5" class="wLnk ">1.970</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735530095/0/1/2/0/1.934?line=23.5" class="wLnk ">1.934</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/3637/735530095/0/Today/Market/2/null">+5</a></td>
+	</tr><tr id="Today_735881355_0" class="Live_99999-Row evRow Today_735881355-Row">
+		<td class="left_cell">
+			<span class="sTime">08:30</span>
+			<span class="hTime">6/16/2017 8:30 AM</span>
+			<span class="rot">8055</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home " title="Benoit Paire">Benoit Paire</span>-vs-<span class="Away  fav" title="Jerzy Janowicz">Jerzy Janowicz</span>
+	    </td>
+		<td class="pos0 Handicap">1.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735881355/0/0/0/0/2.01?line=1.5" class="wLnk ">2.010</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735881355/0/1/0/0/1.9?line=-1.5" class="wLnk ">1.900</a></td>
+		<td class="pos1 Handicap">23.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735881355/0/0/2/0/1.943?line=23.5" class="wLnk ">1.943</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735881355/0/1/2/0/1.961?line=23.5" class="wLnk ">1.961</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/3637/735881355/0/Today/Market/2/null">+5</a></td>
+	</tr></tbody><tbody class="LeagueContainer regular" id="Today_33_6363">
+                                    <tr class="GamesContainerHeader">
+                                        <th colspan="9" class="ColumnCount league_header">
+                                            <div class="puls">
+                                                    <select size="1" class="select buySellLevels ">
+                                                            <option value="0" selected="selected">1 линия</option>
+                                                            <option value="1">3 линии</option>
+                                                            <option value="2">5 линий</option>
+                                                            <option value="3">Всего</option>
+                                                    </select>
+
+                                                <a href="#" class="Refresh " title="обновить">
+                                                    &nbsp;</a>
+                                            </div>
+                                            <span class="dispName">WTA Hertogenbosch - QF</span><span class="order hidden"></span>
+                                            <span class="LeagueName hidden">WTA Hertogenbosch - QF</span>
+                                        </th>
+                                    </tr>
+
+
+
+	
+	
+
+                                <tr id="Today_735565496_0" class="Live_99999-Row evRow Today_735565496-Row">
+		<td class="left_cell">
+			<span class="sTime">08:00</span>
+			<span class="hTime">6/16/2017 8:00 AM</span>
+			<span class="rot">8649</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home  fav" title="Anett Kontaveit">Anett Kontaveit</span>-vs-<span class="Away " title="Carina Witthoeft">Carina Witthoeft</span>
+	    </td>
+		<td class="pos0 Handicap">4.0</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735565496/0/0/0/0/1.97?line=-4.0" class="wLnk ">1.970</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735565496/0/1/0/0/1.934?line=4.0" class="wLnk ">1.934</a></td>
+		<td class="pos1 Handicap">21.0</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735565496/0/0/2/0/1.909?line=21.0" class="wLnk ">1.909</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735565496/0/1/2/0/2?line=21.0" class="wLnk ">2.000</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/6363/735565496/0/Today/Market/2/null">+5</a></td>
+	</tr><tr id="Today_735869395_0" class="Live_99999-Row evRow Today_735869395-Row">
+		<td class="left_cell">
+			<span class="sTime">06:00</span>
+			<span class="hTime">6/16/2017 6:00 AM</span>
+			<span class="rot">8653</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home " title="Evgeniya Rodina">Evgeniya Rodina</span>-vs-<span class="Away  fav" title="Ana Konjuh">Ana Konjuh</span>
+	    </td>
+		<td class="pos0 Handicap">3.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735869395/0/0/0/0/1.961?line=3.5" class="wLnk ">1.961</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735869395/0/1/0/0/1.943?line=-3.5" class="wLnk ">1.943</a></td>
+		<td class="pos1 Handicap">21.0</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735869395/0/0/2/0/1.934?line=21.0" class="wLnk ">1.934</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735869395/0/1/2/0/1.97?line=21.0" class="wLnk ">1.970</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/6363/735869395/0/Today/Market/2/null">+5</a></td>
+	</tr></tbody><tbody class="LeagueContainer regular" id="Today_33_187533">
+                                    <tr class="GamesContainerHeader">
+                                        <th colspan="9" class="ColumnCount league_header">
+                                            <div class="puls">
+                                                    <select size="1" class="select buySellLevels ">
+                                                            <option value="0" selected="selected">1 линия</option>
+                                                            <option value="1">3 линии</option>
+                                                            <option value="2">5 линий</option>
+                                                            <option value="3">Всего</option>
+                                                    </select>
+
+                                                <a href="#" class="Refresh " title="обновить">
+                                                    &nbsp;</a>
+                                            </div>
+                                            <span class="dispName">WTA Nottingham - QF</span><span class="order hidden"></span>
+                                            <span class="LeagueName hidden">WTA Nottingham - QF</span>
+                                        </th>
+                                    </tr>
+
+
+
+	
+	
+
+                                <tr id="Today_735889877_0" class="Live_99999-Row evRow Today_735889877-Row">
+		<td class="left_cell">
+			<span class="sTime">07:00</span>
+			<span class="hTime">6/16/2017 7:00 AM</span>
+			<span class="rot">8853</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home  fav" title="Magdalena Rybarikova">Magdalena Rybarikova</span>-vs-<span class="Away " title="Kristie Ahn">Kristie Ahn</span>
+	    </td>
+		<td class="pos0 Handicap">4.0</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735889877/0/0/0/0/1.961?line=-4.0" class="wLnk ">1.961</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735889877/0/1/0/0/1.943?line=4.0" class="wLnk ">1.943</a></td>
+		<td class="pos1 Handicap">21.0</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735889877/0/0/2/0/1.97?line=21.0" class="wLnk ">1.970</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735889877/0/1/2/0/1.934?line=21.0" class="wLnk ">1.934</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/187533/735889877/0/Today/Market/2/null">+5</a></td>
+	</tr><tr id="Today_735916337_0" class="Live_99999-Row evRow Today_735916337-Row">
+		<td class="left_cell">
+			<span class="sTime">09:00</span>
+			<span class="hTime">6/16/2017 9:00 AM</span>
+			<span class="rot">8855</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home " title="Lucie Safarova">Lucie Safarova</span>-vs-<span class="Away  fav" title="Tsvetana Pironkova">Tsvetana Pironkova</span>
+	    </td>
+		<td class="pos0 Handicap">1.5</td>
+		<td class="pos0 Home T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735916337/0/0/0/0/1.769?line=1.5" class="wLnk ">1.769</a></td>
+		<td class="pos0 Away T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735916337/0/1/0/0/2.18?line=-1.5" class="wLnk ">2.180</a></td>
+		<td class="pos1 Handicap">22.5</td>
+		<td class="pos1 Over T1 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735916337/0/0/2/0/2.01?line=22.5" class="wLnk ">2.010</a></td>
+		<td class="pos1 Under T2 nochange"><a href="https://members.pinnacle.com/Sportsbook/Bet/Add/735916337/0/1/2/0/1.9?line=22.5" class="wLnk ">1.900</a></td>
+		<td class="alt"><a href="https://members.pinnacle.com/Sportsbook/Asia/Alternate/33/187533/735916337/0/Today/Market/2/null">+5</a></td>
+	</tr></tbody></table>
+            </div></div>
+    <div id="loadMoreGamesLink" style="display: none;">Нажмите здесь, чтобы загрузить больше игр</div>
+
+				</div>
+				
+				
+				<div id="lines_area_footer">
+					<div class="divLinks">
+						*Информация Pinnacle в:
+ : <a href="https://members.pinnacle.com/Sportsbook/Mobile/Enhanced">Мобильный
+</a>
+					    
+                        
+						| <a href="https://members.pinnacle.com/Sportsbook/User/SetBrowserMode/Enhanced/Desktop">
+								<span class="currentLink">Полная версия</span>
+						  </a>
+					</div>
+					<br>
+					<br>
+					<br>
+
+
+<ul class="logo_license_list">
+	<li>
+        <a href="https://www.pinnacle.com/ru/responsible-gaming#underage" title="Участие несовершеннолетних лиц в азартных играх является нарушением закона. Компания Pinnacle очень серьезно относится к своим обязанностям в отношении участия несовершеннолетних лиц в азартных играх, а потому оставляет за собой право потребовать от своих клиентов документы, подтверждающие возраст, и приостановить действие их счетов до тех пор, пока все необходимые документы не будут предоставлены. В случае выявления факта использования веб-сайта лицами младше 18 лет или же лицами, не достигшими совершеннолетнего возраста согласно законам стран, гражданами которых они являются, все их выигрыши будут аннулированы. Компания также оставляет за собой право сообщать о таких пользователях в компетентные органы." target="_blank">
+            <span class="logo_license_18">
+            </span>
+        </a>
+	</li>
+	<li>
+		<a class="footerLogoLicenseLink" href="http://www.gamcare.org.uk/" target="_blank" title="GamCare-gambling problems help,support and advice">
+			<span class="logo_license_gamecare">
+			</span>
+		</a>
+	</li>
+	<li>
+		<a class="footerLogoLicenseLink" href="http://seals.networksolutions.com/siteseal_seek/siteseal?v_shortname=PINSP&amp;v_querytype=W&amp;v_search=pinnaclesports.com&amp;x=5&amp;y=5" title="About PinnacleSports.com Network Solutions Secure" target="_blank">
+			<span class="logo_license_networksolutions">
+			</span>
+		</a>
+	</li>
+	<li>
+		<iframe id="iframeMGALicense" src="site2_files/seal-of-authorisation.htm" frameborder="0"></iframe>
+	</li>
+</ul>
+
+<div class="divLicenseInfo">
+	<p>
+		При осуществлении доступа к этому веб-сайту, а также его использовании
+ или навигации по нему вы соглашаетесь с тем, что мы будем применять 
+определенные файлы cookie, необходимые для улучшения вашего 
+пользовательского опыта. Компания Pinnacle применяет файлы cookie 
+исключительно для улучшения пользования и обязуется уважать ваше право 
+на частную жизнь. Обратите внимание на то, что веб-сайт не может 
+функционировать, если файлы cookie отключены. Для изменения настроек 
+файлов cookie см. {ПОЛИТИКУ КОНФИДЕНЦИАЛЬНОСТИ}.
+	</p>
+	<p>
+		Этот веб-сайт управляется компанией PinBet Malta Ltd, 
+зарегистрированной на Мальте по адресу: Susan Court B1, Triq 
+il-Prinjolata, Ta’Xbiex, XBX 1130. Номер лицензии: <a class="footerLink" target="_blank" href="https://www.authorisation.mga.org.mt/verification.aspx?lang=en&amp;company=dd32c28b-4878-4f40-ad81-1d70719a35cc">MGA/CL2/1069/2015</a>
+ от 03.03.2015. Компания PinBet Malta Ltd имеет лицензию, выданную 
+Управлением по организации лотерей и игорного бизнеса Мальты. Узнать 
+больше на веб-сайте <a class="footerLink" target="_blank" href="http://www.mga.org.mt/">www.mga.org.mt</a>.
+	</p>
+	<hr>
+	<p>
+		Gambling can be addictive.
+		Please know your limits and gamble responsibly.
+	</p>
+	<hr>
+	<p>
+		<a class="footerLink" target="_blank" href="https://www.pinnacle.com/ru/termsandconditions/malta">Условия и положения</a>
+		|
+		<a class="footerLink" target="_blank" href="https://www.pinnacle.com/ru/responsible-gaming">Ответственная игра</a>
+		|
+	    <a class="footerLink" target="_blank" href="https://www.pinnacle.com/ru/privacy-policy">Политика безопасности</a>
+        |
+        <a class="footerLink" target="_blank" href="https://www.pinnacle.com/ru/privacy-policy#cookie-policy">Политика в отношении файлов cookie</a>
+		|
+		<a class="footerLink" target="_blank" href="https://www.pinnacle.com/ru/help">Помощь</a>
+	</p>
+	<br>
+</div>
+				</div>
+			</div>
+            <div id="templateDiv" class="hidden">
+                
+    <div id="" class="sportContainer Simple">
+        <div class="sportHeader">
+            <h2 class="sportName">TEMPLATE</h2>
+            <span class="sportSortOrder">1</span>
+            <div class="puls">
+                <span class="selectLeagues"><a id="SelectLeaguesButton" class="sLeagBtn">выберите лиги</a></span>
+<form action="/Sportsbook/AsiaSession/SelectFilter" id="SelectFilter" method="post">                    <select name="sport" id="sport" size="1" class="select hidden" autocomplete="off">
+                    </select>
+                    <select name="period" id="period" size="1" class="select ">
+                    </select>
+                    <select name="time" id="time" size="1" class="select ">
+                    </select>
+<input id="lc_isParlay" name="LinesRequest.IsParlay" value="False" type="hidden">                    <select name="lineViewType" id="lineViewType" size="1" class="select hidden">
+                    </select>
+                    <input id="filterSubmitButton" value="submit" type="submit">
+</form>            </div>
+        </div>
+            <div id="" class="MarketContainer Live enabled">
+                <div class="market_header">
+                    <h4 class="MarketName">LIVE
+</h4>
+                    <div class="puls">
+                        <a href="#" class="rfsh"><span class="RefreshCountDown Live">обновить
+
+&nbsp;</span>
+                        </a>
+                    </div>
+                </div>
+                <table class="lineView Simple">
+                    <colgroup>
+                        <col class="col1">
+                        <col class="col2">
+                        <col class="col3">
+                        <col class="col4">
+                        <col class="col5">
+                        <col class="col6">
+                        <col class="col7">
+                        <col class="col8">
+                        <col class="col9">
+                    </colgroup>
+                    <thead class="header Simple">
+	<tr>
+		<th class="left_cell">&nbsp;</th>
+		<th class="flex_cell">&nbsp;</th>
+		<th class="Label0 light_cell"></th>
+		<th class="Label1 cell"></th>
+		<th class="Label2 cell"></th>
+		<th class="Label3 light_cell"></th>
+		<th class="Label4 cell"></th>
+		<th class="Label5 cell"></th>
+		<th class="right_cell"></th>
+	</tr>
+</thead>
+<thead class="header Moneyline">
+	<tr>
+		<th class="Label0 left_cell" rowspan="2"></th>
+		<th class="Label1 flex_cell" rowspan="2"></th>
+		<th class="Label2 top_cell" colspan="3"></th>
+		<th class="Label6 top_cell" colspan="3"></th>									
+		<th class="right_cell" rowspan="2"></th>
+	</tr>
+	<tr>
+		<th class="Label3 cell"></th>
+		<th class="Label4 cell"></th>
+		<th class="Label5 cell"></th>
+		<th class="Label7 cell"></th>
+		<th class="Label8 cell"></th>
+		<th class="Label9 cell"></th>
+	</tr>
+</thead>
+<thead class="header Single">
+	<tr>
+		<th class="Label0 left_cell" rowspan="2"></th>
+		<th class="Label1 flex_cell" rowspan="2"></th>
+		<th class="Label2 top_cell" colspan="6"></th>
+		<th class="Label9 top_cell" colspan="6"></th>									
+		<th class="right_cell" rowspan="2"></th>
+	</tr>
+	<tr>
+		<th class="Label3 light_cell"></th>
+		<th class="Label4 cell"></th>
+		<th class="Label5 cell"></th>
+		<th class="Label6 light_cell"></th>
+		<th class="Label7 cell"></th>
+		<th class="Label8 cell"></th>
+
+		<th class="Label10 light_cell"></th>
+		<th class="Label11 cell"></th>
+		<th class="Label12 cell"></th>
+		<th class="Label13 light_cell"></th>
+		<th class="Label14 cell"></th>
+		<th class="Label15 cell"></th>
+	</tr>
+</thead>
+<thead class="header Double">
+	<tr>
+		<th class="left_cell Label0" rowspan="2"></th>
+		<th class="flex_cell Label1" rowspan="2"></th>
+		<th class="top_cell Label2" colspan="3"></th>
+		<th class="top_cell Label6" colspan="3"></th>									
+		<th class="right_cell" rowspan="2"></th>
+	</tr>
+	<tr>
+		<th class="cell Label3"></th>
+		<th class="double_cell Label4"></th>
+		<th class="double_cell Label5"></th>
+
+		<th class="cell Label7"></th>
+		<th class="double_cell Label8"></th>
+		<th class="double_cell Label9"></th>
+	</tr>
+</thead><thead class="header Taiwan">
+	<tr>
+		<th class="left_cell Label0" rowspan="2"></th>
+		<th class="cell Label1" rowspan="2"></th>
+		<th class="top_cell Label2" colspan="4"></th>
+		<th class="right_cell" rowspan="2"></th>
+	</tr>
+	<tr>
+		<th class="cell Label3"></th>
+		<th class="cell Label4"></th>
+		<th class="cell Label5"></th>
+		<th class="cell Label6"></th>
+	</tr>
+</thead>
+                                <tbody id="" class="LeagueContainer regular">
+                                    <tr class="GamesContainerHeader">
+                                        <th colspan="9" class="ColumnCount league_header">
+                                            <div class="puls">
+                                                    <select size="1" class="select buySellLevels ">
+                                                            <option value="0">1 линия</option>
+                                                            <option value="1">3 линии</option>
+                                                            <option value="2">5 линий</option>
+                                                            <option value="3" selected="selected">Всего</option>
+                                                    </select>
+
+                                                <a href="#" class="Refresh " title="обновить">
+                                                    &nbsp;</a>
+                                            </div>
+                                            <span class="dispName">TemplateLeague
+                                            </span><span class="order hidden">1</span>
+                                            <span class="LeagueName hidden">TemplateLeague</span>
+                                        </th>
+                                    </tr>
+
+
+
+	<tr id="Live_99999_0" class="Live_99999-Row evRow">
+		<td class="left_cell">
+			<span class="sTime"></span>
+			<span class="hTime"></span>
+			<span class="rot">1</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home ">TeamH</span>-vs-<span class="Away ">TeamH</span>
+	    </td>
+		<td class="pos0 Handicap"></td>
+		<td class="pos0 Home T1 nochange"><a href="#" class="wLnk">&nbsp;</a></td>
+		<td class="pos0 Away T2 nochange"><a href="#" class="wLnk">&nbsp;</a></td>
+		<td class="pos1 Handicap"></td>
+		<td class="pos1 Over T1 nochange"><a href="#" class="wLnk">&nbsp;</a></td>
+		<td class="pos1 Under T2 nochange"><a href="#" class="wLnk">&nbsp;</a></td>
+		<td class="alt"></td>
+	</tr>
+	<tr id="Live_99998_0" class="Live_99998-Row evRow">
+		<td class="left_cell">
+			<span class="sTime"></span>
+			<span class="hTime"></span>
+			<span class="rot">1</span>
+		</td>
+	    <td class="teamId">
+            	        <span class="Home ">TeamH</span>-vs-<span class="Away ">TeamH</span>
+	    </td>
+		<td class="pos0 Handicap"></td>
+		<td class="pos0 Home T1 nochange"><a href="#" class="wLnk">&nbsp;</a></td>
+		<td class="pos0 Away T2 nochange"><a href="#" class="wLnk">&nbsp;</a></td>
+		<td class="pos1 Handicap"></td>
+		<td class="pos1 Over T1 nochange"><a href="#" class="wLnk">&nbsp;</a></td>
+		<td class="pos1 Under T2 nochange"><a href="#" class="wLnk">&nbsp;</a></td>
+		<td class="alt"></td>
+	</tr>
+
+                                </tbody>
+                </table>
+            </div>
+            <div id="" class="MarketContainer Today enabled">
+                <div class="market_header">
+                    <h4 class="MarketName">СЕГОДНЯ
+</h4>
+                    <div class="puls">
+                        <a href="#" class="rfsh"><span class="RefreshCountDown Today">обновить
+
+&nbsp;</span>
+                        </a>
+                    </div>
+                </div>
+                <table class="lineView Simple">
+                    <colgroup>
+                        <col class="col1">
+                        <col class="col2">
+                        <col class="col3">
+                        <col class="col4">
+                        <col class="col5">
+                        <col class="col6">
+                        <col class="col7">
+                        <col class="col8">
+                        <col class="col9">
+                    </colgroup>
+                    <thead class="header Simple">
+	<tr>
+		<th class="left_cell">&nbsp;</th>
+		<th class="flex_cell">&nbsp;</th>
+		<th class="Label0 light_cell"></th>
+		<th class="Label1 cell"></th>
+		<th class="Label2 cell"></th>
+		<th class="Label3 light_cell"></th>
+		<th class="Label4 cell"></th>
+		<th class="Label5 cell"></th>
+		<th class="right_cell"></th>
+	</tr>
+</thead>
+<thead class="header Moneyline">
+	<tr>
+		<th class="Label0 left_cell" rowspan="2"></th>
+		<th class="Label1 flex_cell" rowspan="2"></th>
+		<th class="Label2 top_cell" colspan="3"></th>
+		<th class="Label6 top_cell" colspan="3"></th>									
+		<th class="right_cell" rowspan="2"></th>
+	</tr>
+	<tr>
+		<th class="Label3 cell"></th>
+		<th class="Label4 cell"></th>
+		<th class="Label5 cell"></th>
+		<th class="Label7 cell"></th>
+		<th class="Label8 cell"></th>
+		<th class="Label9 cell"></th>
+	</tr>
+</thead>
+<thead class="header Single">
+	<tr>
+		<th class="Label0 left_cell" rowspan="2"></th>
+		<th class="Label1 flex_cell" rowspan="2"></th>
+		<th class="Label2 top_cell" colspan="6"></th>
+		<th class="Label9 top_cell" colspan="6"></th>									
+		<th class="right_cell" rowspan="2"></th>
+	</tr>
+	<tr>
+		<th class="Label3 light_cell"></th>
+		<th class="Label4 cell"></th>
+		<th class="Label5 cell"></th>
+		<th class="Label6 light_cell"></th>
+		<th class="Label7 cell"></th>
+		<th class="Label8 cell"></th>
+
+		<th class="Label10 light_cell"></th>
+		<th class="Label11 cell"></th>
+		<th class="Label12 cell"></th>
+		<th class="Label13 light_cell"></th>
+		<th class="Label14 cell"></th>
+		<th class="Label15 cell"></th>
+	</tr>
+</thead>
+<thead class="header Double">
+	<tr>
+		<th class="left_cell Label0" rowspan="2"></th>
+		<th class="flex_cell Label1" rowspan="2"></th>
+		<th class="top_cell Label2" colspan="3"></th>
+		<th class="top_cell Label6" colspan="3"></th>									
+		<th class="right_cell" rowspan="2"></th>
+	</tr>
+	<tr>
+		<th class="cell Label3"></th>
+		<th class="double_cell Label4"></th>
+		<th class="double_cell Label5"></th>
+
+		<th class="cell Label7"></th>
+		<th class="double_cell Label8"></th>
+		<th class="double_cell Label9"></th>
+	</tr>
+</thead><thead class="header Taiwan">
+	<tr>
+		<th class="left_cell Label0" rowspan="2"></th>
+		<th class="cell Label1" rowspan="2"></th>
+		<th class="top_cell Label2" colspan="4"></th>
+		<th class="right_cell" rowspan="2"></th>
+	</tr>
+	<tr>
+		<th class="cell Label3"></th>
+		<th class="cell Label4"></th>
+		<th class="cell Label5"></th>
+		<th class="cell Label6"></th>
+	</tr>
+</thead>
+                        <tbody class="noEvents">
+                            <tr>
+                                <td colspan="9" class="ColumnCount">На данный момент нет доступных мероприятий.
+                                </td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+                
+    </div>
+    <div id="loadMoreGamesLink">Нажмите здесь, чтобы загрузить больше игр</div>
+
+            </div>
+		    <table id="doubleLineTemplate" class="hidden">
+		        
+
+
+	<tbody><tr id="Live_99999_0" class="Live_99999-Row evRow">
+		<td class="time">
+			<span class="sTime"></span>
+			<span class="hTime"></span>
+			<span class="rot">1</span>
+		</td>
+	    <td class="teamId">
+            	        <div class="Home " title="TeamH">TeamH</div>
+	        <div class="Away " title="TeamA">TeamA</div>
+	        <div class="Draw "></div>
+	    </td>
+		<td class="moneyline">
+			<div class="Home pos0 T1 nochange"><a href="#" class="wLnk">&nbsp;</a></div>
+			<div class="Away pos0 T2 nochange"><a href="#" class="wLnk">&nbsp;</a></div>
+			<div class="Draw pos0 T0 nochange "><a href="#" class="wLnk">&nbsp;</a></div>
+		</td>
+		<td class="spread">
+			<div class="cont"><div class="Handicap pos0 T0 nochange">&nbsp;</div>
+			<div class="Home pos0 T1 nochange"><a href="#" class="wLnk">&nbsp;</a></div></div>
+			<div class="cont"><div class="Handicap pos0 T2 nochange">&nbsp;</div><div class="Away pos0 T3 nochange"><a href="#" class="wLnk">&nbsp;</a></div></div>
+		</td>
+		<td class="total">
+			<div class="cont">
+				<div class="Handicap pos0 T0 nochange">&nbsp;</div>
+				<div class="ou pos0 ">o</div>
+				<div class="Over pos0 T1 nochange"><a href="#" class="wLnk">&nbsp;</a></div>
+			</div>
+			<div class="cont">
+				<div class="left">&nbsp;</div>
+				<div class="ou pos0 ">u</div>
+				<div class="Under pos0 T2 nochange"><a href="#" class="wLnk">&nbsp;</a></div>
+			</div>
+		</td>
+		<td class="moneyline">
+			<div class="Home pos1 T1 nochange"><a href="#" class="wLnk">&nbsp;</a></div>
+			<div class="Away pos1 T2 nochange"><a href="#" class="wLnk">&nbsp;</a></div>
+			<div class="Draw pos1 T0 nochange "><a href="#" class="wLnk">&nbsp;</a></div>
+		</td>
+		<td class="spread">
+			<div class="cont"><div class="Handicap pos1 T0 nochange">&nbsp;</div>
+			<div class="Home pos1 T1 nochange"><a href="#" class="wLnk">&nbsp;</a></div></div>
+			<div class="cont"><div class="Handicap pos1 T2 nochange">&nbsp;</div><div class="Away pos1 T3 nochange"><a href="#" class="wLnk">&nbsp;</a></div></div>
+		</td>
+		<td class="total">
+			<div class="cont">
+				<div class="Handicap pos1 T0 nochange">&nbsp;</div>
+				<div class="ou pos1 ">o</div>
+				<div class="Over pos1 T1 nochange"><a href="#" class="wLnk">&nbsp;</a></div>
+			</div>
+			<div class="cont">
+				<div class="left">&nbsp;</div>
+				<div class="ou pos1 ">u</div>
+				<div class="Under pos1 T2 nochange"><a href="#" class="wLnk">&nbsp;</a></div>
+			</div>
+		</td>
+		<td class="alt"></td>
+	</tr>
+
+		    </tbody></table>
+            <table id="taiwanLineTemplate" class="hidden">
+				
+
+
+	<tbody><tr id="Live_99999_0" class="Live_99999-Row evRow">
+		<td class="time">
+			<span class="sTime"></span>
+			<span class="hTime"></span>
+			<span class="rot">1</span>
+		</td>
+	    <td class="teamId">
+            	        <div class="Home " title="TeamH">TeamH</div>
+	        <div class="Away " title="TeamA">TeamA</div>
+	        <div class="Draw "></div>
+	    </td>
+
+		<td class="twspread">
+			<div class="cont"><div class="Handicap pos0 T0 nochange">&nbsp;</div>
+			<div class="Home pos0 T1 nochange"><a href="#" class="wLnk">&nbsp;</a></div></div>
+			<div class="cont"><div class="Handicap pos0 T2 nochange">&nbsp;</div>
+			<div class="Away pos0 T3 nochange"><a href="#" class="wLnk">&nbsp;</a></div></div>
+		</td>
+		<td class="twtotal">
+			<div class="cont">
+				<div class="Handicap pos0 T0 nochange">&nbsp;</div>
+				<div class="ou pos0 ">o</div>
+				<div class="Over pos0 T1 nochange"><a href="#" class="wLnk">&nbsp;</a></div>
+			</div>
+			<div class="cont">
+				<div class="left Handicap pos0 T2">&nbsp;</div>
+				<div class="ou pos0 ">u</div>
+				<div class="Under pos0 T3 nochange"><a href="#" class="wLnk">&nbsp;</a></div>
+			</div>
+		</td>
+		<td class="spread">
+			<div class="cont"><div class="Handicap pos0 T0 nochange">&nbsp;</div>
+			<div class="Home pos0 T1 nochange"><a href="#" class="wLnk">&nbsp;</a></div></div>
+		    <div class="cont"><div class="Handicap pos0 T2 nochange">&nbsp;</div>
+            <div class="Away pos0 T3 nochange"><a href="#" class="wLnk">&nbsp;</a></div></div>
+		</td>
+		<td class="moneyline">
+			<div class="Home pos0 T1 nochange"><a href="#" class="wLnk">&nbsp;</a></div>
+			<div class="Away pos0 T2 nochange"><a href="#" class="wLnk">&nbsp;</a></div>
+			<div class="Draw pos0 T0 nochange "><a href="#" class="wLnk">&nbsp;</a></div>
+		</td>
+
+		<td class="alt"></td>
+	</tr>
+
+			</tbody></table>
+		</div>
+	</div>
+            <div class="clear">
+            </div>
+        </div>
+            <div id="footer" class="modern_footer_off">
+            </div>
+    </div>
+    <div id="loadingDiv" class="loadingDiv hidden" style="top: 0px; left: 0px; height: 0px; width: 0px;">
+    </div>
+    <div id="loadingDivImg" class="loadingDivImg medium hidden" style="top: 0px; left: 0px; height: 0px; width: 0px;">
+    </div>
+</div>
+
+<div id="errorMessage">
+    <div class="errorMessage">
+        <div class="header">
+            <div class="title">Error</div>
+            <div class="close">
+                <span class="basictext">&nbsp;</span>
+            </div>
+        </div>
+        <div class="genericError">Запрашиваемые Вами данные временно недоступны.</div>
+    </div>
+</div>
+<div id="errorMessageSlim">
+    <div class="errorMessageSlim">
+        <div class="genericError">
+            Запрашиваемые Вами данные временно недоступны.
+            <span class="retry">Please Retry</span>
+        </div>
+    </div>
+</div>
+
+<noscript>
+    <div style="display: none"><img src="//members.pinnacle.com/Asia/Tracker" height="2" width="2" alt="IntelliTracker"/>
+    </div>
+</noscript>
+
+
+
+
+
+<meta name="com.silverpop.brandeddomains" content="www.pages04.net,abqwt1199.com,gfdrhj655.com,jkkjekj3k.com,kshdb7823.com,ljshj3k43.com,lsjskjdm.com,pages.pinnaclesports.com,pin1111.com,pin138.com,pin2222.com,pin3333.com,pin4444.com,pin5555.com,pin6666.com,pin7777.com,pin818.com,pin8888.com,pin9999.com,pinnacle.com,pinnaclesports.com,soprm6502.com,utfjkvc567.com,ysap5768.com">
+<script type="text/javascript" id="" src="site2_files/iMAWebCookie.js"></script>
+
+
+<script type="text/javascript" id="">(function(a,e,f,g,b,c,d){a.MovableInkTrack=b;c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.type="text/javascript";c.async=!0;c.src="//"+g+"/p/js/1.js";a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};d.parentNode.insertBefore(c,d)})(window,document,"script","9jzkiupf.micpn.com","mitr");</script>
+<img style="display: none;" src="site2_files/event.jfif"> 
+<script type="text/javascript" id="" src="site2_files/iCognesia62.js"></script>
+<script type="text/javascript" id="">iCognesia.Init("1987","www.intelli-direct.com");</script>
+ 
+<script type="text/javascript" id="">iCognesia.RegCustomVars("Language\x3dru-RU;Page
+ Name\x3dundefined;Page 
+Category\x3dundefined;Domain\x3dmembers.pinnacle.com;Site\x3ddesktop;Referrer\x3d;Article
+ Author\x3dundefined;Article Publish 
+Date\x3dundefined;oddsType\x3ddecimal;clientID\x3d554163;property\x3dsportsbook;logStatus\x3dtrue;view\x3dasian;event\x3dgtm.load".split(";"));</script></body></html>

@@ -1,0 +1,5225 @@
+/*
+---------------------------------------------------------------------------------------------
+WARNING: if you're editing the css file directly it WILL get overwritten with the scss output
+---------------------------------------------------------------------------------------------
+*/
+.norepeat-sprite, #divLogo, #divPLogo, #personalMessages, .newsTicker .newsTickerDX #personalButton, .newsTicker .ticker, .newsTicker .tickerDX, .ticket .item .puls_top .close, .ticket .item .ticketInput .info, .ticket .divBtn .confirm, .ticket .divBtn .end, .ticket .divBtn .confirm SPAN, .ticket .item .play INPUT, .ticket .item .win INPUT, #lines_area_footer .logos_on, #lines_area_footer .logo_license_18, #lines_area_footer .logo_license_curacao, #lines_area_footer .logo_license_gamecare, #lines_area_footer .logo_license_malta, #lines_area_footer .logo_license_networksolutions, #SelectLeagues .Tab, .Early .league_header .Refresh, .Today .league_header .Refresh, .Live .league_header .Refresh, .lineView.Double .moneyline .better.highlight, .lineView.Double .spread .better.highlight, .lineView.Double .total .better.highlight, .lineView.Double .twspread .better.highlight, .lineView.Double .twtotal .better.highlight, .lineView.Taiwan .moneyline .better.highlight, .lineView.Taiwan .spread .better.highlight, .lineView.Taiwan .total .better.highlight, .lineView.Taiwan .twspread .better.highlight, .lineView.Taiwan .twtotal .better.highlight, .lineView.Double .moneyline .worse.highlight, .lineView.Double .spread .worse.highlight, .lineView.Double .total .worse.highlight, .lineView.Double .twspread .worse.highlight, .lineView.Double .twtotal .worse.highlight, .lineView.Taiwan .moneyline .worse.highlight, .lineView.Taiwan .spread .worse.highlight, .lineView.Taiwan .total .worse.highlight, .lineView.Taiwan .twspread .worse.highlight, .lineView.Taiwan .twtotal .worse.highlight, #AlternateLines .header .close, .partialbox .header .actions .refresh, .partialbox .header .actions .close, #Statement .footer, #FullBetList .footer, #Results .footer, #CustomerBalance .expand, #CustomerBalance .expand.Over, #CustomerBalance .refresh, #CustomerBalance .mainBalanceInfo, .errorMessage .header .close, .pt_alertLeft, .pt_alertRight, .pt_close, .pt_submit A, .pt_submit A SPAN, .pt_submit.disabled A, .pt_submit.disabled A SPAN, .icon-menu-drop {
+  background: url('/images/norepeat-s6aa17aa599.png') no-repeat;
+}
+
+/* */
+.norepeat-sprite, #divLogo, #divPLogo, #personalMessages, .newsTicker .newsTickerDX #personalButton, .newsTicker .ticker, .newsTicker .tickerDX, .ticket .item .puls_top .close, .ticket .item .ticketInput .info, .ticket .divBtn .confirm, .ticket .divBtn .end, .ticket .divBtn .confirm SPAN, .ticket .item .play INPUT, .ticket .item .win INPUT, #lines_area_footer .logos_on, #lines_area_footer .logo_license_18, #lines_area_footer .logo_license_curacao, #lines_area_footer .logo_license_gamecare, #lines_area_footer .logo_license_malta, #lines_area_footer .logo_license_networksolutions, #SelectLeagues .Tab, .Early .league_header .Refresh, .Today .league_header .Refresh, .Live .league_header .Refresh, .lineView.Double .moneyline .better.highlight, .lineView.Double .spread .better.highlight, .lineView.Double .total .better.highlight, .lineView.Double .twspread .better.highlight, .lineView.Double .twtotal .better.highlight, .lineView.Taiwan .moneyline .better.highlight, .lineView.Taiwan .spread .better.highlight, .lineView.Taiwan .total .better.highlight, .lineView.Taiwan .twspread .better.highlight, .lineView.Taiwan .twtotal .better.highlight, .lineView.Double .moneyline .worse.highlight, .lineView.Double .spread .worse.highlight, .lineView.Double .total .worse.highlight, .lineView.Double .twspread .worse.highlight, .lineView.Double .twtotal .worse.highlight, .lineView.Taiwan .moneyline .worse.highlight, .lineView.Taiwan .spread .worse.highlight, .lineView.Taiwan .total .worse.highlight, .lineView.Taiwan .twspread .worse.highlight, .lineView.Taiwan .twtotal .worse.highlight, #AlternateLines .header .close, .partialbox .header .actions .refresh, .partialbox .header .actions .close, #Statement .footer, #FullBetList .footer, #Results .footer, #CustomerBalance .expand, #CustomerBalance .expand.Over, #CustomerBalance .refresh, #CustomerBalance .mainBalanceInfo, .errorMessage .header .close, .pt_alertLeft, .pt_alertRight, .pt_close, .pt_submit A, .pt_submit A SPAN, .pt_submit.disabled A, .pt_submit.disabled A SPAN, .icon-menu-drop {
+  background: transparent url("../../Images/template/norepeat.png?v=5") no-repeat 0 0;
+}
+
+/* mixin's */
+/* variables */
+/* Body Structure */
+body {
+  background: #cccccc url(../../Images/template/body_bg.png) repeat-y center top;
+  color: #000032;
+  font-size: 0.75em;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#divMain {
+  min-height: 100%;
+  min-width: 960px;
+  position: relative;
+}
+
+#mainBox {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#main_column {
+  border-bottom-color: #00F;
+  padding: 0 0 0 225px;
+  font-size: 11px;
+}
+
+#menu_and_ticket {
+  padding: 0 5px 0 0;
+  float: left;
+  font-size: 11px;
+  width: 237px;
+  height: auto;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  top: 60px;
+}
+
+/***** HEADER CSS - START *****/
+#divLogo {
+  float: left;
+  width: 241px;
+  height: 50px;
+  margin-top: 2px;
+  background-position: 0 -1341px;
+  padding: 0 5px 0 0;
+}
+
+#divPLogo {
+  float: left;
+  width: 185px;
+  height: 50px;
+  margin-top: 2px;
+  background-position: 0 -1943px;
+  padding: 0 5px 0 0;
+}
+
+#divHeaderContent {
+  float: right;
+}
+
+#divHeaderLinks {
+  color: #9C9B9B;
+  text-align: right;
+  margin-top: 5px;
+  height: 17px;
+}
+
+.linkDynamic {
+  text-decoration: none;
+  color: #9C9B9B;
+  font-size: 11px;
+}
+.linkDynamic:hover {
+  color: #000000;
+}
+
+.linkRedirect {
+  text-decoration: none;
+  color: #0021a5;
+  font-size: 11px;
+}
+.linkRedirect:hover {
+  color: #ff8c00;
+}
+
+.linkPopup {
+  text-decoration: none;
+  color: #000000;
+  font-size: 11px;
+}
+.linkPopup:hover {
+  color: #f00;
+}
+
+sup {
+  color: #CC0000;
+  /*position: relative; left: 1px;*/
+}
+
+#divUserInfo {
+  color: #000000;
+  font-weight: bold;
+  margin: 5px 0 0 0;
+  clear: left;
+  display: inline-block;
+  float: right;
+  width: 100%;
+}
+#divUserInfo form {
+  display: inline;
+  padding: 0;
+  margin-right: 10px;
+  float: right;
+  position: relative;
+  z-index: 999;
+}
+
+#logoutButton {
+  background-color: #000032;
+  padding: 2px;
+  width: auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  float: right;
+  color: white;
+  display: block;
+  border: 1px solid #405ba9;
+  padding: 0 5px 0 5px;
+  margin: 2px 5px 2px 5px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  /* fallback/image non-cover color */
+  background-color: #24335f;
+  background-image: -moz-linear-gradient(#395196 0%, #0f1528 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#395196), to(#0f1528));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(#395196, #0f1528);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(#395196, #0f1528);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #395196, #0f1528);
+  /* IE10 */
+  background-image: linear-gradient(top, #395196, #0f1528);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#395196', EndColorStr='#0f1528');
+  /* IE6–IE9 */
+  -moz-box-shadow: 1px 1px 2px black;
+  -webkit-box-shadow: 1px 1px 2px black;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='black')";
+  /* For IE 8 */
+  box-shadow: 1px 1px 2px black;
+  /* IE 7 down, don't show a drop shadow for performance */
+  text-decoration: none;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  top: -1px;
+}
+
+#logoutButtonLink {
+  color: White;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  line-height: 18px;
+  color: #000032;
+  font-weight: bold;
+  color: White;
+  white-space: nowrap;
+  text-decoration: none;
+}
+#logoutButtonLink:hover {
+  color: #B3B3BF;
+}
+
+#personalMessages {
+  float: right;
+  padding: 5px 5px 3px 5px;
+  background-position: 2px -553px;
+}
+#personalMessages a {
+  color: #000032;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+}
+#personalMessages a:hover {
+  color: #B3B3BF;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+#welcome {
+  float: right;
+  padding: 5px 5px 0 5px;
+}
+
+#userPrefsSubmitButton {
+  display: none;
+}
+
+#culture {
+  width: 140px;
+  margin: 2px;
+}
+
+#divHeader {
+  background: #FFFFFF;
+  width: 962px;
+  height: 54px;
+  position: fixed;
+  z-index: 998;
+  display: block;
+}
+
+/***** HEADER CSS - END *****/
+/* TICKER TAPE */
+.newsTicker {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.newsTicker a {
+  text-decoration: none;
+}
+.newsTicker a:hover {
+  color: #000000;
+}
+.newsTicker .newsTickerDX {
+  padding: 0 12px 0 0;
+  position: relative;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.newsTicker .newsTickerDX .tickerLogo {
+  background-repeat: no-repeat;
+  float: left;
+  height: 14px;
+  margin: 2px 3px 0 0;
+  padding: 0;
+  text-align: left;
+  visibility: visible;
+  width: 15px;
+  z-index: 223;
+}
+.newsTicker .newsTickerDX .tickerLogoGreen {
+  background-image: url("../../Images/ticker_icn_green.gif");
+}
+.newsTicker .newsTickerDX .tickerLogoOrange {
+  background-image: url("../../Images/ticker_icn_orange.gif");
+}
+.newsTicker .newsTickerDX .tickerLogoGray {
+  background-image: url("../../Images/ticker_icn_gray.gif");
+}
+.newsTicker .newsTickerDX #personalButton {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  float: left;
+  display: block;
+  background-position: 0 -553px;
+}
+.newsTicker .newsTickerDX #personalButton a {
+  color: #000032;
+  font-size: 11px;
+  font-weight: bold;
+}
+.newsTicker .newsTickerDX #personalButton a:hover {
+  color: #B3B3BF;
+  font-size: 11px;
+  font-weight: bold;
+}
+.newsTicker .ticker {
+  width: 520px;
+  position: absolute;
+  height: 18px;
+  line-height: 18px;
+  display: block;
+  left: 110px;
+  top: 1px;
+  float: left;
+  background-position: 0 -2205px;
+}
+.newsTicker .tickerDX {
+  height: 18px;
+  line-height: 18px;
+  width: 767px;
+  font-size: 11px;
+  background-position: 465px -2230px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-weight: normal;
+  color: #00006a;
+}
+.newsTicker .tickerDX .normalAnnouncement {
+  color: black;
+}
+.newsTicker .tickerDX .specialAnnouncement {
+  color: red;
+}
+.newsTicker .tickerDX .personalAnnouncement {
+  color: green;
+}
+.newsTicker #newsLink {
+  color: #000032;
+}
+.newsTicker #newsLink:hover {
+  color: #B3B3BF;
+}
+
+.newsTicker, .newsTicker .newsTickerDX {
+  line-height: 20px;
+  background: url(../../Images/template/repeatx_bg.png) repeat-x 0 -304px;
+  padding: 0 0 0 2px;
+  overflow: hidden;
+  color: #7B7A7A;
+  font-weight: bold;
+}
+
+#TickerTape {
+  position: fixed;
+  top: 54px;
+  z-index: 999;
+  width: 962px;
+  height: 20px;
+  background-color: #FFFFFF;
+}
+
+/* ENHANCED */
+#divMiniNav, .chkMenu {
+  display: block;
+}
+
+table, td, th {
+  padding: 0;
+}
+
+.basictext {
+  display: none;
+}
+
+.hidLabel {
+  position: absolute;
+  left: -9999em;
+}
+
+#linkBalance {
+  display: none;
+}
+
+#UpgradeBrowser {
+  display: none;
+}
+
+.wLnk, .pLnk {
+  text-decoration: none;
+}
+
+.breakWord {
+  text-wrap: normal;
+  /*white-space: -moz-pre-wrap;*/
+  /* Mozilla, since 1999 */
+  /*white-space: -pre-wrap;*/
+  /* Opera 4-6 */
+  /*white-space: -o-pre-wrap;*/
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+  word-break: break-all;
+}
+
+.neg {
+  color: #CC0000;
+}
+
+.fav {
+  color: #ff6300;
+}
+
+/* Bet Ticket and Wager List Start */
+/*
+ticket = ticket UN-SUBMITTED
+ticketSub = ticket SUBMITTED
+ticketErr = ticket INVALID
+*/
+.ticket {
+  display: block;
+}
+
+.ticket .cnt {
+  padding: 0 3px 0 3px;
+  background-color: #000032;
+}
+
+.ticket .wrapper {
+  border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+
+.ticket .enhance #betTicketNotification {
+  visibility: hidden;
+  display: none;
+}
+
+/*ITEMS*/
+.ticket .item {
+  background: url(../../Images/template/repeaty_bg.png) repeat-y -221px 0;
+  position: relative;
+  border-bottom: 3px solid #000032;
+  font-size: 11px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+
+.ticket .item.live {
+  background-position: -438px 0;
+}
+
+.ticket .item {
+  background-color: #FFF;
+  padding: 0 0 2px 0;
+}
+
+#pendingBetList .acceptedTicket {
+  background: url(../../Images/template/repeaty_bg.png) repeat-y -438px 0;
+}
+#pendingBetList .rfshCont {
+  text-align: center;
+}
+#pendingBetList .rfshCont .rfsh {
+  color: white;
+  display: block;
+  border: 1px solid #a3a3a3;
+  padding: 0 5px 0 5px;
+  margin: 2px 5px 2px 5px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  /* fallback/image non-cover color */
+  background-color: #d6d6d6;
+  background-image: -moz-linear-gradient(#fcfcfc 0%, #b0b0b0 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fcfcfc), to(#b0b0b0));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(#fcfcfc, #b0b0b0);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(#fcfcfc, #b0b0b0);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #fcfcfc, #b0b0b0);
+  /* IE10 */
+  background-image: linear-gradient(top, #fcfcfc, #b0b0b0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fcfcfc', EndColorStr='#b0b0b0');
+  /* IE6–IE9 */
+  -moz-box-shadow: 1px 1px 2px black;
+  -webkit-box-shadow: 1px 1px 2px black;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='black')";
+  /* For IE 8 */
+  box-shadow: 1px 1px 2px black;
+  /* IE 7 down, don't show a drop shadow for performance */
+  line-height: 13px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #0d0e73;
+  cursor: pointer;
+  margin-bottom: 3px;
+  width: auto;
+  display: inline-block;
+}
+#pendingBetList .rfshCont .rfsh SPAN {
+  display: block;
+  line-height: 13px;
+}
+
+.miniBetList {
+  display: block;
+  padding: 0 3px 0 3px;
+  background-color: #000032;
+}
+.miniBetList .cnt {
+  padding: 0 3px 0 3px;
+}
+.miniBetList .betListContainer {
+  padding: 3px;
+  background: url(../../Images/template/repeaty_bg.png) repeat-y -655px 0;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+}
+.miniBetList .acceptedTicket, .miniBetList .emtpyWagerList {
+  padding: 0px 3px 3px 3px;
+  position: relative;
+  margin-bottom: 4px;
+  border: 1px solid #8c8c8c;
+  background-color: white;
+  color: #000;
+  text-align: left;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.miniBetList .acceptedTicket .yellowbg, .miniBetList .emtpyWagerList .yellowbg {
+  background-color: #FFFFA8;
+}
+.miniBetList .emtpyWagerList {
+  padding: 20px 3px;
+}
+.miniBetList .compactTicket {
+  /* fallback/image non-cover color */
+  background-color: #d8d8d8;
+  background-image: -moz-linear-gradient(#d8d8d8 0%, #f3f3f3 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d8d8d8), to(#f3f3f3));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(#d8d8d8, #f3f3f3);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(#d8d8d8, #f3f3f3);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #d8d8d8, #f3f3f3);
+  /* IE10 */
+  background-image: linear-gradient(top, #d8d8d8, #f3f3f3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#d8d8d8', EndColorStr='#f3f3f3');
+  /* IE6–IE9 */
+  padding: 3px;
+  position: relative;
+  border: 1px solid #8c8c8c;
+  background-color: Silver;
+  color: #000;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-align: left;
+  margin-bottom: 4px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.miniBetList .compactTicket:hover {
+  /* fallback/image non-cover color */
+  background-color: #c9c7c7;
+  background-image: -moz-linear-gradient(#c9c7c7 0%, #e5e5e5 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c9c7c7), to(#e5e5e5));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(#c9c7c7, #e5e5e5);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(#c9c7c7, #e5e5e5);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #c9c7c7, #e5e5e5);
+  /* IE10 */
+  background-image: linear-gradient(top, #c9c7c7, #e5e5e5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#c9c7c7', EndColorStr='#e5e5e5');
+  /* IE6–IE9 */
+}
+
+.acceptedTicket .title, .compactTicket .title {
+  font-weight: bold;
+}
+
+.acceptedTicket.rejected .play,
+.acceptedTicket.rejected .ticketId,
+.acceptedTicket.rejected .ticketLine,
+.acceptedTicket.rejected .ticketPick {
+  text-decoration: line-through;
+}
+
+.compactTicket.rejected .compactTicketGameInfo, .compactTicket.rejected .compactTicketLine, .compactTicket.rejected .compactTicketRisk, .compactTicket.rejected .ticketDate {
+  text-decoration: line-through;
+}
+
+.betList .rejected .selection {
+  text-decoration: line-through;
+}
+
+.compactTicket .compactTicketGameInfo, .compactTicket .compactTicketLine {
+  padding: 1px 0 1px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.compactTicket .compactTicketRisk {
+  padding: 1px 0 1px 0;
+}
+
+.acceptedTicket .odds {
+  text-align: center;
+}
+.acceptedTicket .pick {
+  font-weight: bold;
+}
+.acceptedTicket .ticketSection {
+  width: 100%;
+  padding-bottom: 4px;
+  padding-top: 2px;
+}
+.acceptedTicket .ticketSection .wagerItem {
+  padding-bottom: 4px;
+  padding-top: 2px;
+}
+.acceptedTicket .ticketSection .sport, .acceptedTicket .ticketSection .league, .acceptedTicket .ticketSection .date {
+  text-align: left;
+}
+.acceptedTicket .ticketSection .wagerType, .acceptedTicket .ticketSection .period {
+  text-align: right;
+}
+.acceptedTicket .ticketSection .play {
+  padding: 1px 0;
+}
+.acceptedTicket .borderBottom {
+  border-bottom: 2px dotted #8c8c8c;
+}
+.acceptedTicket .borderTop {
+  border-top: 2px dotted #8c8c8c;
+}
+
+.ticket2ColContainer {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+.ticket2ColContainer .leftCol {
+  float: left;
+  width: 58%;
+}
+.ticket2ColContainer .rightCol {
+  float: right;
+  text-align: right;
+  width: 40%;
+}
+
+/*ITEMS DATA UN-SUBMITTED TICKET*/
+.ticket .item .status {
+  display: none;
+}
+
+.ticket .item .puls_top {
+  height: 20px;
+  position: relative;
+}
+
+.ticket .item .puls_top .close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 11px;
+  height: 11px;
+  padding: 3px;
+  display: block;
+  cursor: pointer;
+  background-position: 0 -2019px;
+}
+
+.ticket .item .puls_top .num {
+  background-color: #000032;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.ticket .item .addInfo {
+  font-size: 11px;
+  line-height: 15px;
+  margin: 0 5px;
+  padding: 3px 2px 3px 2px;
+  color: #000;
+  border-bottom: 1px dotted #000032;
+}
+
+.ticket .item .addInfo .period {
+  font-weight: bold;
+}
+
+.ticketDiv {
+  border: 0;
+  padding: 0;
+}
+
+.ticket .item.live.alternate {
+  background-position: -434px top;
+}
+
+.ticketOdds {
+  table-layout: fixed;
+  width: 187px;
+  position: relative;
+  top: 5px;
+}
+
+.ticketSpacer {
+  line-height: 8px;
+}
+
+.ticketOddsLabel {
+  text-align: right;
+  padding: 0 5px 0 0;
+  width: 40%;
+  height: 18px;
+}
+
+.ticketLine {
+  font-weight: bold;
+  text-align: center;
+}
+
+.ticketLine .highlight {
+  background-color: #FCE582;
+}
+
+.ticketOverUnder {
+  height: 18px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+/* used on the Bet Ticket and the Wager List */
+.ticketAtSymbol {
+  color: #000080;
+  font-weight: bold;
+}
+
+.ticketPick {
+  font-weight: bold;
+  text-align: center;
+}
+
+.ticketMatch {
+  line-height: 15px;
+  padding: 3px 5px 3px 20px;
+  color: #000;
+  position: relative;
+}
+
+.ticketMatch .vs {
+  position: relative;
+  display: inline-block;
+  top: -2px;
+  left: -15px;
+}
+
+/* used on the Bet Ticket and the Wager List */
+.ticket .ticketMatch {
+  font-weight: bold;
+}
+
+.ticketMatch .pitcher {
+  position: relative;
+  top: -2px;
+}
+
+.ticket .item .odds * {
+  font-size: 13px;
+}
+
+.ticket .item .odds {
+  margin: 8px 0 8px 8px;
+  padding: 0;
+  width: 197px;
+  position: relative;
+  -moz-box-shadow: 2px 2px 2px #000000;
+  box-shadow: 2px 2px 2px #000000;
+  border: 1px solid black;
+  background-color: #FFFFFF;
+  color: #000;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.ticket .item .odds .spread, .ticket .item .odds .pick, .ticket .item .odds .price {
+  font-weight: bold;
+  position: relative;
+  padding: 0 0 0 85px;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+  display: block;
+}
+
+.ticket .item .odds .lbl {
+  font-weight: normal;
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 80px;
+  text-align: right;
+  top: 0;
+  left: 0;
+}
+
+.ticket .item .odds .val {
+  float: left;
+  display: block;
+  white-space: nowrap;
+}
+
+.ticket .item .odds .val:first-letter {
+  font-weight: normal;
+}
+
+.ticket .item .info {
+  text-align: center;
+  color: #000;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  text-align: center;
+  cursor: default;
+}
+
+.ticket .item .ticketInput {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.ticket .item .ticketInput .riskorwin {
+  text-align: right;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #000;
+}
+
+.ticket .item .ticketInput .label {
+  width: 100px;
+  padding-right: 5px;
+  padding-left: 2px;
+  padding-top: 2px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 12px;
+  color: #000;
+  white-space: nowrap;
+}
+
+.ticket .item .ticketInput .input {
+  width: 95px;
+  height: 20px;
+  padding-right: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #000;
+  text-align: right;
+}
+
+.ticket .item .ticketInput .info {
+  padding-top: 2px;
+  background-position: -1px -908px;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+}
+
+.ticket .item .ticketInput .input INPUT {
+  width: 94px;
+}
+
+.ticket .item INPUT:focus {
+  background-image: none;
+  border: 1px solid #F60;
+}
+
+/*BOTTOM BUTTONS*/
+.ticket .divBtn {
+  position: relative;
+}
+
+.ticket .divBtn .confirm, .ticket .divBtn .end {
+  background-position: 0 -763px;
+  display: block;
+  padding: 0 0 0 25px;
+  height: 31px;
+  line-height: 31px;
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 0 3px 0;
+  cursor: pointer;
+}
+
+.ticket .divBtn .confirm SPAN {
+  background-position: -135px -799px;
+  padding: 0 30px 0 0;
+  display: block;
+  height: 31px;
+  line-height: 31px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/*TOTALS AREA*/
+.ticket .totals {
+  background-color: #CCC;
+  color: #000;
+  padding: 5px;
+  margin-top: 3px;
+}
+
+.ticketTotals .container .left {
+  width: 83px;
+}
+.ticketTotals .container .right {
+  width: 122px;
+  font-weight: bold;
+}
+
+/*ERRORS*/
+.ticket .item .error {
+  padding: 2px;
+  color: #CF2020;
+  margin-bottom: 0px;
+}
+
+.ticket .item .error .warning {
+  padding: 4px 0 4px 2px;
+  line-height: 13px;
+  min-height: 5px;
+  font-size: .8em;
+  text-align: center;
+}
+
+.ticket .item .play INPUT, .ticket .item .win INPUT {
+  margin-top: 3px;
+  display: block;
+  border: 0;
+  padding: 2px;
+  width: 80px;
+  font-size: 11px;
+  background-position: 0 -2255px;
+  border: 1px solid #999;
+}
+
+.ticket .message {
+  background: url(../../Images/template/repeaty_bg.png) repeat-y -655px 0;
+  padding: 20px 5px;
+  text-align: center;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-top-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+}
+
+.ticket .ticketNote .message {
+  border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+}
+
+.ticketNote {
+  background-color: #000032;
+}
+
+.ticketNote .message {
+  text-align: left;
+  padding: 5px;
+}
+
+#betTicketSummary {
+  line-height: 12px;
+}
+
+#ticketMinBet {
+  text-align: left;
+}
+
+.betMaximum {
+  padding-top: 5px;
+  margin-left: 5px;
+  visibility: visible !important;
+  display: inline !important;
+}
+.betMaximum input {
+  vertical-align: -2px;
+}
+
+.acceptBetterOdds {
+  padding-top: 1px;
+  margin-left: 5px;
+}
+.acceptBetterOdds input {
+  vertical-align: -2px;
+}
+
+#ticketRefresh {
+  color: white;
+  display: block;
+  border: 1px solid #405ba9;
+  padding: 0 5px 0 5px;
+  margin: 2px 5px 2px 5px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  /* fallback/image non-cover color */
+  background-color: #24335f;
+  background-image: -moz-linear-gradient(#395196 0%, #0f1528 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#395196), to(#0f1528));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(#395196, #0f1528);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(#395196, #0f1528);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #395196, #0f1528);
+  /* IE10 */
+  background-image: linear-gradient(top, #395196, #0f1528);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#395196', EndColorStr='#0f1528');
+  /* IE6–IE9 */
+  -moz-box-shadow: 1px 1px 2px black;
+  -webkit-box-shadow: 1px 1px 2px black;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='black')";
+  /* For IE 8 */
+  box-shadow: 1px 1px 2px black;
+  /* IE 7 down, don't show a drop shadow for performance */
+  display: block;
+  line-height: 13px;
+  text-decoration: none;
+  font-size: 10px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+
+#ticketRefresh span {
+  display: block;
+  font-weight: normal;
+  line-height: 13px;
+}
+
+.ticket, .ticketVoid {
+  width: 221px;
+  margin: 0 0 0 0;
+  position: relative;
+}
+
+/* Bet Ticket and Wager List End */
+.datePickerDiv {
+  position: absolute;
+  z-index: 99998;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #CCCCCC;
+}
+
+.loadingDiv {
+  position: absolute;
+  z-index: 99998;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #CCCCCC;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  filter: alpha(opacity=65);
+  opacity: .65;
+}
+
+.loadingDivImg {
+  position: absolute;
+  z-index: 99999;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.loadingDivImg.medium {
+  background: url(../../Images/template/loading.gif) no-repeat center center;
+}
+
+.loadingDivImg.medium-bottom {
+  background: url(../../Images/template/loading.gif) no-repeat center bottom;
+}
+
+.loadingDivImg.small {
+  background: url(../../Images/template/loading_sml.gif) no-repeat center center;
+}
+
+.loadingDivImg.small.left {
+  background: url(../../Images/template/loading_sml.gif) no-repeat left center;
+  margin-left: 8px;
+}
+
+#infscr-loading {
+  background: url(../../Images/template/loading_hor.gif) no-repeat center center;
+  height: 18px;
+}
+
+#lines_area {
+  top: 60px;
+  position: relative;
+  width: 715px;
+  height: auto;
+  left: 20px;
+  padding: 0 2px 0 2px;
+  position: relative;
+}
+
+#lines_area_footer {
+  text-align: center;
+  margin-top: 20px;
+}
+#lines_area_footer .divLinks {
+  color: #9C9B9B;
+  margin-bottom: 10px;
+}
+#lines_area_footer .divLinks .currentLink {
+  font-weight: bold;
+}
+#lines_area_footer .divLinks a {
+  text-decoration: none;
+  color: #9C9B9B;
+  font-size: 11px;
+}
+#lines_area_footer .divLinks a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+#lines_area_footer .divLicenseInfo {
+  text-align: center;
+  font-size: 12px;
+}
+#lines_area_footer .divLicenseInfo p {
+  text-align: center;
+  color: #C2C2C2;
+}
+#lines_area_footer .divLicenseInfo hr {
+  height: 1px;
+  border-width: 0;
+  color: #C2C2C2;
+  background-color: #C2C2C2;
+}
+#lines_area_footer .divLicenseInfo .footerLink {
+  text-decoration: underline;
+  color: #C2C2C2;
+}
+#lines_area_footer .logos_on {
+  width: 270px;
+  margin: 0 auto 10px;
+  height: 40px;
+  display: block;
+  background-position: 0 -645px;
+  position: relative;
+}
+#lines_area_footer .logos_off {
+  display: none;
+}
+#lines_area_footer .logo_license_list {
+  width: 100%;
+  /* or your desired width */
+  text-align: center;
+  /* this will center the list items */
+}
+#lines_area_footer .logo_license_list li {
+  display: inline-block;
+  /* the key bit */
+  padding: 3px;
+  *display: inline;
+  /* IE7 hack */
+  *zoom: 1;
+  /* IE7 hack */
+}
+#lines_area_footer .logo_license_18 {
+  width: 50px;
+  margin: 0 auto 10px;
+  height: 50px;
+  display: inline-block;
+  background-position: 0 -1398px;
+  position: relative;
+}
+#lines_area_footer .logo_license_curacao {
+  width: 33px;
+  margin: 0 auto 10px;
+  height: 50px;
+  display: inline-block;
+  background-position: 0 -1453px;
+  position: relative;
+}
+#lines_area_footer .logo_license_gamecare {
+  width: 46px;
+  margin: 0 auto 10px;
+  height: 50px;
+  display: inline-block;
+  background-position: 0 -1508px;
+  position: relative;
+}
+#lines_area_footer .logo_license_malta {
+  width: 99px;
+  margin: 0 auto 10px;
+  height: 50px;
+  display: inline-block;
+  background-position: 0 -1563px;
+  position: relative;
+}
+#lines_area_footer .logo_license_networksolutions {
+  width: 168px;
+  margin: 0 auto 10px;
+  height: 50px;
+  display: inline-block;
+  background-position: 0 -1618px;
+  position: relative;
+}
+#lines_area_footer #iframeMGALicense {
+  border: none;
+  width: 125px;
+  height: 72px;
+}
+
+/* SELECT LEAGUES */
+#SelectLeagues {
+  background-color: #000032;
+  padding: 2px;
+  margin: 0 0 10px 0;
+  width: auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  z-index: 110;
+}
+#SelectLeagues .Bar {
+  padding-top: 6px;
+  color: White;
+  background: url(../../Images/template/repeatx_bg.png) repeat-x 0 -218px;
+  height: 22px;
+}
+#SelectLeagues .Tab {
+  background-position: -40px -1036px;
+  padding-top: 5px;
+  padding-right: 2px;
+  height: 17px;
+  width: 245px;
+  float: left;
+  color: #000032;
+  font-weight: bold;
+}
+#SelectLeagues SPAN {
+  padding-left: 7px;
+}
+#SelectLeagues HR {
+  width: 95%;
+  color: Silver;
+}
+#SelectLeagues .Content {
+  background: url(../../Images/template/selectleagues_bg.png) repeat-x 0 0;
+  background-color: White;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-top-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+}
+#SelectLeagues TABLE {
+  table-layout: fixed;
+  width: 660px;
+  border-collapse: separate;
+  border-spacing: 5px 5px;
+  margin: 0 auto;
+}
+#SelectLeagues TD {
+  background: url(../../Images/template/repeatx_bg.png) repeat-x 0 -426px;
+  margin: 0;
+  text-align: left;
+  border: 1px solid #BFB9B9;
+  height: 21px;
+  white-space: nowrap;
+  width: 218px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#SelectLeagues TD INPUT {
+  vertical-align: middle;
+}
+#SelectLeagues TD LABEL {
+  vertical-align: middle;
+  white-space: nowrap;
+  color: #000032;
+}
+#SelectLeagues .Ok, #SelectLeagues .Cancel, #SelectLeagues .SelectAll, #SelectLeagues .DeselectAll {
+  color: white;
+  display: block;
+  border: 1px solid #405ba9;
+  padding: 0 5px 0 5px;
+  margin: 2px 5px 2px 5px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  /* fallback/image non-cover color */
+  background-color: #24335f;
+  background-image: -moz-linear-gradient(#395196 0%, #0f1528 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#395196), to(#0f1528));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(#395196, #0f1528);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(#395196, #0f1528);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #395196, #0f1528);
+  /* IE10 */
+  background-image: linear-gradient(top, #395196, #0f1528);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#395196', EndColorStr='#0f1528');
+  /* IE6–IE9 */
+  -moz-box-shadow: 1px 1px 2px black;
+  -webkit-box-shadow: 1px 1px 2px black;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='black')";
+  /* For IE 8 */
+  box-shadow: 1px 1px 2px black;
+  /* IE 7 down, don't show a drop shadow for performance */
+  float: right;
+  cursor: pointer;
+  padding-left: 5px;
+  line-height: 19px;
+  display: block;
+  margin: 0 3px 0 3px;
+  text-decoration: none;
+  position: relative;
+  top: -2px;
+}
+#SelectLeagues .Ok {
+  margin-left: 20px;
+}
+#SelectLeagues .Ok input:hover {
+  color: #B3B3BF;
+}
+#SelectLeagues .Ok A, #SelectLeagues .Cancel A, #SelectLeagues .SelectAll A, #SelectLeagues .DeselectAll A {
+  cursor: pointer;
+  text-align: center;
+  padding-right: 5px;
+  line-height: 19px;
+  font-weight: bold;
+  color: White;
+  white-space: nowrap;
+  display: block;
+}
+#SelectLeagues .Ok A:hover, #SelectLeagues .Cancel A:hover, #SelectLeagues .SelectAll A:hover, #SelectLeagues .DeselectAll A:hover {
+  color: #B3B3BF;
+}
+#SelectLeagues .Ok INPUT, #SelectLeagues .Cancel INPUT, #SelectLeagues .SelectAll INPUT, #SelectLeagues .DeselectAll INPUT {
+  background-color: transparent;
+  border: 0px none;
+  cursor: pointer;
+  border: 0px;
+  text-align: center;
+  height: 19px;
+  display: block;
+  font-weight: bold;
+  color: White;
+  white-space: nowrap;
+}
+
+.sLeagBtn {
+  text-decoration: none;
+}
+
+/* SPORT HEADER */
+.sportContainer {
+  border: 2px solid #000032;
+  margin: 0 0 8px 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.sportHeader {
+  position: relative;
+  height: 28px;
+  color: #FFFFFF;
+  background: url(../../Images/template/repeatx_bg.png) repeat-x 0 -218px;
+}
+.sportHeader H2 {
+  position: absolute;
+  left: 10px;
+  font-size: 13px;
+  line-height: 28px;
+  padding: 0;
+  margin: 0;
+}
+.sportHeader .puls {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.sportHeader .selectLeagues {
+  color: white;
+  display: block;
+  border: 1px solid #405ba9;
+  padding: 0 5px 0 5px;
+  margin: 2px 5px 2px 5px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  /* fallback/image non-cover color */
+  background-color: #24335f;
+  background-image: -moz-linear-gradient(#395196 0%, #0f1528 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#395196), to(#0f1528));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(#395196, #0f1528);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(#395196, #0f1528);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #395196, #0f1528);
+  /* IE10 */
+  background-image: linear-gradient(top, #395196, #0f1528);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#395196', EndColorStr='#0f1528');
+  /* IE6–IE9 */
+  -moz-box-shadow: 1px 1px 2px black;
+  -webkit-box-shadow: 1px 1px 2px black;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='black')";
+  /* For IE 8 */
+  box-shadow: 1px 1px 2px black;
+  /* IE 7 down, don't show a drop shadow for performance */
+  line-height: 19px;
+  text-decoration: none;
+  font-size: 12px;
+  float: right;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 0px;
+}
+.sportHeader .selectLeagues A {
+  display: block;
+  line-height: 19px;
+  color: White;
+  font-weight: bold;
+}
+.sportHeader .selectLeagues A:hover {
+  color: #B3B3BF;
+}
+.sportHeader #filterSubmitButton {
+  display: none;
+}
+.sportHeader #oddsFormatSubmitButton {
+  display: none;
+}
+.sportHeader #oddsFormat {
+  margin-right: 5px;
+  float: right;
+}
+.sportHeader #DisplayOptions {
+  float: right;
+  display: inline;
+}
+.sportHeader #SelectFilter {
+  float: right;
+  display: inline;
+}
+.sportHeader #period {
+  margin-right: 5px;
+}
+.sportHeader #time {
+  margin-right: 5px;
+}
+.sportHeader #lineViewType {
+  margin-right: 5px;
+}
+
+#lines_area .errorMessageSlim {
+  border: 2px solid #000032;
+  margin: 0 0 8px 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/* MARKET HEADER */
+.MarketContainer td, .MarketContainer th {
+  padding: 0px;
+}
+
+.MarketContainer table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  /*
+  left: 1px; margin: 0 1px 0 0;  padding: 0 1px 0 0; 
+  */
+}
+
+.market_header {
+  position: relative;
+  background: url(../../Images/template/repeatx_bg.png) repeat-x left -246px;
+  height: 20px;
+  color: #000032;
+  border: 1px solid #FFF;
+}
+
+H4.MarketName {
+  position: absolute;
+  left: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.market_header .puls {
+  position: absolute;
+  right: 5px;
+}
+
+.market_header .puls .rfsh {
+  color: white;
+  display: block;
+  border: 1px solid #a3a3a3;
+  padding: 0 5px 0 5px;
+  margin: 2px 5px 2px 5px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  /* fallback/image non-cover color */
+  background-color: #d6d6d6;
+  background-image: -moz-linear-gradient(#fcfcfc 0%, #b0b0b0 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fcfcfc), to(#b0b0b0));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(#fcfcfc, #b0b0b0);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(#fcfcfc, #b0b0b0);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #fcfcfc, #b0b0b0);
+  /* IE10 */
+  background-image: linear-gradient(top, #fcfcfc, #b0b0b0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fcfcfc', EndColorStr='#b0b0b0');
+  /* IE6–IE9 */
+  -moz-box-shadow: 1px 1px 2px black;
+  -webkit-box-shadow: 1px 1px 2px black;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='black')";
+  /* For IE 8 */
+  box-shadow: 1px 1px 2px black;
+  /* IE 7 down, don't show a drop shadow for performance */
+  line-height: 13px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #0d0e73;
+  float: right;
+  text-align: center;
+  cursor: pointer;
+}
+.market_header .puls .rfsh SPAN {
+  display: block;
+  line-height: 13px;
+}
+
+.noEvents {
+  background-color: #EAEAEA;
+  text-align: center;
+  height: 35px;
+}
+
+.noEvents td {
+  padding: 5px 0 5px 0;
+}
+
+/* VIEW HEADER */
+.header .left_cell, .header .cell, .header .right_cell, .header .top_cell, .header .light_cell, .header .flex_cell, .header .double_cell {
+  width: 55px;
+  height: 22px;
+  vertical-align: middle;
+  background-color: #000032;
+  color: #FFFFFF;
+  font-weight: normal;
+  line-height: 12px;
+}
+.header .cell, .header .flex_cell, .header .double_cell {
+  border-left: 1px solid #93ADF7;
+}
+.header .light_cell {
+  background-color: #5169A3;
+  border-left: 1px solid #93ADF7;
+}
+.header .top_cell {
+  border-bottom: 1px solid #93ADF7;
+  border-left: 1px solid #93ADF7;
+}
+.header .right_cell {
+  width: 30px;
+  vertical-align: middle;
+  text-align: center;
+  border-left: 1px solid #93ADF7;
+}
+.header .left_cell {
+  border-left: 0;
+}
+
+.header.Simple .cell {
+  height: 28px;
+  width: 55px;
+  overflow: hidden;
+}
+.header.Simple .left_cell {
+  width: 66px;
+}
+.header.Simple .right_cell {
+  width: 32px;
+}
+.header.Simple .flex_cell {
+  width: 285px;
+}
+.header.Simple .light_cell {
+  width: 55px;
+  overflow: hidden;
+}
+
+.header.Moneyline .top_cell {
+  height: 28px;
+  width: 165px;
+}
+.header.Moneyline .cell {
+  height: 28px;
+  width: 55px;
+  overflow: hidden;
+}
+.header.Moneyline .left_cell {
+  width: 55px;
+}
+.header.Moneyline .right_cell {
+  width: 32px;
+}
+.header.Moneyline .flex_cell {
+  width: 283px;
+}
+
+.header.Single .cell {
+  width: 41px;
+  overflow: hidden;
+  padding: 0px 2px;
+}
+.header.Single .light_cell {
+  width: 41px;
+  overflow: hidden;
+  padding: 0px 2px;
+}
+.header.Single .left_cell {
+  width: 55px;
+}
+.header.Single .right_cell {
+  width: 32px;
+}
+.header.Single .flex_cell {
+  width: 121px;
+  height: 46px;
+}
+.header.Single .top_cell {
+  width: 250px;
+}
+
+.header.Double .cell, .header.Double .left_cell, .header.Double .right_cell, .header.Double .top_cell, .header.Taiwan .cell, .header.Taiwan .left_cell, .header.Taiwan .right_cell, .header.Taiwan .top_cell {
+  text-align: center;
+}
+.header.Double .cell, .header.Taiwan .cell {
+  width: 45px;
+}
+.header.Double .left_cell, .header.Taiwan .left_cell {
+  width: 55px;
+}
+.header.Double .right_cell, .header.Taiwan .right_cell {
+  width: 30px;
+}
+.header.Double .flex_cell, .header.Taiwan .flex_cell {
+  width: 157px;
+}
+.header.Double .double_cell, .header.Taiwan .double_cell {
+  width: 95px;
+}
+.header.Double .top_cell, .header.Taiwan .top_cell {
+  width: 235px;
+}
+
+.header.Taiwan .cell.Label5 {
+  width: 65px;
+}
+.header.Taiwan .cell.Label6 {
+  width: 40px;
+}
+.header.Taiwan .right_cell {
+  width: 20px;
+}
+
+/* LEAGUE HEADER */
+.dispName {
+  line-height: 18px;
+  cursor: pointer;
+  padding: 0 0 0 10px;
+}
+
+.dispName:hover {
+  color: #000000;
+}
+
+.Today .dispName:hover, .Early .dispName:hover {
+  color: #8a8a91;
+}
+
+.LeagueName {
+  display: none;
+}
+
+.LeagueContainer .order {
+  display: none;
+}
+
+.buySellLevels {
+  font-size: 9px;
+}
+
+.league_header {
+  position: relative;
+  border-bottom: 1px solid #FFFFFF;
+  height: 20px;
+  text-align: left;
+  border-left: 0px solid #FFFFFF;
+}
+.league_header .puls {
+  position: relative;
+  right: 5px;
+  top: 1px;
+  float: right;
+}
+.league_header .puls .Refresh {
+  height: 13px;
+  width: 13px;
+  margin: 0 4px 0 2px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+.league_header .puls .buySellLevels {
+  margin-right: 9px;
+}
+
+.Early .evRow td, .Today .evRow td {
+  border-left: 1px solid #93ADF7;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 1px 0 1px 0;
+}
+.Early .evRow td:first-child, .Today .evRow td:first-child {
+  border-left: 0;
+}
+.Early .league_header, .Today .league_header {
+  /*background: url(../../Images/template/repeatx_bg.png) repeat-x 0 -286px; */
+  color: #FFFFFF;
+  background-color: #5169A3;
+}
+.Early .league_header .Refresh, .Today .league_header .Refresh {
+  background-position: 0 -964px;
+}
+
+.Live .evRow td {
+  border-left: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  padding-bottom: 1px 0 1px 0;
+}
+.Live .league_header {
+  width: 711px;
+  /*background: url(../../Images/template/repeatx_bg.png) repeat-x 0 -266px;*/
+  color: #FFF;
+  background-color: #FF7500;
+}
+.Live .league_header .Refresh {
+  background-position: 0 -1909px;
+}
+
+.Simple .Live .pos0 > div, .Simple .Live .pos1 > div, .Simple .Early .pos0 > div, .Simple .Early .pos1 > div, .Simple .Today .pos0 > div, .Simple .Today .pos1 > div {
+  margin: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  height: 35%;
+}
+.Simple .Live .highlight, .Simple .Early .highlight, .Simple .Today .highlight {
+  background-color: #ffe684;
+}
+.Simple .Early .pos0.nochange > div, .Simple .Early .pos1.nochange > div, .Simple .Today .pos0.nochange > div, .Simple .Today .pos1.nochange > div {
+  height: 11px;
+}
+.Simple .Early .alt a, .Simple .Today .alt a {
+  font-weight: bold;
+  color: black;
+  display: block;
+  border: 1px solid #8eb2ed;
+  padding: 0 0 0 0;
+  margin: 2px 3px 2px 3px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  /* fallback/image non-cover color */
+  background-color: #e6eefb;
+  background-image: -moz-linear-gradient(white 0%, #a4c1f0 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#a4c1f0));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(white, #a4c1f0);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(white, #a4c1f0);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, white, #a4c1f0);
+  /* IE10 */
+  background-image: linear-gradient(top, #ffffff, #a4c1f0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='white', EndColorStr='#a4c1f0');
+  /* IE6–IE9 */
+}
+.Simple .Early .LeagueContainer tr, .Simple .Today .LeagueContainer tr {
+  background-color: #e6eefb;
+}
+.Simple .Early .LeagueContainer tr:nth-child(even), .Simple .Today .LeagueContainer tr:nth-child(even) {
+  background-color: #c1d2ee;
+}
+.Simple .Live .pos0.nochange > div, .Simple .Live .pos1.nochange > div {
+  height: 11px;
+}
+.Simple .Live .alt a {
+  font-weight: bold;
+  color: black;
+  display: block;
+  border: 1px solid #ff9e5d;
+  padding: 0 0 0 0;
+  margin: 2px 3px 2px 3px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  /* fallback/image non-cover color */
+  background-color: #ffdbc3;
+  background-image: -moz-linear-gradient(white 0%, #ffad76 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#ffad76));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(white, #ffad76);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(white, #ffad76);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, white, #ffad76);
+  /* IE10 */
+  background-image: linear-gradient(top, #ffffff, #ffad76);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='white', EndColorStr='#ffad76');
+  /* IE6–IE9 */
+}
+.Simple .Live .LeagueContainer tr {
+  background-color: #ffdbc3;
+}
+.Simple .Live .LeagueContainer tr:nth-child(even) {
+  background-color: #fdccae;
+}
+
+.lineView .baseball .teamId, .lineView .regular .teamId {
+  position: relative;
+  padding: 0 0 0 5px;
+}
+.lineView .soccer .teamId .extra1 {
+  background-image: url(../../Images/template/red_card1.gif);
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  text-align: center;
+  color: Black;
+  font-weight: bold;
+  font-size: 9px;
+  color: white;
+  padding-top: 2px;
+  height: 7px;
+}
+.lineView .soccer .teamId .extra2 {
+  background-image: url(../../Images/template/red_card2.gif);
+  position: relative;
+  display: inline-block;
+  width: 9px;
+  text-align: center;
+  color: Black;
+  font-weight: bold;
+  font-size: 9px;
+  color: white;
+  padding-top: 2px;
+  height: 9px;
+}
+.lineView .alt {
+  width: 32px;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 1px;
+}
+.lineView .alt a {
+  font-weight: normal;
+  text-decoration: none;
+  display: inline;
+  position: relative;
+  height: 13px;
+  line-height: 13px;
+  left: 1px;
+  font-size: 10px;
+}
+
+.Home, .Away {
+  color: #0000FF;
+}
+
+.Home.fav, .Away.fav {
+  color: #ff6300;
+}
+
+TABLE.Simple, TABLE.Moneyline {
+  width: 711px;
+  position: relative;
+  table-layout: fixed;
+}
+
+.lineView.Simple .left_cell, .lineView.Moneyline .left_cell {
+  width: 55px;
+}
+.lineView.Simple .sTime, .lineView.Moneyline .sTime {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  display: block;
+}
+.lineView.Simple .teamId, .lineView.Moneyline .teamId {
+  width: 275px;
+  color: #000000;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+}
+.lineView.Simple .pos0, .lineView.Simple .pos1, .lineView.Moneyline .pos0, .lineView.Moneyline .pos1 {
+  width: 55px;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  vertical-align: middle;
+  padding: 0;
+}
+.lineView.Simple .pos0.Handicap, .lineView.Simple .pos1.Handicap, .lineView.Moneyline .pos0.Handicap, .lineView.Moneyline .pos1.Handicap {
+  width: 55px;
+  text-align: center;
+  height: 30px;
+  background-color: #EBEBEB;
+  vertical-align: middle;
+  color: #716969;
+  padding: 0;
+}
+.lineView.Simple .pos0 a, .lineView.Simple .pos1 a, .lineView.Moneyline .pos0 a, .lineView.Moneyline .pos1 a {
+  color: #000000;
+  font-size: 11px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.lineView.Simple .pos0 a:hover, .lineView.Simple .pos1 a:hover, .lineView.Moneyline .pos0 a:hover, .lineView.Moneyline .pos1 a:hover {
+  color: #8a8a91;
+}
+.lineView.Simple .pos0 a.neg, .lineView.Simple .pos1 a.neg, .lineView.Moneyline .pos0 a.neg, .lineView.Moneyline .pos1 a.neg {
+  color: #CC0000;
+}
+.lineView.Simple .pos0 a.neg:hover, .lineView.Simple .pos1 a.neg:hover, .lineView.Moneyline .pos0 a.neg:hover, .lineView.Moneyline .pos1 a.neg:hover {
+  color: #8a8a91;
+}
+
+table.Single {
+  width: 711px;
+  position: relative;
+  table-layout: fixed;
+}
+
+.lineView.Single .left_cell {
+  width: 55px;
+}
+.lineView.Single .sTime {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+}
+.lineView.Single .teamId {
+  width: 130px;
+  color: #000000;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: left;
+  padding: 0 0 3px 5px;
+}
+.lineView.Single .teamId .Away {
+  padding: 3px 0 0 0;
+  display: inline-block;
+}
+.lineView.Single .pos0, .lineView.Single .pos1, .lineView.Single .pos2, .lineView.Single .pos3 {
+  width: 41px;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  vertical-align: middle;
+  padding: 0;
+}
+.lineView.Single .pos0.Handicap, .lineView.Single .pos1.Handicap, .lineView.Single .pos2.Handicap, .lineView.Single .pos3.Handicap {
+  text-align: center;
+  height: 30px;
+  background-color: #EBEBEB;
+  vertical-align: middle;
+  color: #716969;
+  padding: 0;
+}
+.lineView.Single .pos0 a, .lineView.Single .pos1 a, .lineView.Single .pos2 a, .lineView.Single .pos3 a {
+  color: #000000;
+  font-size: 11px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.lineView.Single .pos0 a:hover, .lineView.Single .pos1 a:hover, .lineView.Single .pos2 a:hover, .lineView.Single .pos3 a:hover {
+  color: #8a8a91;
+}
+.lineView.Single .pos0 a.neg, .lineView.Single .pos1 a.neg, .lineView.Single .pos2 a.neg, .lineView.Single .pos3 a.neg {
+  color: #CC0000;
+}
+.lineView.Single .pos0 a.neg:hover, .lineView.Single .pos1 a.neg:hover, .lineView.Single .pos2 a.neg:hover, .lineView.Single .pos3 a.neg:hover {
+  color: #8a8a91;
+}
+.lineView.Single .alt {
+  width: 35px;
+}
+
+.lineView.Moneyline .pos0.Handicap, .lineView.Moneyline .pos1.Handicap {
+  background-color: inherit;
+}
+.lineView.Moneyline .pos0.highlight.Handicap, .lineView.Moneyline .pos1.highlight.Handicap {
+  background-color: #ffe684;
+}
+
+TABLE.Double, TABLE.Taiwan {
+  width: 711px;
+  table-layout: fixed;
+}
+
+.lineView.Double .col1, .lineView.Taiwan .col1 {
+  width: 55px;
+}
+.lineView.Double .col2, .lineView.Taiwan .col2 {
+  width: 154px;
+}
+.lineView.Double .col3, .lineView.Double .col6, .lineView.Taiwan .col3, .lineView.Taiwan .col6 {
+  width: 49px;
+}
+.lineView.Double .col4, .lineView.Double .col7, .lineView.Taiwan .col4, .lineView.Taiwan .col7 {
+  width: 93px;
+}
+.lineView.Double .col5, .lineView.Double .col8, .lineView.Taiwan .col5, .lineView.Taiwan .col8 {
+  width: 93px;
+}
+.lineView.Double .col9, .lineView.Taiwan .col9 {
+  width: 32px;
+}
+.lineView.Double .time, .lineView.Taiwan .time {
+  width: 55px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  border-left: 0px !important;
+}
+.lineView.Double .highlight, .lineView.Taiwan .highlight {
+  background-color: #ffe684;
+}
+.lineView.Double .Home, .lineView.Double .Away, .lineView.Double .Over, .lineView.Double .Under, .lineView.Double .Handicap, .lineView.Taiwan .Home, .lineView.Taiwan .Away, .lineView.Taiwan .Over, .lineView.Taiwan .Under, .lineView.Taiwan .Handicap {
+  padding-top: 2px;
+  padding-bottom: 3px;
+}
+.lineView.Double .Draw, .lineView.Taiwan .Draw {
+  padding-bottom: 3px;
+}
+.lineView.Double .teamId, .lineView.Taiwan .teamId {
+  width: 154px;
+  color: #000000;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: left;
+}
+.lineView.Double .teamId .Draw, .lineView.Taiwan .teamId .Draw {
+  color: #000000;
+}
+.lineView.Double .moneyline, .lineView.Double .spread, .lineView.Double .total, .lineView.Double .twspread, .lineView.Double .twtotal, .lineView.Taiwan .moneyline, .lineView.Taiwan .spread, .lineView.Taiwan .total, .lineView.Taiwan .twspread, .lineView.Taiwan .twtotal {
+  text-align: right;
+  color: #000000;
+  font-weight: bold;
+  vertical-align: top;
+  padding: 0;
+}
+.lineView.Double .moneyline .better.highlight, .lineView.Double .spread .better.highlight, .lineView.Double .total .better.highlight, .lineView.Double .twspread .better.highlight, .lineView.Double .twtotal .better.highlight, .lineView.Taiwan .moneyline .better.highlight, .lineView.Taiwan .spread .better.highlight, .lineView.Taiwan .total .better.highlight, .lineView.Taiwan .twspread .better.highlight, .lineView.Taiwan .twtotal .better.highlight {
+  background-color: #ffe684;
+  background-position: 0 0;
+}
+.lineView.Double .moneyline .worse.highlight, .lineView.Double .spread .worse.highlight, .lineView.Double .total .worse.highlight, .lineView.Double .twspread .worse.highlight, .lineView.Double .twtotal .worse.highlight, .lineView.Taiwan .moneyline .worse.highlight, .lineView.Taiwan .spread .worse.highlight, .lineView.Taiwan .total .worse.highlight, .lineView.Taiwan .twspread .worse.highlight, .lineView.Taiwan .twtotal .worse.highlight {
+  background-color: #ffe684;
+  background-position: 0 -77px;
+}
+.lineView.Double .moneyline a, .lineView.Double .spread a, .lineView.Double .total a, .lineView.Double .twspread a, .lineView.Double .twtotal a, .lineView.Taiwan .moneyline a, .lineView.Taiwan .spread a, .lineView.Taiwan .total a, .lineView.Taiwan .twspread a, .lineView.Taiwan .twtotal a {
+  color: #000000;
+  font-size: 11px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.lineView.Double .moneyline a:hover, .lineView.Double .spread a:hover, .lineView.Double .total a:hover, .lineView.Double .twspread a:hover, .lineView.Double .twtotal a:hover, .lineView.Taiwan .moneyline a:hover, .lineView.Taiwan .spread a:hover, .lineView.Taiwan .total a:hover, .lineView.Taiwan .twspread a:hover, .lineView.Taiwan .twtotal a:hover {
+  color: #8a8a91;
+}
+.lineView.Double .moneyline a.neg, .lineView.Double .spread a.neg, .lineView.Double .total a.neg, .lineView.Double .twspread a.neg, .lineView.Double .twtotal a.neg, .lineView.Taiwan .moneyline a.neg, .lineView.Taiwan .spread a.neg, .lineView.Taiwan .total a.neg, .lineView.Taiwan .twspread a.neg, .lineView.Taiwan .twtotal a.neg {
+  color: #CC0000;
+}
+.lineView.Double .moneyline a.neg:hover, .lineView.Double .spread a.neg:hover, .lineView.Double .total a.neg:hover, .lineView.Double .twspread a.neg:hover, .lineView.Double .twtotal a.neg:hover, .lineView.Taiwan .moneyline a.neg:hover, .lineView.Taiwan .spread a.neg:hover, .lineView.Taiwan .total a.neg:hover, .lineView.Taiwan .twspread a.neg:hover, .lineView.Taiwan .twtotal a.neg:hover {
+  color: #8a8a91;
+}
+.lineView.Double .spread .better.highlight, .lineView.Double .total .better.highlight, .lineView.Double .twspread .better.highlight, .lineView.Double .twtotal .better.highlight, .lineView.Taiwan .spread .better.highlight, .lineView.Taiwan .total .better.highlight, .lineView.Taiwan .twspread .better.highlight, .lineView.Taiwan .twtotal .better.highlight {
+  background-position: 38px 0px;
+}
+.lineView.Double .spread .worse.highlight, .lineView.Double .total .worse.highlight, .lineView.Double .twspread .worse.highlight, .lineView.Double .twtotal .worse.highlight, .lineView.Taiwan .spread .worse.highlight, .lineView.Taiwan .total .worse.highlight, .lineView.Taiwan .twspread .worse.highlight, .lineView.Taiwan .twtotal .worse.highlight {
+  background-position: 38px -77px;
+}
+.lineView.Double .spread .Handicap, .lineView.Double .spread .ou, .lineView.Double .total .Handicap, .lineView.Double .total .ou, .lineView.Double .twspread .Handicap, .lineView.Double .twspread .ou, .lineView.Double .twtotal .Handicap, .lineView.Double .twtotal .ou, .lineView.Taiwan .spread .Handicap, .lineView.Taiwan .spread .ou, .lineView.Taiwan .total .Handicap, .lineView.Taiwan .total .ou, .lineView.Taiwan .twspread .Handicap, .lineView.Taiwan .twspread .ou, .lineView.Taiwan .twtotal .Handicap, .lineView.Taiwan .twtotal .ou {
+  color: #716969;
+}
+.lineView.Double .spread .cont .Handicap, .lineView.Double .spread .cont .left, .lineView.Double .total .cont .Handicap, .lineView.Double .total .cont .left, .lineView.Double .twspread .cont .Handicap, .lineView.Double .twspread .cont .left, .lineView.Double .twtotal .cont .Handicap, .lineView.Double .twtotal .cont .left, .lineView.Taiwan .spread .cont .Handicap, .lineView.Taiwan .spread .cont .left, .lineView.Taiwan .total .cont .Handicap, .lineView.Taiwan .total .cont .left, .lineView.Taiwan .twspread .cont .Handicap, .lineView.Taiwan .twspread .cont .left, .lineView.Taiwan .twtotal .cont .Handicap, .lineView.Taiwan .twtotal .cont .left {
+  float: left;
+  width: 35px;
+  min-height: 11px;
+  text-align: center;
+}
+.lineView.Double .spread .cont .Home, .lineView.Double .spread .cont .Away, .lineView.Double .spread .cont .Over, .lineView.Double .spread .cont .Under, .lineView.Double .total .cont .Home, .lineView.Double .total .cont .Away, .lineView.Double .total .cont .Over, .lineView.Double .total .cont .Under, .lineView.Double .twspread .cont .Home, .lineView.Double .twspread .cont .Away, .lineView.Double .twspread .cont .Over, .lineView.Double .twspread .cont .Under, .lineView.Double .twtotal .cont .Home, .lineView.Double .twtotal .cont .Away, .lineView.Double .twtotal .cont .Over, .lineView.Double .twtotal .cont .Under, .lineView.Taiwan .spread .cont .Home, .lineView.Taiwan .spread .cont .Away, .lineView.Taiwan .spread .cont .Over, .lineView.Taiwan .spread .cont .Under, .lineView.Taiwan .total .cont .Home, .lineView.Taiwan .total .cont .Away, .lineView.Taiwan .total .cont .Over, .lineView.Taiwan .total .cont .Under, .lineView.Taiwan .twspread .cont .Home, .lineView.Taiwan .twspread .cont .Away, .lineView.Taiwan .twspread .cont .Over, .lineView.Taiwan .twspread .cont .Under, .lineView.Taiwan .twtotal .cont .Home, .lineView.Taiwan .twtotal .cont .Away, .lineView.Taiwan .twtotal .cont .Over, .lineView.Taiwan .twtotal .cont .Under {
+  float: right;
+  text-align: right;
+  width: 37px;
+  padding-right: 10px;
+}
+.lineView.Double .moneyline .Home, .lineView.Double .moneyline .Away, .lineView.Double .moneyline .Draw, .lineView.Taiwan .moneyline .Home, .lineView.Taiwan .moneyline .Away, .lineView.Taiwan .moneyline .Draw {
+  text-align: right;
+  padding-right: 10px;
+}
+.lineView.Double .alt, .lineView.Taiwan .alt {
+  width: 32px;
+}
+
+.lineView.Double .teamId {
+  width: 157px;
+  padding-left: 5px;
+}
+.lineView.Double .teamId .Home, .lineView.Double .teamId .Away {
+  max-width: 160px;
+}
+.lineView.Double .spread {
+  width: 93px;
+}
+.lineView.Double .total {
+  width: 93px;
+}
+.lineView.Double .total .cont .ou {
+  float: left;
+  width: 10px;
+  text-align: right;
+}
+.lineView.Double .moneyline {
+  width: 49px;
+}
+.lineView.Double .moneyline .better.highlight {
+  background-position: 38px 0px;
+}
+.lineView.Double .moneyline .worse.highlight {
+  background-position: 38px -77px;
+}
+
+.lineView.Taiwan .col1 {
+  width: 63px;
+}
+.lineView.Taiwan .col2 {
+  width: 235px;
+}
+.lineView.Taiwan .col3 {
+  width: 107px;
+}
+.lineView.Taiwan .col4 {
+  width: 107px;
+}
+.lineView.Taiwan .col5 {
+  width: 87px;
+}
+.lineView.Taiwan .col6 {
+  width: 73px;
+}
+.lineView.Taiwan .col7 {
+  width: 39px;
+}
+.lineView.Taiwan .col8 {
+  display: none;
+}
+.lineView.Taiwan .col9 {
+  display: none;
+}
+.lineView.Taiwan .teamId {
+  width: 235px;
+}
+.lineView.Taiwan .teamId .Home, .lineView.Taiwan .teamId .Away {
+  max-width: 245px;
+}
+.lineView.Taiwan .twspread, .lineView.Taiwan .twtotal {
+  width: 107px;
+}
+.lineView.Taiwan .twspread .cont .ou, .lineView.Taiwan .twtotal .cont .ou {
+  float: left;
+  width: 10px;
+  text-align: right;
+  padding-left: 7px;
+}
+.lineView.Taiwan .twspread .cont .Handicap, .lineView.Taiwan .twspread .cont .left, .lineView.Taiwan .twtotal .cont .Handicap, .lineView.Taiwan .twtotal .cont .left {
+  width: 37px;
+  text-align: left;
+  padding-left: 3px;
+  white-space: nowrap;
+}
+.lineView.Taiwan .twspread .cont .Home, .lineView.Taiwan .twspread .cont .Away, .lineView.Taiwan .twspread .cont .Over, .lineView.Taiwan .twspread .cont .Under, .lineView.Taiwan .twtotal .cont .Home, .lineView.Taiwan .twtotal .cont .Away, .lineView.Taiwan .twtotal .cont .Over, .lineView.Taiwan .twtotal .cont .Under {
+  width: 39px;
+}
+.lineView.Taiwan .spread {
+  width: 87px;
+}
+.lineView.Taiwan .moneyline {
+  width: 73px;
+}
+.lineView.Taiwan .moneyline .better.highlight {
+  background-position: 55px 0px;
+}
+.lineView.Taiwan .moneyline .worse.highlight {
+  background-position: 55px -77px;
+}
+.lineView.Taiwan .alt {
+  width: 39px;
+}
+
+.forceWordBreak, .lineView.Single .teamId {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  word-break: break-word;
+}
+
+.truncateText, .lineView.Double .teamId .Home, .lineView.Double .teamId .Away, .lineView.Taiwan .teamId .Home, .lineView.Taiwan .teamId .Away {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* alternate lines */
+#AlternateLines {
+  width: auto;
+  min-width: 550px;
+  background-color: #000032;
+  padding: 4px;
+  margin: 0 0 10px 0;
+  z-index: 100;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#AlternateLines a:hover {
+  color: #8a8a91;
+}
+#AlternateLines table {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 0 10px 10px 0;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: 1px solid #cacaca;
+  padding: 0;
+}
+#AlternateLines th {
+  padding: 0;
+  width: 90px;
+  color: #FFFFFF;
+  height: 20px;
+  border-left: 1px solid #cacaca;
+  border-top: 1px solid #cacaca;
+}
+#AlternateLines td {
+  padding: 0;
+  width: 90px;
+  background-color: #FFFFFF;
+  height: 20px;
+  text-align: center;
+  color: #838B91;
+  font-weight: bold;
+  border-left: 1px solid #cacaca;
+  border-top: 1px solid #cacaca;
+}
+#AlternateLines td.price {
+  background-color: #D1DCEE;
+  border: 1px solid #cacaca;
+}
+#AlternateLines td span {
+  color: Blue;
+}
+#AlternateLines td a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+#AlternateLines td a.neg {
+  color: #C00;
+}
+#AlternateLines tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+}
+#AlternateLines tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+}
+#AlternateLines .teamHeading {
+  padding: 7px 0 0 4px;
+  text-align: left;
+  color: White;
+  font-weight: bold;
+  background: url(../../Images/template/repeatx_bg.png) repeat-x 0 -218px;
+  height: 20px;
+}
+#AlternateLines .header {
+  position: relative;
+}
+#AlternateLines .header .close {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 19px;
+  height: 18px;
+  text-align: center;
+  cursor: pointer;
+  background-position: 0 -532px;
+}
+#AlternateLines .header .close a {
+  color: White;
+  font-size: 150%;
+}
+#AlternateLines .content {
+  background-color: #FFFFDE;
+  height: 100%;
+  padding: 3px;
+  min-width: 550px;
+}
+#AlternateLines .noresults {
+  background-color: #FFFFDE;
+  height: 100%;
+  padding: 10px 3px 10px 3px;
+  min-width: 550px;
+  text-align: center;
+}
+#AlternateLines .periodLabel {
+  background-color: #0F0F89;
+  height: 22px;
+  background-image: url(../../Images/template/repeatx_bg.png);
+  background-repeat: repeat-x;
+  background-position: 0 -403px;
+}
+#AlternateLines tr.periodLabel th {
+  color: #000033;
+  height: 22px;
+  text-align: left;
+  padding: 0 0 0 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+}
+#AlternateLines .columnLabel {
+  background-color: #1C1E4E;
+}
+#AlternateLines .teamLabel {
+  background-color: #5169A3;
+}
+#AlternateLines .moneyline:nth-child(odd) {
+  position: relative;
+  float: left;
+  z-index: 200;
+}
+#AlternateLines .moneyline:nth-child(even) {
+  position: relative;
+  z-index: 100;
+}
+#AlternateLines .clear {
+  clear: both;
+}
+
+/*Full Bet List*/
+.partialbox {
+  background-color: #000032;
+  padding: 2px;
+  margin: 0 0 8px 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.partialbox table {
+  width: 100%;
+  margin: 0 0 0 0;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  border: 1px solid #cacaca;
+  padding: 0;
+}
+.partialbox th {
+  background-color: #0F0F89;
+  background-image: url(../../Images/template/repeatx_bg.png);
+  background-repeat: repeat-x;
+  background-position: 0 -403px;
+  white-space: nowrap;
+  height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.partialbox tr {
+  background-color: #e6eefb;
+  height: 20px;
+}
+.partialbox tr.alternateRow {
+  background-color: #c1d2ee;
+}
+.partialbox td {
+  text-align: center;
+  border-left: 1px solid #93ADF7;
+  border-top: 1px solid #93ADF7;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.partialbox td div {
+  margin-bottom: 4px;
+}
+.partialbox td:first-child {
+  border-left: 0;
+}
+.partialbox A {
+  color: #000032;
+}
+.partialbox .highlighted {
+  color: Red;
+}
+.partialbox .line {
+  font-size: 13px;
+  white-space: nowrap;
+}
+.partialbox .content {
+  background-color: White;
+}
+.partialbox .noresults {
+  height: 25px;
+  text-align: center;
+  padding-top: 10px;
+}
+.partialbox .header .title {
+  padding: 7px 0 0 10px;
+  font-size: 13px;
+  text-align: left;
+  color: White;
+  font-weight: bold;
+  background: url(../../Images/template/repeatx_bg.png) repeat-x 0 -218px;
+  height: 20px;
+}
+.partialbox .header .actions {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+.partialbox .header .actions .refresh {
+  position: absolute;
+  right: 25px;
+  top: 4px;
+  width: 19px;
+  height: 18px;
+  text-align: center;
+  background-position: 0 -459px;
+  padding-right: 2px;
+}
+.partialbox .header .actions .refresh a {
+  color: White;
+  font-size: 150%;
+}
+.partialbox .header .actions .close {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 19px;
+  height: 18px;
+  text-align: center;
+  cursor: pointer;
+  background-position: 0 -532px;
+}
+.partialbox .header .actions .close a {
+  color: White;
+  font-size: 150%;
+}
+
+/* FullBetList jquery UI Date Picker custom classes */
+#ui-datepicker-div.ui-monthpicker {
+  padding: .2em;
+}
+#ui-datepicker-div.ui-monthpicker .ui-datepicker-month, #ui-datepicker-div.ui-monthpicker .ui-datepicker-year {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+#ui-datepicker-div.ui-monthpicker .ui-datepicker-calendar {
+  display: none;
+}
+#ui-datepicker-div.ui-monthpicker .ui-datepicker-header {
+  padding: .2em;
+}
+
+.partialOuterBorder {
+  border: 2px solid #000032;
+  border-radius: 5px;
+}
+
+#FullBetList {
+  min-height: 60px;
+}
+#FullBetList TABLE {
+  width: auto;
+}
+#FullBetList .container {
+  height: 30px;
+}
+#FullBetList .winAmount {
+  text-align: right;
+  font-weight: bold;
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#FullBetList .riskAmount {
+  text-align: right;
+  color: #656565;
+  font-size: 11px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#FullBetList .odd {
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 11px;
+  white-space: nowrap;
+}
+#FullBetList .stake {
+  vertical-align: right;
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#FullBetList .commission {
+  vertical-align: middle;
+  font-size: 11px;
+  font-weight: bold;
+  color: #FD8C14;
+  text-align: right;
+  white-space: nowrap;
+}
+#FullBetList .status {
+  vertical-align: middle;
+  font-size: 13px;
+  white-space: nowrap;
+}
+#FullBetList .selection {
+  vertical-align: top;
+  text-align: left;
+  font-size: 13px;
+  width: 75%;
+}
+#FullBetList .kickOffDateTime {
+  color: #ef8c08;
+}
+#FullBetList .info {
+  font-size: 13px;
+}
+#FullBetList .total {
+  background-color: #FFFFDE;
+  vertical-align: top;
+  font-size: 13px;
+  white-space: nowrap;
+  text-align: right;
+  border-width: 1px 0 0 0;
+  font-weight: bold;
+}
+#FullBetList .buttonsContainer {
+  height: 25px;
+  padding-top: 3px;
+  text-align: center;
+}
+#FullBetList .buttonsContainer a {
+  background-color: #000032;
+  padding: 2px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  width: 150px;
+  display: inline-block;
+  float: none;
+  color: white;
+  display: block;
+  border: 1px solid #405ba9;
+  padding: 0 5px 0 5px;
+  margin: 2px 5px 2px 5px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  /* fallback/image non-cover color */
+  background-color: #24335f;
+  background-image: -moz-linear-gradient(#395196 0%, #0f1528 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#395196), to(#0f1528));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(#395196, #0f1528);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(#395196, #0f1528);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #395196, #0f1528);
+  /* IE10 */
+  background-image: linear-gradient(top, #395196, #0f1528);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#395196', EndColorStr='#0f1528');
+  /* IE6–IE9 */
+  -moz-box-shadow: 1px 1px 2px black;
+  -webkit-box-shadow: 1px 1px 2px black;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='black')";
+  /* For IE 8 */
+  box-shadow: 1px 1px 2px black;
+  /* IE 7 down, don't show a drop shadow for performance */
+  text-decoration: none;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  color: White;
+  font-weight: bold;
+  line-height: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#FullBetList .buttonsContainer a:hover {
+  color: #B3B3BF;
+}
+#FullBetList th {
+  padding: 0;
+}
+
+#Statement {
+  z-index: 200;
+}
+#Statement .partialbox TABLE {
+  width: auto;
+}
+#Statement .partialbox TR.linkRow:hover {
+  background-color: #ffe684;
+}
+#Statement .partialbox A:HOVER {
+  color: #B3B3BF;
+}
+#Statement .partialbox TD {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#Statement .partialbox .remark {
+  text-align: left;
+  width: 60%;
+}
+#Statement .partialbox .type {
+  font-weight: bold;
+  white-space: nowrap;
+}
+#Statement .partialbox .total {
+  text-align: right;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#Statement .partialbox .commission {
+  text-align: right;
+  color: #FD8C14;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#Statement .partialbox .runningTotal {
+  text-align: right;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#Statement .partialbox .openingBalance {
+  background-color: #FFFFDE;
+}
+#Statement .partialbox .date {
+  text-align: left;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+#Statement .header .title .filters, #FullBetList .header .title .filters {
+  position: relative;
+  font-weight: normal;
+  color: #FFFFFF;
+  text-align: left;
+}
+#Statement .header .title .filters .selected, #FullBetList .header .title .filters .selected {
+  text-decoration: none;
+  font-weight: bold;
+}
+#Statement .header .title .filters A, #FullBetList .header .title .filters A {
+  font-weight: normal;
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+#Statement .footer, #FullBetList .footer {
+  background-position: 0 -238px;
+  height: 16px;
+  padding-top: 2px;
+}
+#Statement .footer SPAN, #FullBetList .footer SPAN {
+  margin-left: 20px;
+}
+
+#Results {
+  z-index: 200;
+}
+#Results .partialbox TR.linkRow:hover {
+  background-color: #ffe684;
+}
+#Results .partialbox A:HOVER {
+  color: #B3B3BF;
+}
+#Results .partialbox TD {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#Results .partialbox .remark {
+  text-align: left;
+  width: 50%;
+}
+#Results .partialbox .type {
+  font-weight: bold;
+  white-space: nowrap;
+}
+#Results .partialbox .total {
+  text-align: right;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#Results .partialbox .commission {
+  text-align: right;
+  color: #FD8C14;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#Results .partialbox .runningTotal {
+  text-align: right;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#Results .partialbox .openingBalance {
+  background-color: #FFFFDE;
+}
+#Results .partialbox .date {
+  text-align: left;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#Results .partialbox .filterBox {
+  background-color: #FFFFFF;
+  padding: 5px;
+  min-height: 50px;
+  margin: 0 auto;
+}
+#Results .partialbox .filterBox .filterBoxDate {
+  float: left;
+  width: 64%;
+}
+#Results .partialbox .filterBox .ui-datepicker-trigger {
+  padding-top: 3px;
+}
+#Results .partialbox .filterBox .filterBoxSorting {
+  float: right;
+  width: 36%;
+  padding-top: 5px;
+}
+#Results .partialbox .filterBox .filterBoxSport {
+  float: left;
+  width: 30%;
+  padding: 10px 0 0px 0;
+  clear: left;
+}
+#Results .partialbox .filterBox .filterBoxLeague {
+  float: right;
+  width: 70%;
+  padding: 10px 0 0px 0;
+}
+#Results .partialbox .filterBox #resultsFilterDate {
+  padding-left: 1px;
+}
+#Results .partialbox .filterBox .titleText {
+  font-weight: bold;
+  padding-right: 15px;
+  width: 25px;
+  display: inline-block;
+}
+#Results .partialbox .filterBox .sportSelect {
+  width: 110px;
+}
+#Results .partialbox .filterBox .leagueSelect {
+  width: 391px;
+}
+#Results .partialbox .filterBox .sortingSelect {
+  width: 152px;
+}
+#Results .partialbox .filterBox .buttonToday {
+  margin-left: 25px;
+  background: #fff;
+  visibility: visible;
+  display: inline;
+}
+#Results .partialbox .filterBox .buttonYesterday {
+  margin-left: 10px;
+  background: #fff;
+  visibility: visible;
+  display: inline;
+}
+#Results .partialbox .filterBox #resultsFilterSubmitButton {
+  visibility: hidden;
+  display: none;
+}
+#Results .partialbox .resultsHeader {
+  height: 25px;
+  background-color: #000032;
+  border-left: 1px solid #93ADF7;
+  background-image: none !important;
+  color: #FFFFFF;
+}
+#Results .partialbox .first {
+  border-left: 0px !important;
+}
+#Results .partialbox .periodColumn {
+  width: 40px;
+}
+#Results .partialbox .timeColumn {
+  width: 100px;
+}
+#Results .partialbox .noresults {
+  background-color: #EAEAEA;
+  font-weight: bold;
+}
+#Results .partialbox .leagueName {
+  text-align: left !important;
+  font-weight: bold;
+  color: #000032 !important;
+  background-image: url("../../Images/template/repeatx_bg.png");
+  background-position: 0 -286px;
+  white-space: nowrap;
+  padding: 0 0 0 10px;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+#Results .partialbox .leagueRow {
+  height: 18px;
+}
+#Results .partialbox .TDNoPadding {
+  padding: 0 !important;
+}
+#Results .partialbox .TableNoBorder {
+  border: none !important;
+}
+#Results .partialbox .gameTeams {
+  padding: 0 0 0 5px;
+  text-align: left !important;
+  font-weight: bold;
+  color: #000032 !important;
+  height: 20px !important;
+  border-top: 1px solid #93ADF7;
+  line-height: 1.8em;
+  margin-bottom: 0 !important;
+}
+#Results .partialbox .firstRow {
+  border-top: none !important;
+}
+#Results .partialbox .FTteamPeriod {
+  color: #980000 !important;
+}
+#Results .partialbox .CancelledGame {
+  color: #980000 !important;
+  padding-top: 10px;
+  font-weight: bold;
+}
+#Results .partialbox .teamPeriods {
+  padding: 0 0 0 5px;
+  font-weight: bold;
+  color: #000032;
+  height: 20px !important;
+  border-top: 1px solid #93ADF7;
+  line-height: 1.8em;
+  margin-bottom: 0 !important;
+}
+#Results .footer {
+  background-position: 0 -238px;
+  height: 16px;
+  padding-top: 2px;
+}
+#Results .footer SPAN {
+  margin-left: 20px;
+}
+
+#Settings {
+  z-index: 200;
+}
+#Settings .partialbox .settingsBox {
+  background-color: #FFFFFF;
+  padding: 10px 10px 0 10px;
+}
+#Settings .partialbox .settingsBox .settingsGroup {
+  padding-bottom: 20px;
+}
+#Settings .partialbox .settingsBox .settingsLoginDetails {
+  /* fallback/image non-cover color */
+  background-color: #fefcfe;
+  background-image: -moz-linear-gradient(left, #fefcfe 0%, #e6e6e6 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#fefcfe), to(#e6e6e6));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(center right, #fefcfe, #e6e6e6);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(center right, #fefcfe, #e6e6e6);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(center right, #fefcfe, #e6e6e6);
+  /* IE10 */
+  background-image: linear-gradient(center right, #fefcfe, #e6e6e6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fefcfe', EndColorStr='#e6e6e6', GradientType=1);
+  /* IE6–IE9 */
+  margin-top: 7px;
+  width: 10%;
+  border-color: #ADADAD;
+  border-width: 0px;
+  border-style: solid;
+  border-collapse: collapse;
+}
+#Settings .partialbox .settingsBox .settingsLoginDetails TR {
+  height: 19px;
+  background-color: transparent;
+}
+#Settings .partialbox .settingsBox .settingsLoginDetails TD {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ADADAD;
+  white-space: nowrap;
+  padding: 4px;
+  text-align: left;
+}
+#Settings .partialbox .settingsBox .settingsLoginDetails TD.label {
+  border-right: 1px;
+  border-style: solid;
+  border-color: #ADADAD;
+}
+#Settings .partialbox .settingsBox .title {
+  font-weight: bold;
+}
+#Settings .partialbox .settingsBox .desc {
+  padding-top: 5px;
+}
+#Settings .partialbox .settingsBox .actions {
+  width: 100px;
+  margin: 0 auto;
+}
+#Settings .partialbox .settingsBox .settingsOption {
+  padding-top: 5px;
+}
+#Settings .partialbox .settingsBox .settingsOption select {
+  min-width: 150px;
+}
+#Settings .partialbox .settingsBox .settingsOption .row {
+  padding-top: 5px;
+}
+#Settings .partialbox .settingsBox .settingsOption .row input {
+  padding-right: 10px;
+  vertical-align: middle;
+  margin: 0px;
+  height: 25px;
+}
+#Settings .partialbox .settingsBox .settingsOption .default {
+  font-weight: bold;
+}
+#Settings .partialbox .settingsBox #settingsBoxSave {
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+#Settings .partialbox .settingsBox .noresults {
+  height: 25px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* tabs area */
+#tabsContent {
+  width: 221px;
+  background-color: #000032;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border: 0;
+}
+
+/* tabs */
+#tabs {
+  height: 56px;
+  padding: 3px 0 0 3px;
+  background-color: #000032;
+  width: 218px;
+  border: 0;
+  margin: 0;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  position: relative;
+}
+#tabs a:hover {
+  color: #D3D3DE;
+}
+#tabs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#tabs li {
+  color: white;
+  border: 1px solid #324784;
+  border-bottom: none;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  /* fallback/image non-cover color */
+  background-color: #24335f;
+  background-image: -moz-linear-gradient(#395196 0%, #0f1528 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#395196), to(#0f1528));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(#395196, #0f1528);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(#395196, #0f1528);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #395196, #0f1528);
+  /* IE10 */
+  background-image: linear-gradient(top, #395196, #0f1528);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#395196', EndColorStr='#0f1528');
+  /* IE6–IE9 */
+  display: inline-block;
+  margin: 0;
+  padding: 7px 0 0 0;
+  text-align: center;
+  width: 104px;
+  height: 20px;
+}
+#tabs li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+#tabs .selectedtab {
+  color: white;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  /* fallback/image non-cover color */
+  background-color: white;
+  background-image: -moz-linear-gradient(white 0%, #d9d9d9 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#d9d9d9));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(white, #d9d9d9);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(white, #d9d9d9);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, white, #d9d9d9);
+  /* IE10 */
+  background-image: linear-gradient(top, #ffffff, #d9d9d9);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='white', EndColorStr='#d9d9d9');
+  /* IE6–IE9 */
+}
+#tabs .selectedtab a {
+  padding: 0;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000032;
+}
+#tabs .selectedtab a:hover {
+  color: #000032;
+}
+#tabs .selectedtabgroup {
+  position: absolute;
+  top: 31px;
+}
+#tabs .tabgroup {
+  position: absolute;
+  top: 2px;
+}
+
+.tabsArea .bottom {
+  display: block;
+  width: 221px;
+  padding: 0;
+  margin: 0;
+  height: 4px;
+  background-color: #000032;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+}
+
+/* menu */
+#MenuContent {
+  background: url(../../Images/template/repeaty_bg.png) repeat-y 0 0;
+  background-repeat: repeat-y;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-top-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+}
+#MenuContent A:hover {
+  color: #B3B3BF;
+}
+#MenuContent UL {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#MenuContent LI A {
+  list-style: none;
+  text-decoration: none;
+  color: #000066;
+}
+#MenuContent .sportList LI {
+  position: relative;
+  margin: 0 0 0 10px;
+  padding: 5px 0 5px 2px;
+  border-bottom: 1px solid #DDDDDD;
+  border-top: 0;
+  display: block;
+  width: 200px;
+}
+#MenuContent .sportList .selectedSport {
+  display: inline-block;
+  padding: 5px 0 0 2px;
+}
+#MenuContent .filterList {
+  display: none;
+  position: relative;
+  display: inline-block;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+#MenuContent .filterList.hide {
+  display: none;
+}
+#MenuContent .filterList LI {
+  position: relative;
+  margin: 0 0 0 14px;
+  background-color: White;
+  display: block;
+  width: 185px;
+  border-bottom: 0;
+  border-top: 1px solid #DDDDDD;
+}
+#MenuContent .filterList .selectedFilter, #MenuContent .filterList .selectedFilter A {
+  font-weight: bold;
+  color: #0000EE;
+}
+
+/* CustomerBalance  #E6E6E6  ADADAD */
+#CustomerBalanceContent {
+  width: 219px;
+  padding: 1px;
+  margin: 0 0 5px 0;
+  min-height: 18px;
+  background-color: #ADADAD;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#CustomerBalanceContent .genericError {
+  background-color: #E6E6E6;
+}
+
+#CustomerBalance TABLE {
+  /* fallback/image non-cover color */
+  background-color: #fefcfe;
+  background-image: -moz-linear-gradient(left, #fefcfe 0%, #e6e6e6 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#fefcfe), to(#e6e6e6));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(center right, #fefcfe, #e6e6e6);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(center right, #fefcfe, #e6e6e6);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(center right, #fefcfe, #e6e6e6);
+  /* IE10 */
+  background-image: linear-gradient(center right, #fefcfe, #e6e6e6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fefcfe', EndColorStr='#e6e6e6', GradientType=1);
+  /* IE6–IE9 */
+  width: 100%;
+  border-color: #ADADAD;
+  border-width: 0px;
+  border-style: solid;
+  border-collapse: collapse;
+}
+#CustomerBalance TR {
+  height: 19px;
+}
+#CustomerBalance TD {
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #ADADAD;
+}
+#CustomerBalance TD.label {
+  border-right: 1px;
+  border-style: solid;
+  border-color: #ADADAD;
+}
+#CustomerBalance #AvailableBalance TD {
+  /* fallback/image non-cover color */
+  background-color: #cbcbcb;
+  background-image: -moz-linear-gradient(#cbcbcb 0%, #e7e7e7 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cbcbcb), to(#e7e7e7));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(#cbcbcb, #e7e7e7);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(#cbcbcb, #e7e7e7);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #cbcbcb, #e7e7e7);
+  /* IE10 */
+  background-image: linear-gradient(top, #cbcbcb, #e7e7e7);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cbcbcb', EndColorStr='#e7e7e7');
+  /* IE6–IE9 */
+  border-width: 0px 0px 0px 0px;
+}
+#CustomerBalance #AvailableBalance TD.options {
+  width: 40px;
+  padding-top: 2px;
+  text-align: right;
+}
+#CustomerBalance .expand {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  position: relative;
+  padding-right: 2px;
+  background-position: 0 -853px;
+}
+#CustomerBalance .expand.Over {
+  cursor: pointer;
+  text-decoration: none;
+  background-position: 0 -835px;
+}
+#CustomerBalance .refresh {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  position: relative;
+  padding-right: 2px;
+  background-position: 0 -871px;
+}
+#CustomerBalance .neg {
+  color: Red;
+}
+#CustomerBalance .mainBalance {
+  padding-top: 0;
+  padding-left: 5px;
+  font-weight: bold;
+}
+#CustomerBalance .mainBalanceInfo {
+  position: relative;
+  top: -2px;
+  left: -2px;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-position: 0 -907px;
+  cursor: default;
+}
+#CustomerBalance .mainBalanceExtra {
+  font-weight: normal;
+}
+#CustomerBalance #ExpandedBalance TD {
+  height: 20px;
+  padding: 0px 1px 0px 3px;
+}
+#CustomerBalance #LoginDetails TH {
+  /* fallback/image non-cover color */
+  background-color: #cbcbcb;
+  background-image: -moz-linear-gradient(#cbcbcb 0%, #e7e7e7 100%);
+  /* Firefox 3.6+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cbcbcb), to(#e7e7e7));
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-linear-gradient(#cbcbcb, #e7e7e7);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(#cbcbcb, #e7e7e7);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #cbcbcb, #e7e7e7);
+  /* IE10 */
+  background-image: linear-gradient(top, #cbcbcb, #e7e7e7);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cbcbcb', EndColorStr='#e7e7e7');
+  /* IE6–IE9 */
+  border-width: 0px 0px 0px 0px;
+  text-align: left;
+  padding: 0px 1px 0px 3px;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.notvisible {
+  visibility: hidden;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+#PendingList {
+  background: url(../../Images/template/repeaty_bg.png) repeat-y -655px 0;
+  padding: 20px 5px;
+  text-align: center;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-top-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+}
+
+#errorMessage {
+  display: none;
+}
+
+.errorMessage {
+  width: auto;
+  background-color: #000032;
+  z-index: 100;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.errorMessage a:hover {
+  color: #8a8a91;
+}
+.errorMessage .title {
+  padding: 7px 0 0 4px;
+  text-align: left;
+  color: White;
+  font-weight: bold;
+  background: url(../../Images/template/repeatx_bg.png) repeat-x 0 -218px;
+  height: 20px;
+}
+.errorMessage .header {
+  position: relative;
+}
+.errorMessage .header .close {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 19px;
+  height: 18px;
+  text-align: center;
+  cursor: pointer;
+  background-position: 0 -532px;
+}
+.errorMessage .header .close a {
+  color: White;
+  font-size: 150%;
+}
+.errorMessage .content {
+  background-color: #FFFFDE;
+  height: 100%;
+  padding: 3px;
+}
+.errorMessage .genericError {
+  background-color: #FFFFDE;
+  height: 100%;
+  padding: 10px 3px 10px 3px;
+  text-align: center;
+}
+
+#errorMessageSlim {
+  display: none;
+}
+
+.errorMessageSlim .retry {
+  padding: 0px 5px;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.errorMessageSlim .genericError {
+  padding: 5px;
+  text-align: center;
+}
+
+.ui-widget-overlay {
+  background-color: #ccc;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+}
+
+.floatingDiv {
+  background-color: #000032;
+  left: 0px;
+  margin: 0 0 10px 0;
+  overflow: auto;
+  padding: 4px;
+  position: absolute;
+  width: auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.floatingDiv .floatingHeader {
+  position: relative;
+}
+.floatingDiv .floatingHeader .close {
+  background-image: url(../../Images/template/norepeat.png?v=3);
+  background-position: 0 -457px;
+  cursor: pointer;
+  height: 18px;
+  overflow: auto;
+  position: absolute;
+  right: 4px;
+  text-align: center;
+  top: 4px;
+  width: 19px;
+}
+.floatingDiv .content {
+  background-image: url(../../Images/intro/pinnacle_iphone_bets.jpg);
+  height: 400px;
+  overflow: auto;
+  width: 640px;
+}
+.floatingDiv .content .text {
+  margin: 10px;
+  width: 350px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/*////////////// ParlayTicket /////////////*/
+.pt {
+  background-color: #E4EBF9;
+  border-left: 3px solid #000032;
+  border-right: 3px solid #000032;
+  line-height: 15px;
+  width: 215px;
+  padding-bottom: 8px;
+}
+
+.pt .pt_leg {
+  padding: 6px;
+}
+
+.pt .pt_multibetoptions, .pt .pt_stake, .pt .pt_acceptbetterodds, .pt .pt_alert, .pt .pt_submit {
+  padding: 4px 8px;
+}
+
+.pt_multibetoptions DIV:first-child {
+  margin-bottom: 8px;
+}
+
+.pt_periodWagerType {
+  margin-bottom: 8px;
+}
+
+.pt_alertMessage {
+  color: #F11C24;
+  line-height: 12px;
+  font-weight: normal;
+  text-align: left;
+  font-size: 11px;
+  /*font-weight: bold;*/
+}
+
+.pt_alertLeft {
+  background-position: 0 -578px;
+  padding-top: 4px;
+  padding-bottom: 1px;
+  position: relative;
+  left: -6px;
+}
+
+.pt_alertRight {
+  background-position: 0 -578px;
+  padding-bottom: 5px;
+  position: relative;
+  top: -4px;
+}
+
+.pt_overlayMessage {
+  display: none;
+}
+
+.pt_highlight {
+  background-color: #FFC90E;
+  padding: 0 2px 1px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  line-height: 22px;
+}
+
+.pt_favorite {
+  color: #FF6300;
+}
+
+.pt_listedpitcher {
+  font-style: italic;
+}
+
+.pt_listedPitcherMargin {
+  padding-left: 10px;
+}
+
+.pt_atSymbol {
+  color: #000080;
+  font-weight: bold;
+}
+
+.pt_invalidLeg {
+  padding-top: 1px;
+  margin: 3px;
+}
+
+.pt_leg.pt_invalidLeg {
+  padding: 3px;
+}
+
+.pt HR {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #B9C0D0;
+  margin: 0;
+  padding: 0;
+}
+
+.pt_close {
+  background-position: 0 -2019px;
+  float: right;
+  text-decoration: none;
+  position: relative;
+  left: 1px;
+  padding: 2px;
+}
+
+.pt_pick {
+  padding: 4px;
+  margin: 4px 10px 8px 0px;
+  width: 193px;
+  -moz-box-shadow: 0.05em 0.05em 0.05em #B9C0D0;
+  box-shadow: 0.05em 0.05em 0.05em #B9C0D0;
+  border: 0.05em solid #B9C0D0;
+  background-color: #FFFFFF;
+  color: #000;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+.pt_pick .pickAndLine {
+  display: block;
+}
+
+.pt_link {
+  float: right;
+  padding-right: 1px;
+  position: relative;
+  top: -1px;
+  color: #0021A5;
+}
+
+.pt INPUT[type="checkbox"] {
+  margin: 4px 4px 4px 0;
+  position: relative;
+  top: -2px;
+  top: -6px \9;
+  /* apply position fix to ie */
+}
+
+.pt LABEL {
+  vertical-align: top;
+  white-space: nowrap;
+  position: relative;
+}
+
+.pt_stake {
+  font-weight: bold;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.pt_stake INPUT {
+  width: 104px;
+  text-align: left;
+  font-size: 11px;
+  border: 1px solid #858C99;
+  margin-right: 2px;
+  margin-right: 2px;
+}
+
+.pt_stake INPUT:focus {
+  background-image: none;
+  border: 1px solid #F60;
+}
+
+.pt_submit A {
+  background-position: 0 -763px;
+  display: block;
+  height: 31px;
+  line-height: 31px;
+  padding-left: 25px;
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 3px 0 8px;
+  cursor: pointer;
+}
+
+.pt_submit A SPAN {
+  background-position: -167px -799px;
+  display: block;
+  height: 31px;
+  line-height: 31px;
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.pt_submit.disabled A {
+  background-position: 0 -691px;
+  display: block;
+  height: 31px;
+  line-height: 31px;
+  padding-left: 25px;
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 3px 0 8px;
+  cursor: pointer;
+}
+
+.pt_submit.disabled A SPAN {
+  background-position: -167px -727px;
+  display: block;
+  height: 31px;
+  line-height: 31px;
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.pt_summary {
+  margin: 8px 8px 0 8px;
+  padding: 5px;
+  background-color: #FFF;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.pt_summary TABLE {
+  font-size: 11px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1px 1px;
+}
+
+.pt_summary TH {
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  padding-right: 3px;
+}
+
+.pt_summary TD {
+  font-weight: bold;
+  white-space: nowrap;
+  width: 100px;
+}
+
+.pt_correlatedlegs {
+  margin: 3px;
+  padding: 3px 3px 6px;
+}
+.pt_correlatedlegs .pt_invalidLeg {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.pt_correlatedlegs HR {
+  border-top: 1px dotted #000000;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width: 95%;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+/*/////////////////////////////////////////*/
+/*////////////// Casino button ////////////*/
+.casino_button {
+  margin-right: 10px;
+  height: 19px;
+  line-height: 19px;
+  padding: 0px 4px;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #ce5500;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff8e42) to(#ce5500));
+  background: -webkit-linear-gradient(#ff8e42, #ce5500);
+  background: -moz-linear-gradient(#ff8e42, #ce5500);
+  background: -ms-linear-gradient(#ff8e42, #ce5500);
+  background: linear-gradient(#ff8e42, #ce5500);
+  background: -o-linear-gradient(#ff8e42, #ce5500);
+  -pie-background: linear-gradient(#ff8e42, #ce5500);
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0px 1px black;
+  border: 2px solid #ff6118;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.casino_button span {
+  float: right;
+  line-height: 18px;
+  padding-left: 2px;
+  padding-right: 20px;
+  display: inline-block;
+  cursor: pointer;
+  background: url(../../Images/arrow-right.png) no-repeat right;
+}
+
+/*/////////////////////////////////////////*/
+/*
+ * jQuery UI CSS Framework 1.8.18
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden {
+  display: none;
+}
+
+.ui-helper-hidden-accessible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+}
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+  content: "";
+  display: table;
+}
+
+.ui-helper-clearfix:after {
+  clear: both;
+}
+
+.ui-helper-clearfix {
+  zoom: 1;
+}
+
+.ui-helper-zfix {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  filter: Alpha(Opacity=0);
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+  cursor: default !important;
+}
+
+/* Icons
+----------------------------------*/
+/* states and images */
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+.ui-widget-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+ * jQuery UI CSS Framework 1.8.18
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Trebuchet%20MS,%20Tahoma,%20Verdana,%20Arial,%20sans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=ff7500&bgTextureHeader=12_gloss_wave.png&bgImgOpacityHeader=35&borderColorHeader=e78f08&fcHeader=ffffff&iconColorHeader=ffffff&bgColorContent=eeeeee&bgTextureContent=03_highlight_soft.png&bgImgOpacityContent=100&borderColorContent=dddddd&fcContent=333333&iconColorContent=222222&bgColorDefault=f6f6f6&bgTextureDefault=02_glass.png&bgImgOpacityDefault=100&borderColorDefault=cccccc&fcDefault=004fb8&iconColorDefault=ef8c08&bgColorHover=fdf5ce&bgTextureHover=02_glass.png&bgImgOpacityHover=100&borderColorHover=fbcb09&fcHover=c77405&iconColorHover=ef8c08&bgColorActive=ffffff&bgTextureActive=02_glass.png&bgImgOpacityActive=65&borderColorActive=fbd850&fcActive=eb8f00&iconColorActive=ef8c08&bgColorHighlight=ffe45c&bgTextureHighlight=03_highlight_soft.png&bgImgOpacityHighlight=75&borderColorHighlight=fed22f&fcHighlight=363636&iconColorHighlight=228ef1&bgColorError=b81900&bgTextureError=08_diagonals_thick.png&bgImgOpacityError=18&borderColorError=cd0a0a&fcError=ffffff&iconColorError=ffd27a&bgColorOverlay=666666&bgTextureOverlay=08_diagonals_thick.png&bgImgOpacityOverlay=20&opacityOverlay=50&bgColorShadow=000000&bgTextureShadow=01_flat.png&bgImgOpacityShadow=10&opacityShadow=20&thicknessShadow=5px&offsetTopShadow=-5px&offsetLeftShadow=-5px&cornerRadiusShadow=5px
+ */
+/* Component containers
+----------------------------------*/
+.ui-widget {
+  font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+  font-size: 1.1em;
+}
+
+.ui-widget .ui-widget {
+  font-size: 1em;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+  font-size: 1em;
+}
+
+.ui-widget-content {
+  border: 1px solid #dddddd;
+  background: #eeeeee url(../../Images/jqueryui/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x;
+  color: #333333;
+}
+
+.ui-widget-content a {
+  color: #333333;
+}
+
+.ui-widget-header {
+  border: 1px solid #e78f08;
+  background: #ff7500 url(../../Images/jqueryui/ui-bg_gloss-wave_35_ff7500_500x100.png) 50% 50% repeat-x;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.ui-widget-header a {
+  color: #ffffff;
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 1px solid #cccccc;
+  background: #f6f6f6 url(../../Images/jqueryui/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;
+  font-weight: bold;
+  color: #004fb8;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+  color: #004fb8;
+  text-decoration: none;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  border: 1px solid #fbcb09;
+  background: #fdf5ce url(../../Images/jqueryui/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x;
+  font-weight: bold;
+  color: #c77405;
+}
+
+.ui-state-hover a, .ui-state-hover a:hover {
+  color: #c77405;
+  text-decoration: none;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: 1px solid #fbd850;
+  background: white url(../../Images/jqueryui/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+  font-weight: bold;
+  color: #eb8f00;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: #eb8f00;
+  text-decoration: none;
+}
+
+.ui-widget :active {
+  outline: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  border: 1px solid #fed22f;
+  background: #ffe45c url(../../Images/jqueryui/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x;
+  color: #363636;
+}
+
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+  color: #363636;
+}
+
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
+  border: 1px solid #cd0a0a;
+  background: #b81900 url(../../Images/jqueryui/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat;
+  color: #ffffff;
+}
+
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a {
+  color: #ffffff;
+}
+
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text {
+  color: #ffffff;
+}
+
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {
+  font-weight: bold;
+}
+
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+  opacity: .7;
+  filter: Alpha(Opacity=70);
+  font-weight: normal;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+  opacity: .35;
+  filter: Alpha(Opacity=35);
+  background-image: none;
+}
+
+/* Icons
+----------------------------------*/
+/* states and images */
+.ui-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url(../../Images/jqueryui/ui-icons_222222_256x240.png);
+}
+
+.ui-widget-content .ui-icon {
+  background-image: url(../../Images/jqueryui/ui-icons_222222_256x240.png);
+}
+
+.ui-widget-header .ui-icon {
+  background-image: url(../../Images/jqueryui/ui-icons_ffffff_256x240.png);
+}
+
+.ui-state-default .ui-icon {
+  background-image: url(../../Images/jqueryui/ui-icons_ef8c08_256x240.png);
+}
+
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+  background-image: url(../../Images/jqueryui/ui-icons_ef8c08_256x240.png);
+}
+
+.ui-state-active .ui-icon {
+  background-image: url(../../Images/jqueryui/ui-icons_ef8c08_256x240.png);
+}
+
+.ui-state-highlight .ui-icon {
+  background-image: url(../../Images/jqueryui/ui-icons_228ef1_256x240.png);
+}
+
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
+  background-image: url(../../Images/jqueryui/ui-icons_ffd27a_256x240.png);
+}
+
+/* positioning */
+.ui-icon-carat-1-n {
+  background-position: 0 0;
+}
+
+.ui-icon-carat-1-ne {
+  background-position: -16px 0;
+}
+
+.ui-icon-carat-1-e {
+  background-position: -32px 0;
+}
+
+.ui-icon-carat-1-se {
+  background-position: -48px 0;
+}
+
+.ui-icon-carat-1-s {
+  background-position: -64px 0;
+}
+
+.ui-icon-carat-1-sw {
+  background-position: -80px 0;
+}
+
+.ui-icon-carat-1-w {
+  background-position: -96px 0;
+}
+
+.ui-icon-carat-1-nw {
+  background-position: -112px 0;
+}
+
+.ui-icon-carat-2-n-s {
+  background-position: -128px 0;
+}
+
+.ui-icon-carat-2-e-w {
+  background-position: -144px 0;
+}
+
+.ui-icon-triangle-1-n {
+  background-position: 0 -16px;
+}
+
+.ui-icon-triangle-1-ne {
+  background-position: -16px -16px;
+}
+
+.ui-icon-triangle-1-e {
+  background-position: -32px -16px;
+}
+
+.ui-icon-triangle-1-se {
+  background-position: -48px -16px;
+}
+
+.ui-icon-triangle-1-s {
+  background-position: -64px -16px;
+}
+
+.ui-icon-triangle-1-sw {
+  background-position: -80px -16px;
+}
+
+.ui-icon-triangle-1-w {
+  background-position: -96px -16px;
+}
+
+.ui-icon-triangle-1-nw {
+  background-position: -112px -16px;
+}
+
+.ui-icon-triangle-2-n-s {
+  background-position: -128px -16px;
+}
+
+.ui-icon-triangle-2-e-w {
+  background-position: -144px -16px;
+}
+
+.ui-icon-arrow-1-n {
+  background-position: 0 -32px;
+}
+
+.ui-icon-arrow-1-ne {
+  background-position: -16px -32px;
+}
+
+.ui-icon-arrow-1-e {
+  background-position: -32px -32px;
+}
+
+.ui-icon-arrow-1-se {
+  background-position: -48px -32px;
+}
+
+.ui-icon-arrow-1-s {
+  background-position: -64px -32px;
+}
+
+.ui-icon-arrow-1-sw {
+  background-position: -80px -32px;
+}
+
+.ui-icon-arrow-1-w {
+  background-position: -96px -32px;
+}
+
+.ui-icon-arrow-1-nw {
+  background-position: -112px -32px;
+}
+
+.ui-icon-arrow-2-n-s {
+  background-position: -128px -32px;
+}
+
+.ui-icon-arrow-2-ne-sw {
+  background-position: -144px -32px;
+}
+
+.ui-icon-arrow-2-e-w {
+  background-position: -160px -32px;
+}
+
+.ui-icon-arrow-2-se-nw {
+  background-position: -176px -32px;
+}
+
+.ui-icon-arrowstop-1-n {
+  background-position: -192px -32px;
+}
+
+.ui-icon-arrowstop-1-e {
+  background-position: -208px -32px;
+}
+
+.ui-icon-arrowstop-1-s {
+  background-position: -224px -32px;
+}
+
+.ui-icon-arrowstop-1-w {
+  background-position: -240px -32px;
+}
+
+.ui-icon-arrowthick-1-n {
+  background-position: 0 -48px;
+}
+
+.ui-icon-arrowthick-1-ne {
+  background-position: -16px -48px;
+}
+
+.ui-icon-arrowthick-1-e {
+  background-position: -32px -48px;
+}
+
+.ui-icon-arrowthick-1-se {
+  background-position: -48px -48px;
+}
+
+.ui-icon-arrowthick-1-s {
+  background-position: -64px -48px;
+}
+
+.ui-icon-arrowthick-1-sw {
+  background-position: -80px -48px;
+}
+
+.ui-icon-arrowthick-1-w {
+  background-position: -96px -48px;
+}
+
+.ui-icon-arrowthick-1-nw {
+  background-position: -112px -48px;
+}
+
+.ui-icon-arrowthick-2-n-s {
+  background-position: -128px -48px;
+}
+
+.ui-icon-arrowthick-2-ne-sw {
+  background-position: -144px -48px;
+}
+
+.ui-icon-arrowthick-2-e-w {
+  background-position: -160px -48px;
+}
+
+.ui-icon-arrowthick-2-se-nw {
+  background-position: -176px -48px;
+}
+
+.ui-icon-arrowthickstop-1-n {
+  background-position: -192px -48px;
+}
+
+.ui-icon-arrowthickstop-1-e {
+  background-position: -208px -48px;
+}
+
+.ui-icon-arrowthickstop-1-s {
+  background-position: -224px -48px;
+}
+
+.ui-icon-arrowthickstop-1-w {
+  background-position: -240px -48px;
+}
+
+.ui-icon-arrowreturnthick-1-w {
+  background-position: 0 -64px;
+}
+
+.ui-icon-arrowreturnthick-1-n {
+  background-position: -16px -64px;
+}
+
+.ui-icon-arrowreturnthick-1-e {
+  background-position: -32px -64px;
+}
+
+.ui-icon-arrowreturnthick-1-s {
+  background-position: -48px -64px;
+}
+
+.ui-icon-arrowreturn-1-w {
+  background-position: -64px -64px;
+}
+
+.ui-icon-arrowreturn-1-n {
+  background-position: -80px -64px;
+}
+
+.ui-icon-arrowreturn-1-e {
+  background-position: -96px -64px;
+}
+
+.ui-icon-arrowreturn-1-s {
+  background-position: -112px -64px;
+}
+
+.ui-icon-arrowrefresh-1-w {
+  background-position: -128px -64px;
+}
+
+.ui-icon-arrowrefresh-1-n {
+  background-position: -144px -64px;
+}
+
+.ui-icon-arrowrefresh-1-e {
+  background-position: -160px -64px;
+}
+
+.ui-icon-arrowrefresh-1-s {
+  background-position: -176px -64px;
+}
+
+.ui-icon-arrow-4 {
+  background-position: 0 -80px;
+}
+
+.ui-icon-arrow-4-diag {
+  background-position: -16px -80px;
+}
+
+.ui-icon-extlink {
+  background-position: -32px -80px;
+}
+
+.ui-icon-newwin {
+  background-position: -48px -80px;
+}
+
+.ui-icon-refresh {
+  background-position: -64px -80px;
+}
+
+.ui-icon-shuffle {
+  background-position: -80px -80px;
+}
+
+.ui-icon-transfer-e-w {
+  background-position: -96px -80px;
+}
+
+.ui-icon-transferthick-e-w {
+  background-position: -112px -80px;
+}
+
+.ui-icon-folder-collapsed {
+  background-position: 0 -96px;
+}
+
+.ui-icon-folder-open {
+  background-position: -16px -96px;
+}
+
+.ui-icon-document {
+  background-position: -32px -96px;
+}
+
+.ui-icon-document-b {
+  background-position: -48px -96px;
+}
+
+.ui-icon-note {
+  background-position: -64px -96px;
+}
+
+.ui-icon-mail-closed {
+  background-position: -80px -96px;
+}
+
+.ui-icon-mail-open {
+  background-position: -96px -96px;
+}
+
+.ui-icon-suitcase {
+  background-position: -112px -96px;
+}
+
+.ui-icon-comment {
+  background-position: -128px -96px;
+}
+
+.ui-icon-person {
+  background-position: -144px -96px;
+}
+
+.ui-icon-print {
+  background-position: -160px -96px;
+}
+
+.ui-icon-trash {
+  background-position: -176px -96px;
+}
+
+.ui-icon-locked {
+  background-position: -192px -96px;
+}
+
+.ui-icon-unlocked {
+  background-position: -208px -96px;
+}
+
+.ui-icon-bookmark {
+  background-position: -224px -96px;
+}
+
+.ui-icon-tag {
+  background-position: -240px -96px;
+}
+
+.ui-icon-home {
+  background-position: 0 -112px;
+}
+
+.ui-icon-flag {
+  background-position: -16px -112px;
+}
+
+.ui-icon-calendar {
+  background-position: -32px -112px;
+}
+
+.ui-icon-cart {
+  background-position: -48px -112px;
+}
+
+.ui-icon-pencil {
+  background-position: -64px -112px;
+}
+
+.ui-icon-clock {
+  background-position: -80px -112px;
+}
+
+.ui-icon-disk {
+  background-position: -96px -112px;
+}
+
+.ui-icon-calculator {
+  background-position: -112px -112px;
+}
+
+.ui-icon-zoomin {
+  background-position: -128px -112px;
+}
+
+.ui-icon-zoomout {
+  background-position: -144px -112px;
+}
+
+.ui-icon-search {
+  background-position: -160px -112px;
+}
+
+.ui-icon-wrench {
+  background-position: -176px -112px;
+}
+
+.ui-icon-gear {
+  background-position: -192px -112px;
+}
+
+.ui-icon-heart {
+  background-position: -208px -112px;
+}
+
+.ui-icon-star {
+  background-position: -224px -112px;
+}
+
+.ui-icon-link {
+  background-position: -240px -112px;
+}
+
+.ui-icon-cancel {
+  background-position: 0 -128px;
+}
+
+.ui-icon-plus {
+  background-position: -16px -128px;
+}
+
+.ui-icon-plusthick {
+  background-position: -32px -128px;
+}
+
+.ui-icon-minus {
+  background-position: -48px -128px;
+}
+
+.ui-icon-minusthick {
+  background-position: -64px -128px;
+}
+
+.ui-icon-close {
+  background-position: -80px -128px;
+}
+
+.ui-icon-closethick {
+  background-position: -96px -128px;
+}
+
+.ui-icon-key {
+  background-position: -112px -128px;
+}
+
+.ui-icon-lightbulb {
+  background-position: -128px -128px;
+}
+
+.ui-icon-scissors {
+  background-position: -144px -128px;
+}
+
+.ui-icon-clipboard {
+  background-position: -160px -128px;
+}
+
+.ui-icon-copy {
+  background-position: -176px -128px;
+}
+
+.ui-icon-contact {
+  background-position: -192px -128px;
+}
+
+.ui-icon-image {
+  background-position: -208px -128px;
+}
+
+.ui-icon-video {
+  background-position: -224px -128px;
+}
+
+.ui-icon-script {
+  background-position: -240px -128px;
+}
+
+.ui-icon-alert {
+  background-position: 0 -144px;
+}
+
+.ui-icon-info {
+  background-position: -16px -144px;
+}
+
+.ui-icon-notice {
+  background-position: -32px -144px;
+}
+
+.ui-icon-help {
+  background-position: -48px -144px;
+}
+
+.ui-icon-check {
+  background-position: -64px -144px;
+}
+
+.ui-icon-bullet {
+  background-position: -80px -144px;
+}
+
+.ui-icon-radio-off {
+  background-position: -96px -144px;
+}
+
+.ui-icon-radio-on {
+  background-position: -112px -144px;
+}
+
+.ui-icon-pin-w {
+  background-position: -128px -144px;
+}
+
+.ui-icon-pin-s {
+  background-position: -144px -144px;
+}
+
+.ui-icon-play {
+  background-position: 0 -160px;
+}
+
+.ui-icon-pause {
+  background-position: -16px -160px;
+}
+
+.ui-icon-seek-next {
+  background-position: -32px -160px;
+}
+
+.ui-icon-seek-prev {
+  background-position: -48px -160px;
+}
+
+.ui-icon-seek-end {
+  background-position: -64px -160px;
+}
+
+.ui-icon-seek-start {
+  background-position: -80px -160px;
+}
+
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first {
+  background-position: -80px -160px;
+}
+
+.ui-icon-stop {
+  background-position: -96px -160px;
+}
+
+.ui-icon-eject {
+  background-position: -112px -160px;
+}
+
+.ui-icon-volume-off {
+  background-position: -128px -160px;
+}
+
+.ui-icon-volume-on {
+  background-position: -144px -160px;
+}
+
+.ui-icon-power {
+  background-position: 0 -176px;
+}
+
+.ui-icon-signal-diag {
+  background-position: -16px -176px;
+}
+
+.ui-icon-signal {
+  background-position: -32px -176px;
+}
+
+.ui-icon-battery-0 {
+  background-position: -48px -176px;
+}
+
+.ui-icon-battery-1 {
+  background-position: -64px -176px;
+}
+
+.ui-icon-battery-2 {
+  background-position: -80px -176px;
+}
+
+.ui-icon-battery-3 {
+  background-position: -96px -176px;
+}
+
+.ui-icon-circle-plus {
+  background-position: 0 -192px;
+}
+
+.ui-icon-circle-minus {
+  background-position: -16px -192px;
+}
+
+.ui-icon-circle-close {
+  background-position: -32px -192px;
+}
+
+.ui-icon-circle-triangle-e {
+  background-position: -48px -192px;
+}
+
+.ui-icon-circle-triangle-s {
+  background-position: -64px -192px;
+}
+
+.ui-icon-circle-triangle-w {
+  background-position: -80px -192px;
+}
+
+.ui-icon-circle-triangle-n {
+  background-position: -96px -192px;
+}
+
+.ui-icon-circle-arrow-e {
+  background-position: -112px -192px;
+}
+
+.ui-icon-circle-arrow-s {
+  background-position: -128px -192px;
+}
+
+.ui-icon-circle-arrow-w {
+  background-position: -144px -192px;
+}
+
+.ui-icon-circle-arrow-n {
+  background-position: -160px -192px;
+}
+
+.ui-icon-circle-zoomin {
+  background-position: -176px -192px;
+}
+
+.ui-icon-circle-zoomout {
+  background-position: -192px -192px;
+}
+
+.ui-icon-circle-check {
+  background-position: -208px -192px;
+}
+
+.ui-icon-circlesmall-plus {
+  background-position: 0 -208px;
+}
+
+.ui-icon-circlesmall-minus {
+  background-position: -16px -208px;
+}
+
+.ui-icon-circlesmall-close {
+  background-position: -32px -208px;
+}
+
+.ui-icon-squaresmall-plus {
+  background-position: -48px -208px;
+}
+
+.ui-icon-squaresmall-minus {
+  background-position: -64px -208px;
+}
+
+.ui-icon-squaresmall-close {
+  background-position: -80px -208px;
+}
+
+.ui-icon-grip-dotted-vertical {
+  background-position: 0 -224px;
+}
+
+.ui-icon-grip-dotted-horizontal {
+  background-position: -16px -224px;
+}
+
+.ui-icon-grip-solid-vertical {
+  background-position: -32px -224px;
+}
+
+.ui-icon-grip-solid-horizontal {
+  background-position: -48px -224px;
+}
+
+.ui-icon-gripsmall-diagonal-se {
+  background-position: -64px -224px;
+}
+
+.ui-icon-grip-diagonal-se {
+  background-position: -80px -224px;
+}
+
+/* Misc visuals
+----------------------------------*/
+/* Corner radius */
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -khtml-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -khtml-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -khtml-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -khtml-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* Overlays */
+.ui-widget-overlay {
+  background: #666666 url(../../Images/jqueryui/ui-bg_diagonals-thick_20_666666_40x40.png) 50% 50% repeat;
+  opacity: .50;
+  filter: Alpha(Opacity=50);
+}
+
+.ui-widget-shadow {
+  margin: -5px 0 0 -5px;
+  padding: 5px;
+  background: black url(../../Images/jqueryui/ui-bg_flat_10_000000_40x100.png) 50% 50% repeat-x;
+  opacity: .20;
+  filter: Alpha(Opacity=20);
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/*
+ * jQuery UI Datepicker 1.8.18
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Datepicker#theming
+ */
+.ui-datepicker {
+  width: 17em;
+  padding: .2em .2em 0;
+  display: none;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: .2em 0;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  position: absolute;
+  top: 2px;
+  width: 1.8em;
+  height: 1.8em;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
+  top: 1px;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+  left: 2px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+  right: 2px;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover {
+  left: 1px;
+}
+
+.ui-datepicker .ui-datepicker-next-hover {
+  right: 1px;
+}
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+  font-size: 1em;
+  margin: 1px 0;
+}
+
+.ui-datepicker select.ui-datepicker-month-year {
+  width: 100%;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width: 49%;
+}
+
+.ui-datepicker table {
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+  margin: 0 0 .4em;
+}
+
+.ui-datepicker th {
+  padding: .7em .3em;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+}
+
+.ui-datepicker td {
+  border: 0;
+  padding: 1px;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+  display: block;
+  padding: .2em;
+  text-align: right;
+  text-decoration: none;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane {
+  background-image: none;
+  margin: .7em 0 0 0;
+  padding: 0 .2em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+  float: right;
+  margin: .5em .2em .4em;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  width: auto;
+  overflow: visible;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+  width: auto;
+}
+
+.ui-datepicker-multi .ui-datepicker-group {
+  float: left;
+}
+
+.ui-datepicker-multi .ui-datepicker-group table {
+  width: 95%;
+  margin: 0 auto .4em;
+}
+
+.ui-datepicker-multi-2 .ui-datepicker-group {
+  width: 50%;
+}
+
+.ui-datepicker-multi-3 .ui-datepicker-group {
+  width: 33.3%;
+}
+
+.ui-datepicker-multi-4 .ui-datepicker-group {
+  width: 25%;
+}
+
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header {
+  border-left-width: 0;
+}
+
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+  border-left-width: 0;
+}
+
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+  clear: left;
+}
+
+.ui-datepicker-row-break {
+  clear: both;
+  width: 100%;
+  font-size: 0em;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+  direction: rtl;
+}
+
+.ui-datepicker-rtl .ui-datepicker-prev {
+  right: 2px;
+  left: auto;
+}
+
+.ui-datepicker-rtl .ui-datepicker-next {
+  left: 2px;
+  right: auto;
+}
+
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+  right: 1px;
+  left: auto;
+}
+
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+  left: 1px;
+  right: auto;
+}
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+  clear: right;
+}
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+  float: left;
+}
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: right;
+}
+
+.ui-datepicker-rtl .ui-datepicker-group {
+  float: right;
+}
+
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px;
+}
+
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px;
+}
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+.ui-datepicker-cover {
+  display: none;
+  /*sorry for IE5*/
+  display/**/: block;
+  /*sorry for IE5*/
+  position: absolute;
+  /*must have*/
+  z-index: -1;
+  /*must have*/
+  filter: mask();
+  /*must have*/
+  top: -4px;
+  /*must have*/
+  left: -4px;
+  /*must have*/
+  width: 200px;
+  /*must have*/
+  height: 200px;
+  /*must have*/
+}
+
+/* Start dropdown menu styling 
+--------------------------------------------- */
+ul.dropdown,
+ul.dropdown li,
+ul.dropdown ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul.dropdown {
+  float: left;
+  width: 100%;
+  position: relative;
+  display: inline;
+}
+
+ul.dropdown li {
+  float: left;
+  vertical-align: middle;
+  zoom: 1;
+  /* IE6 */
+  line-height: 1em;
+  border-left: 1px solid #9C9B9B;
+  height: 16px;
+}
+
+ul.dropdown *.first {
+  border-left: none !important;
+}
+
+ul.dropdown li ul li {
+  border-left: none;
+  line-height: 1.5em;
+}
+
+ul.dropdown a,
+ul.dropdown a:visited,
+ul.dropdown a:hover,
+ul.dropdown a:active {
+  text-decoration: none;
+  position: relative;
+  top: -3px;
+}
+
+ul.dropdown a,
+ul.dropdown span {
+  display: block;
+  outline: none;
+  cursor: pointer;
+  padding: 1px 5px;
+}
+
+ul.dropdown ul a,
+ul.dropdown ul a:visited,
+ul.dropdown ul a:hover,
+ul.dropdown ul a:active {
+  position: relative;
+  top: 0;
+}
+
+ul.dropdown ul a,
+ul.dropdown ul span {
+  padding: 2px 3px;
+}
+
+ul.dropdown li:hover,
+ul.dropdown li.hover {
+  position: relative;
+  cursor: pointer;
+}
+
+ul.dropdown ul {
+  display: none;
+  position: absolute;
+  z-index: 598;
+  width: 160px;
+  top: 100%;
+  left: -2px;
+  margin-top: -1px;
+}
+
+ul.dropdown ul.morecasino {
+  display: none;
+  position: absolute;
+  z-index: 598;
+  width: 120px;
+  top: 100%;
+  left: -20px;
+  margin-top: -1px;
+}
+
+ul.dropdown li:hover > ul {
+  display: block;
+}
+
+ul.dropdown ul li {
+  float: none;
+  font-weight: normal;
+  text-transform: none;
+  position: relative;
+  top: 0;
+  height: 20px;
+}
+
+#linkMore, #linkCasino {
+  float: left;
+}
+
+.icon-menu-drop {
+  float: left;
+  background-position: 0 -1833px;
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 5px;
+}
+
+.more-menu ul.dropdown ul {
+  background: #ECECEC;
+}
+
+.more-menu ul.dropdown li.hover {
+  background-color: #EFF0F2;
+}
+
+.more-menu ul.dropdown ul li,
+.more-menu ul.dropdown ul li a {
+  color: #000000!important;
+  /* IE6 */
+}
+
+.more-menu ul.dropdown ul li {
+  border-bottom: 1px solid #fff;
+}
+
+.more-menu ul.dropdown ul li.hover,
+.more-menu ul.dropdown ul li:hover {
+  background-color: #9C9B9B;
+  color: #000000!important;
+}
+
+/* End dropdown menu styling 
+--------------------------------------------- */
+#loadMoreGamesLink {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+}

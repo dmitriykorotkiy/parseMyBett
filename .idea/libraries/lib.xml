@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://C:/projects/selenium/client-combined-3.4.0-nodeps.jar!/" />
+      <root url="file://C:/projects/selenium/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://C:/projects/selenium/lib" recursive="false" />
+  </library>
+</component>
