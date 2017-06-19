@@ -1,5 +1,5 @@
-import login.FirstSiteLogin;
-import login.SecondSiteLogin;
+import login.SourceSiteLogin;
+import login.PerformanceSiteLogin;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
@@ -13,21 +13,21 @@ public class Main {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-        FirstSiteLogin site1 = new FirstSiteLogin();
-        driver.get("C:\\PARSER\\parseMyBett\\src\\resources\\htmlExample\\site1.html");
-//        driver.get(site1.getFIRST_SITE_URL());                         // захожу на сайт , логинюсь
-//        site1.login(site1.getUSER(), site1.getPASSWORD());
-//        Thread.sleep(2000);
+        SourceSiteLogin site1 = new SourceSiteLogin();
+//        driver.get("C:\\PARSER\\parseMyBett\\src\\resources\\htmlExample\\site1.html");
+        driver.get(site1.getSourceSiteUrl());
+        site1.login(site1.getUserSource(), site1.getPasswordSource());
+        Thread.sleep(2000);
 
         ParserSite parserSite = new ParserSite();
-        List<String> listTextBet = parserSite.getTextFromSite1(driver);
+        List<String> listTextBet = parserSite.getContentFromSourceSite(driver);
         List<Position> positionsList = parserSite.createPositionsList(listTextBet);
         parserSite.showPositionList(positionsList);
 
-        SecondSiteLogin site2 = new SecondSiteLogin();
-//        driver.get("C:\\PARSER\\parseMyBett\\src\\resources\\htmlExample\\site2.html");
-        driver.get(site2.getSECOND_SITE_URL());
-        site2.login(site2.getUSER_PIN(),site2.getPASSWORD_PIN(),driver);
+        PerformanceSiteLogin site2 = new PerformanceSiteLogin();
+        driver.get(site2.getPerformanceSiteUrl());
+        site2.login(site2.getUserPerformance(),site2.getPasswordPerformance(),driver);
+        System.out.println(parserSite.checkLogin(driver));
 
         parserSite.makeBet(positionsList,driver);
 

@@ -10,10 +10,9 @@ import java.util.List;
 
 public class ParserSite {
 
-    public List<String> getTextFromSite1(WebDriver driver) {
+    public List<String> getContentFromSourceSite(WebDriver driver) {
 
         List<WebElement> allPositions = driver.findElements(By.className("style4"));
-        // Делаю масив строк , который состоит из текста
         ArrayList<String> listBet = new ArrayList<>();
         for (int i = 0; i < allPositions.size(); i++) {
             String element = String.valueOf(allPositions.get(i).getText());
@@ -57,10 +56,20 @@ public class ParserSite {
         }
     }
 
+    public boolean checkLogin(WebDriver driver){
+        WebElement checkBalance = driver.findElement(By.xpath(".//*[@id='AvailableBalance']/tbody/tr/td[1]"));
+        String balance = checkBalance.getText();
+        if (balance != null){
+            return true;
+        }
+        return false;
+    }
+
+
     public void makeBet(List<Position> listPosition, WebDriver driver) throws InterruptedException {
         for (Position bet : listPosition) {
 //           String[] arrayName =  bet.createArrayName(bet);
-            String[] arrayName = {"Albot", "Sandgren"};
+            String[] arrayName = {"Lindell", "Banes"};
             WebElement betToday = driver.findElement(By.xpath(".//*[@id='menuEventFilter_33_343']"));
             betToday.click();
             Thread.sleep(500);
@@ -78,14 +87,12 @@ public class ParserSite {
                             for (WebElement btnText : btn) {
                                 System.out.println("I PLACE bet!");
                                 btnText.click();
+
                             }
                         }
                     }
                 }
-
             }
-
         }
-
     }
 }

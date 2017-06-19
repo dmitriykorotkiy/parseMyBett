@@ -4,33 +4,33 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class SecondSiteLogin {
+public class PerformanceSiteLogin {
 
-    private String USER_PIN = "****";
-    private String PASSWORD_PIN = "****";
-    private String SECOND_SITE_URL = "https://www.****.com/ru/";
+    private String USER_PERFORMANCE = "****";
+    private String PASSWORD_PERFORMANCE = "****";
+    private String PERFORMANCE_SITE_URL = "https://*****/ru";
 
-    public String getUSER_PIN() {
-        return USER_PIN;
+    public String getUserPerformance() {
+        return USER_PERFORMANCE;
     }
 
-    public String getPASSWORD_PIN() {
-        return PASSWORD_PIN;
+    public String getPasswordPerformance() {
+        return PASSWORD_PERFORMANCE;
     }
 
-    public String getSECOND_SITE_URL() {
-        return SECOND_SITE_URL;
+    public String getPerformanceSiteUrl() {
+        return PERFORMANCE_SITE_URL;
     }
 
-    public void login(String USERPIN, String PASSWORDPIN, WebDriver driver) throws InterruptedException {
+    public void login(String USER_PERFORMANCE, String PASSWORD_PERFORMANCE, WebDriver driver) throws InterruptedException {
 
         WebElement element = driver.findElement(By.id("loginButton"));
         element.click();
         Thread.sleep(1500);
         WebElement login = driver.findElement(By.xpath(".//*[@id='loginMvc']/form/div/div[1]/div[1]/div[2]/div[2]/input"));
-        login.sendKeys(USER_PIN);
+        login.sendKeys(USER_PERFORMANCE);
         WebElement password = driver.findElement(By.xpath(".//*[@id='loginMvc']/form/div/div[1]/div[1]/div[3]/div[2]/input"));
-        password.sendKeys(PASSWORD_PIN);
+        password.sendKeys(PASSWORD_PERFORMANCE);
         WebElement enter = driver.findElement(By.id("loginButtonContainer"));
         Thread.sleep(2000);
         enter.click();
