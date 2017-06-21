@@ -1,5 +1,6 @@
-import login.SourceSiteLogin;
+
 import login.PerformanceSiteLogin;
+import login.SourceSiteLogin;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
@@ -13,20 +14,20 @@ public class Main {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-        SourceSiteLogin site1 = new SourceSiteLogin();
-//        driver.get("C:\\PARSER\\parseMyBett\\src\\resources\\htmlExample\\site1.html");
-        driver.get(site1.getSourceSiteUrl());
-        site1.login(site1.getUserSource(), site1.getPasswordSource());
+        SourceSiteLogin sourceSiteLogin = new SourceSiteLogin();
+        driver.get(sourceSiteLogin.getSourceSiteUrl());
+        sourceSiteLogin.login(sourceSiteLogin.getUserSource(), sourceSiteLogin.getPasswordSource());
         Thread.sleep(2000);
+
 
         ParserSite parserSite = new ParserSite();
         List<String> listTextBet = parserSite.getContentFromSourceSite(driver);
         List<Position> positionsList = parserSite.createPositionsList(listTextBet);
         parserSite.showPositionList(positionsList);
 
-        PerformanceSiteLogin site2 = new PerformanceSiteLogin();
-        driver.get(site2.getPerformanceSiteUrl());
-        site2.login(site2.getUserPerformance(),site2.getPasswordPerformance(),driver);
+        PerformanceSiteLogin performanceSiteLogin = new PerformanceSiteLogin();
+        driver.get(performanceSiteLogin.getPerformanceSiteUrl());
+        performanceSiteLogin.login(performanceSiteLogin.getUserPerformance(),performanceSiteLogin.getPasswordPerformance(),driver);
         System.out.println(parserSite.checkLogin(driver));
 
         parserSite.makeBet(positionsList,driver);
