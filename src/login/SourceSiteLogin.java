@@ -3,13 +3,18 @@ package login;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.util.HashMap;
+import java.util.Map;
 
 public class SourceSiteLogin {
 
+    MyProperty property = new MyProperty();
+    Map<String,String > mapSourseSite = property.getProperty(MyProperty.getPathToProperties());
 
-    private final String USERSOURCE = "***";
-    private final String PASSWORDSOURCE = "***";
-    private String SOURCE_SITE_URL = "http://****.ru/";
+
+    private final String USERSOURCE = mapSourseSite.get("loginSourceSite");
+    private final String PASSWORDSOURCE = mapSourseSite.get("passwordSourceSite");
+    private String SOURCE_SITE_URL = mapSourseSite.get("sourceSite");
 
     public String getSourceSiteUrl() {
         return SOURCE_SITE_URL;
