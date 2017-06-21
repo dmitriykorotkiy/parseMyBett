@@ -4,11 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.Map;
+
 public class PerformanceSiteLogin {
 
-    private String USER_PERFORMANCE = "****";
-    private String PASSWORD_PERFORMANCE = "****";
-    private String PERFORMANCE_SITE_URL = "https://*****/ru";
+    MyProperty property = new MyProperty();
+    Map<String,String > mapPerformanceSite = property.getProperty(MyProperty.getPathToProperties());
+
+    private String USER_PERFORMANCE = mapPerformanceSite.get("loginPerformanceSite");
+    private String PASSWORD_PERFORMANCE = mapPerformanceSite.get("passwordPerformanceSite");
+    private String PERFORMANCE_SITE_URL = mapPerformanceSite.get("performanceSite");
 
     public String getUserPerformance() {
         return USER_PERFORMANCE;
