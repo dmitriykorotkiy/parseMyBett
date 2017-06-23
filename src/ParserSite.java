@@ -1,6 +1,8 @@
+import javafx.geometry.Pos;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -9,6 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ParserSite {
+
 
     public List<String> getContentFromSourceSite(WebDriver driver) {
 
@@ -66,33 +69,23 @@ public class ParserSite {
     }
 
 
-    public void makeBet(List<Position> listPosition, WebDriver driver) throws InterruptedException {
-        for (Position bet : listPosition) {
-//           String[] arrayName =  bet.createArrayName(bet);
-            String[] arrayName = {"Lindell", "Banes"};
-            WebElement betToday = driver.findElement(By.xpath(".//*[@id='menuEventFilter_33_343']"));
-            betToday.click();
-            Thread.sleep(500);
-            List<WebElement> tbodyList = betToday.findElements(By.xpath("//*[@id='Today_33']/table/tbody"));
-            for (WebElement tBodyElement : tbodyList) {
-                Thread.sleep(1000);
-                List<WebElement> trList = tBodyElement.findElements(By.xpath("//*[@id='Today_33']/table/tbody/tr"));
-                for (WebElement trElement : trList) {
-                    System.out.println("trList.size()   ---------------->" + trList.size());
-                    List<WebElement> listTeamId = trElement.findElements(By.className("teamId"));
-                    for (WebElement teamIdElement : listTeamId) {
-                        System.out.println(teamIdElement.getText());
-                        if (teamIdElement.getText().contains(arrayName[0]) || teamIdElement.getText().contains(arrayName[1])) {
-                            List<WebElement> btn = trElement.findElements(By.className("alt"));
-                            for (WebElement btnText : btn) {
-                                System.out.println("I PLACE bet!");
-                                btnText.click();
+    public void placeBet( WebDriver driver) throws InterruptedException {
+        String[] arrayName = {"Groth", "Fratangelo"};
+        WebElement betToday = driver.findElement(By.xpath(".//*[@id='menuEventFilter_33_343']"));
+        betToday.click();
+        Thread.sleep(500);
+        List<WebElement> teamIdName = driver.findElements(By.className("teamId"));
+        for (WebElement player : teamIdName) {
+            if (player.getText().contains(arrayName[0]) || player.getText().contains(arrayName[1])) {
+                System.out.println(player.getText());
+                WebElement alt = player.findElement(By.xpath("../td[9]/a"));
+                System.out.println(alt.getText());
+                alt.click();
+                Thread.sleep(5000);
 
-                            }
-                        }
-                    }
-                }
             }
+
         }
     }
 }
+
