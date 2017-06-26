@@ -70,22 +70,38 @@ public class ParserSite {
 
 
     public void placeBet( WebDriver driver) throws InterruptedException {
-        String[] arrayName = {"Groth", "Fratangelo"};
-        WebElement betToday = driver.findElement(By.xpath(".//*[@id='menuEventFilter_33_343']"));
+        String[] arrayName = {"Darcis", "Verdasco"};
+        String stavka = "Ф1(-2)";
+        WebElement betToday = driver.findElement(By.xpath(".//*[@id='menuEventFilter_33_344']"));
         betToday.click();
         Thread.sleep(500);
         List<WebElement> teamIdName = driver.findElements(By.className("teamId"));
         for (WebElement player : teamIdName) {
             if (player.getText().contains(arrayName[0]) || player.getText().contains(arrayName[1])) {
+                WebElement home = player.findElement(By.className("Home"));
+                System.out.println(home.getText());
                 System.out.println(player.getText());
-                WebElement alt = player.findElement(By.xpath("../td[9]/a"));
+                WebElement alt = player.findElement(By.xpath("../*[@class='alt']/a"));
                 System.out.println(alt.getText());
                 alt.click();
                 Thread.sleep(5000);
+
+                if (stavka.contains("Ф1")){
+                    WebElement spreadtotal = driver.findElement(By.xpath(".//*[@class='spreadTotal']/table/tbody"));
+                    System.out.println(spreadtotal.getText());
+                    List<WebElement> price = spreadtotal.findElements(By.xpath(".//a[contains(@href,'2.5')]"));
+                    for (WebElement td: price) {
+                        System.out.println(td.getText());
+                        td.click();
+                        Thread.sleep(2000);
+                    }
+                }
 
             }
 
         }
     }
+
+
 }
 
