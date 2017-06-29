@@ -69,51 +69,60 @@ public class ParserSite {
     }
 
 
-    public void placeBet( WebDriver driver) throws InterruptedException {
-        String[] arrayName = {"Djokovic", "Young"};
-        String stavka = "4.5";
+    public WebElement findAndGetAlternateLines(WebDriver driver , String[] arrayName) throws InterruptedException {
+        WebElement alternateLines = null;
         WebElement betToday = driver.findElement(By.xpath(".//*[@id='menuEventFilter_33_343']"));
         betToday.click();
         Thread.sleep(500);
         List<WebElement> teamIdName = driver.findElements(By.className("teamId"));
         for (WebElement player : teamIdName) {
             if (player.getText().contains(arrayName[0]) || player.getText().contains(arrayName[1])) {
-                WebElement home = player.findElement(By.className("Home"));
-                System.out.println(home.getText());
                 System.out.println(player.getText());
-                WebElement alt = player.findElement(By.xpath("../*[@class='alt']/a"));
-                System.out.println(alt.getText());
-                alt.click();
-                Thread.sleep(5000);
+                alternateLines = player.findElement(By.xpath("../*[@class='alt']"));
+                System.out.println(alternateLines.getText());
+            }
+        }
+        return alternateLines;
+    }
 
-                if (stavka.contains("4.5")){
-                    List<WebElement> listTr = driver.findElements(By.xpath(".//*[@class='spreadTotal']/table/tbody/tr"));
-                    System.out.println(listTr);
-                    for (WebElement tr: listTr) {
-                        if(tr.getText().contains(stavka)){
-                            System.out.println("есть ставка");
-                            List<WebElement> betPrice = tr.findElements(By.className("price"));
-                            for (WebElement price : betPrice) {
-                                System.out.println(price.getText());
-                                price.click();
-                                WebElement odds = driver.findElement(By.className("odds"));
-                                System.out.println(odds.getText());
-                                if((odds.getText().contains(arrayName[0]) || odds.getText().contains(arrayName[1])) && odds.getText().contains(stavka)){
-                                    WebElement pendingTicket = driver.findElement(By.xpath(".//*[@id='PendingTicket_TicketItem_StakeAmount']"));
-                                    pendingTicket.sendKeys("100");
-                                    break;
-                                }
-                            }
-                        }
+
+    public void findBetAndPlaceBet(WebDriver driver , String whichBet , String[] arrayName , WebElement alternateLines) throws InterruptedException{
+        String reallyBet = "-3.5";
+        Thread.sleep(1000);
+        alternateLines.click();
+        List<WebElement> listTr = driver.findElements(By.xpath(".//*[@class='spreadTotal']/table/tbody/tr"));
+        for (WebElement tr: listTr) {
+            if (tr.getText().contains(whichBet)) {
+                System.out.println("есть ставка");
+                List<WebElement> betPrice = tr.findElements(By.className("price"));
+                for (WebElement price : betPrice) {
+                    System.out.println(price.getText());
+                    price.click();
+                    Thread.sleep(500);
+                    WebElement odds = driver.findElement(By.className("odds"));
+                    System.out.println(odds.getText());
+                    if (checkOdds(odds, arrayName, reallyBet)) {
+                        WebElement pendingTicket = driver.findElement(By.xpath(".//*[@id='PendingTicket_TicketItem_StakeAmount']"));
+                        pendingTicket.sendKeys("100");
+                        Thread.sleep(5000);
+                        System.out.println(" Ok , I`m ready to place a bet !");
+                        break;
+
                     }
 
                 }
-
+                break;
             }
-
         }
     }
 
+
+     private boolean checkOdds(WebElement odds,String[] arrayName,String reallyBet){
+         if((odds.getText().contains(arrayName[0]) || odds.getText().contains(arrayName[1])) && odds.getText().contains(reallyBet)){
+             return true;
+         }
+         return false;
+     }
 
 }
 
