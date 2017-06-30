@@ -1,3 +1,4 @@
+import java.util.Map;
 
 public class Position {
     private String tournamentName;
@@ -8,7 +9,7 @@ public class Position {
     private String bookmaker;
 
 
-    public Position(){
+    public Position() {
 
     }
 
@@ -82,10 +83,19 @@ public class Position {
                 '}';
     }
 
-    public String[] createArrayName(Position position){
-       String[] playerName =  position.getPlayerName().split("-");
-          return playerName;
+    public String[] createArrayName(Position position) {
+        String[] playerName = position.getPlayerName().split("-");
+        return playerName;
     }
+
+    public String comparingBetWithBetMap(Position position) {
+        BetMap betMap = new BetMap();
+        Map<String, String> mapTypeBets = betMap.createBetMapValue();
+        String myBet = mapTypeBets.get(position.getBet());
+        System.out.println(myBet);
+        return myBet;
+    }
+
 }
 
 
