@@ -2,9 +2,12 @@
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -87,7 +90,7 @@ public class ParserSite {
     }
 
 
-    public void findBetAndPlaceBet(WebDriver driver , String whichBet , String[] arrayName , WebElement alternateLines) throws InterruptedException{
+    public void findBetAndPlaceBet(WebDriver driver , String whichBet , String[] arrayName , WebElement alternateLines) throws InterruptedException, AWTException {
         String reallyBet = "-2.0";
         Thread.sleep(1000);
         alternateLines.click();
@@ -105,9 +108,15 @@ public class ParserSite {
                     System.out.println(odds.getText());
                     if (checkOdds(odds, arrayName, reallyBet)) {
                         WebElement pendingTicket = driver.findElement(By.xpath(".//*[@id='PendingTicket_TicketItem_StakeAmount']"));
-                        pendingTicket.sendKeys("5");
-                        Thread.sleep(5000);
+                        pendingTicket.sendKeys("1");
+                        Thread.sleep(3000);
                         System.out.println(" Ok , I`m ready to place a bet !");
+                        WebElement registerBet = driver.findElement(By.id("BetTicketSubmitLink"));
+                        registerBet.click();
+                        Robot rb = new Robot();
+                        rb.keyPress(KeyEvent.VK_ENTER);
+                        Thread.sleep(2000);
+                        rb.keyPress(KeyEvent.VK_ENTER);
                         break;
 
                     }
