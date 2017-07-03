@@ -83,12 +83,13 @@ public class Position {
                 '}';
     }
 
-    public String[] createArrayName(Position position) {
+    public String[] createName(Position position) {
         String[] playerName = position.getPlayerName().split("-");
         return playerName;
     }
 
-    public String comparingBetWithBetMap(Position position) {
+    public String findBetByPosition(Position position) {
+        System.out.println(position.getPlayerName() + position.getBet());
         BetMap betMap = new BetMap();
         Map<String, String> mapTypeBets = betMap.createBetMapValue();
         String myBet = mapTypeBets.get(position.getBet());

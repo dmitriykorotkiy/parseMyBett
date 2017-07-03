@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 
@@ -34,24 +33,16 @@ public class Main {
         System.out.println(parserSite.checkLogin(driver));
 
 
-//        String whichBet = "Ф1(-1.5)";
-//        BetMap betMap = new BetMap();
-//        Map<String,String> mapTypeBets = betMap.createBetMapValue();
-//        String myBet = mapTypeBets.get(whichBet);
-//        System.out.println(myBet);
-//        String[] arrayName = {"Gasquet", "Monfils"};
 
         for (Position element : positionsList) {
-            String[] playerName = element.createArrayName(element);
-            for (String x : playerName) {
-                System.out.println(x);
-            }
-            String myBet = element.comparingBetWithBetMap(element);
+            String[] playerName = element.createName(element);
+            String myBet = element.findBetByPosition(element);
+            String myBetForSearch = myBet.substring(1);
+
             WebElement alternateLines = parserSite.findAndGetAlternateLines(driver, playerName);
             System.out.println(alternateLines.getText());
-            System.out.println(alternateLines.getTagName());
             Thread.sleep(500);
-            parserSite.findBetAndPlaceBet(driver, myBet, playerName, alternateLines);
+            parserSite.findBetAndPlaceBet(driver, myBetForSearch, playerName, alternateLines , myBet);
             Thread.sleep(10000);
             driver.quit();
 

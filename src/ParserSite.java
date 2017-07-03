@@ -75,7 +75,7 @@ public class ParserSite {
 
     public WebElement findAndGetAlternateLines(WebDriver driver , String[] arrayName) throws InterruptedException {
         WebElement alternateLines = null;
-        WebElement betToday = driver.findElement(By.xpath(".//*[@id='menuEventFilter_33_344']"));
+        WebElement betToday = driver.findElement(By.xpath(".//*[@id='menuEventFilter_33_343']"));
         betToday.click();
         Thread.sleep(500);
         List<WebElement> teamIdName = driver.findElements(By.className("teamId"));
@@ -90,8 +90,8 @@ public class ParserSite {
     }
 
 
-    public void findBetAndPlaceBet(WebDriver driver , String whichBet , String[] arrayName , WebElement alternateLines) throws InterruptedException, AWTException {
-        String reallyBet = "-2.0";
+    public void findBetAndPlaceBet(WebDriver driver , String whichBet , String[] arrayName , WebElement alternateLines , String myBet) throws InterruptedException, AWTException {
+
         Thread.sleep(1000);
         alternateLines.click();
         List<WebElement> listTr = driver.findElements(By.xpath(".//*[@class='spreadTotal']/table/tbody/tr"));
@@ -106,9 +106,9 @@ public class ParserSite {
                     Thread.sleep(300);
                     WebElement odds = driver.findElement(By.className("odds"));
                     System.out.println(odds.getText());
-                    if (checkOdds(odds, arrayName, reallyBet)) {
+                    if (checkOdds(odds, arrayName, myBet)) {
                         WebElement pendingTicket = driver.findElement(By.xpath(".//*[@id='PendingTicket_TicketItem_StakeAmount']"));
-                        pendingTicket.sendKeys("1");
+                        pendingTicket.sendKeys("2");
                         Thread.sleep(3000);
                         System.out.println(" Ok , I`m ready to place a bet !");
                         WebElement registerBet = driver.findElement(By.id("BetTicketSubmitLink"));
